@@ -46,6 +46,7 @@ footer {
 }
 .menu .logo{
 	margin-right:600px;
+	margin-top: 10px;
 }
 .menu ul{
 	list-style: none;
@@ -60,12 +61,15 @@ footer {
 }
 
 .menu li:hover {
-	background-color:white;
+	background-color:#f46758;
+	margin-bottom:30px;
+	text-decoration: none;
 }
 
  .menu a {
 	color: white;
 	text-decoration: none;
+	margin-bottom:30px;
 }
 
 .learn-more{
@@ -97,9 +101,14 @@ footer {
 
 .red-line{
 	background-color:#db574a;
-	height:200px;
-	margin-top:200px;
+	height:300px;
+	margin-top:50px;
+	color:#ffffff;
+	font-family: 'Open Sans', sans-serif;
 	
+}
+.text{
+	font-size:38px;
 }
 
 .image-proj{
@@ -195,7 +204,7 @@ textarea{
 	padding:0;
 }
 .prod-bottom{
-	height:100px;
+	height:50px;
 }
 
 .my-carousel-control a{
