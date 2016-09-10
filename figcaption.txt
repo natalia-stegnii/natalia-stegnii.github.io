@@ -1,0 +1,6 @@
+function() {
+  var b = $(this).find("figcaption");
+  b.stop().animate({
+    height: a
+  }, "fast")
+}
