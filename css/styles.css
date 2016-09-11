@@ -1,0 +1,23 @@
+header{
+	height:200px;
+	padding-top: 50px;
+}
+.contact{
+	font-size:16px;
+	padding-top:15px;
+}
+.name{
+	font-size:38px;
+	margin-bottom:0px;
+}
+.job{
+	font-size:20px;
+}
+.wk-img{
+	width:434px; 
+	height:366px;
+	
+}
+.wk1{
+	padding-left:100px;
+}
