@@ -1,16 +1,42 @@
+body{
+	background: #ededed url(...images/bc.png) repeat;
+}
 header{
 	height:100px;
-	background-color:#2c3e50;
+	
 }
 .content{
-	background-color:#e74c3c;
+	
 }
 .contact{
 	background-image:  url(images/lviv.png);
+}
+.logos{
+	margin-top:30px;
+}
+.logo{
+	margin-left:20px;
 }
 .logos .logo{
 	display: inline-block;
 }
 .cont{
 	display: inline-block;
+}
+.name {
+	font-size:16px;
+}
+.line{
+	border-bottom: 2px solid #c9c9c9;
+}
+.section-title{
+	position: relative;
+	top:-14px;
+	text-transform: strong;
+	text-transform: uppercase;
+	float:right;
+	font-size: 16px;
+	letter-spacing:4px;
+	font-weight:normal;
+	color:#c9c9c9;
 }
