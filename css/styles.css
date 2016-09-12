@@ -1,23 +1,16 @@
 header{
-	height:200px;
-	padding-top: 50px;
+	height:100px;
+	background-color:#2c3e50;
+}
+.content{
+	background-color:#e74c3c;
 }
 .contact{
-	font-size:16px;
-	padding-top:15px;
+	background-image:  url(images/lviv.png);
 }
-.name{
-	font-size:38px;
-	margin-bottom:0px;
+.logos .logo{
+	display: inline-block;
 }
-.job{
-	font-size:20px;
-}
-.wk-img{
-	width:434px; 
-	height:366px;
-	
-}
-.wk1{
-	padding-left:100px;
+.cont{
+	display: inline-block;
 }
