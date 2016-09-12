@@ -4,55 +4,51 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>natalia-stegnii</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	
-	
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-<header>
-<div class="container">
+<header class="submenu">
+<div class="container ">
 	<div class="row">
 		<ul class="nav navbar-nav navbar-right">
-		<li><a href="#">portfolio</a></li>
-		<li><a href="#">about</a></li>
-		<li><a href="#">contact</a></li>
+			<li><a href="#home">home</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#contact">contact</a></li>
 		</ul>
 	</div>
 </div>
 </header>
-<div class="content">
+<div class="section home">
 	<div class="container">
 		<div class="row">
 				<img src="images/my-photo.png" class="img-responsive img-circle center-block" alt="my-photo" width="200" height="200">
-				<h1 class="text-center">Natalia Stehnii</h1>
+				<h2 class="text-center">Natalia Stehnii</h1>
 				<h1 class="text-center">Front-end Developer</h1>
-				<p class="text-center">HTML CSS JavaScript - Bootstrap JQuery - WordPress OpenCart</p>
+				<h3 class="text-center">HTML CSS JavaScript - Bootstrap JQuery - WordPress OpenCart</p>
 		</div>
 	</div>
-</div>	
-<div class="portfolio">
+</div>
+<div class="section portfolio">
 	<div class="container">
 		<div class="row">
 		<h4 class="line">
 			<span class="section-title"><strong>portfolio</strong></span>
 		</h4>
-		<h1 class="text-center">Приклади виконаних робіт</h1>
+		<h2 class="text-center">Examples</h1>
 			<div class="col-md-6">
 				<div class="work">
 					<a href="works/fast-search"><img class="img-responsive" src="images/fast-search.png"  alt="fast-search"></a>
@@ -66,14 +62,15 @@
 		</div>
 	</div>
 </div>
-<div class="about">
+<div class="section about">
 	<div class="container">
 		<div class="row">
 		<h4 class="line">
 			<span class="section-title"><strong>about</strong></span>
 		</h4>
 			<div class="text-center">
-				<h2>Порофесійні навики:</h2>
+
+				<h2>Skills</h2>
 				<div class="logos">
 					<div class="logo">
 					 <img src="images/html5.png" class="img-responsive " alt="html5"/><strong>HTML 5</strong>
@@ -114,12 +111,13 @@
 	</div>
 </div>
 
-<div class="contact">
+<div class="section contact">
 	<div class="container">
 		<div class="row">
 		<h4 class="line">
 			<span class="section-title"><strong>contact</strong></span>
 		</h4>
+		<h2>Connect with me</p>
 			<div class="mail">
 				<div class="cont"><img src="images/mail.png" class="img-responsive" alt="mail"/></div>
 				<p class="name cont"><strong>n.stehnii@gmail.com<strong></p>
@@ -133,7 +131,15 @@
 				<p class="name cont">+38(096)204-75-97</p>
 			</div>
 		</div>
-	</div>	
-</div>	
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="./js/jquery.smint.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.submenu').smint();
+	});
+</script>
 </body>
 </html>

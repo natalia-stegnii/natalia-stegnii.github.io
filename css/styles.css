@@ -1,13 +1,40 @@
 body{
-	background: #ededed url(...images/bc.png) repeat;
+	background: #ededed url(./../images/bc.png) repeat;
+	color: #6C7A89;
+	font-family:'Dosis',Helvetica
 }
-header{
-	height:100px;
-	
+a {
+	color: #6C7A89;
+	text-transform: capitalize;
 }
-.content{
-	
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color:#52B3D9;
 }
+h2 {
+	font-size:36px;
+}
+h3 {
+	font-size:24px;
+}
+.section.home {
+	padding-top:120px;
+	padding-bottom:70px;
+}
+.section.about {
+	padding-bottom:80px;
+}
+.section.contact {
+	padding-bottom:400px;
+}
+.section.portfolio {
+	padding-bottom:85px;
+}
+.section {
+	padding-top:30px;
+}
+
 .contact{
 	background-image:  url(images/lviv.png);
 }
@@ -39,4 +66,32 @@ header{
 	letter-spacing:4px;
 	font-weight:normal;
 	color:#c9c9c9;
+}
+
+.submenu {
+	height: 80px;
+	background-color: #95A5A6;
+
+	z-index: 300;
+}
+.submenu.fxd {
+	right: 0px;
+	opacity: 0.8;
+
+	-webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.submenu .nav li a {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #EEEEEE;
+}
+
+.submenu .nav li a:hover, .submenu .nav li a.active {
+	background-color: #ECF0F1;
+	color: #6C7A89;
 }
