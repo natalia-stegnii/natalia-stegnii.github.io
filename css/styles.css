@@ -18,22 +18,38 @@ h2 {
 h3 {
 	font-size:24px;
 }
-.section.home {
-	padding-top:120px;
-	padding-bottom:70px;
+
+	
+	.section.home {
+		width: 100%;
+		max-width: 1600px;
+		min-width: 960px;
+		padding-top:120px;
+		padding-bottom:70px;
+	}
+	.section.about {
+		
+		padding-bottom:80px;
+	}
+	.section.contact {
+		
+		padding-bottom:400px;
+	}
+	.section.portfolio {
+		
+		padding-bottom:85px;
+	}
+@media screen and (min-height: 480px) {
+
+	.section {
+		width: 100%;
+		padding-top:30px;
+	}
 }
-.section.about {
-	padding-bottom:80px;
-}
-.section.contact {
-	padding-bottom:400px;
-}
-.section.portfolio {
-	padding-bottom:85px;
-}
-.section {
-	padding-top:30px;
-}
+	
+
+
+
 .logos{
 	margin-top:30px;
 }
