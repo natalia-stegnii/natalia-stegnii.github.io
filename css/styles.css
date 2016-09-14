@@ -25,6 +25,7 @@ h3 {
 	padding-top:10%;
 	padding-bottom:10%;
 }
+
 .portfolio{
 	height: 100%;
 	padding-top:5%;
@@ -40,6 +41,14 @@ h3 {
 	padding-top:5%;
 	padding-bottom:40%;
 }	
+@media screen and (min-height: 480px) {
+	.contact{
+	height: 100%;
+	padding-top:5%;
+	padding-bottom:80%;
+	}	
+	
+}
 	
 
 
