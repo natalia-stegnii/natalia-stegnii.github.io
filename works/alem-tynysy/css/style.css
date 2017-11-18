@@ -1,0 +1,249 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+.header-block{
+  background: url(../img/main.png);
+}
+.header-block h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+  line-height: 1.318;
+  text-align: center;
+  width: 90%;
+  padding-top: 50px;
+}
+.header-block h2 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+header .form{
+  margin-bottom: 50px;
+}
+.form-block{
+  /*width: 31%;*/
+  width: 350px;
+  margin: auto;
+  background-color: rgba(34, 177, 76, 0.651);
+  padding: 25px 32px;
+}
+.form-block p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.form-block .form-group:last-child{
+  text-align: center;
+}
+form button{
+  border-radius: 2px;
+  background-color: rgb(237, 28, 36);
+  width: 218px;
+  height: 45px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.form-block .form-group{
+  margin-bottom: 20px;
+}
+.form-block .form-control, .contact-form .form-control{
+  height: 45px;
+  border-left: 0;
+}
+.input-group-addon{
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.advantage{
+  background: #eeeeee;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0;
+  margin-bottom: 40px;
+}
+.advantage img{
+  padding-right: 20px;
+}
+.advantage-item-first{
+  padding-left: 120px;
+}
+.advantage-item{
+  padding-left: 60px;
+}
+
+.title{
+  font-size: 48px;
+  line-height: 0.989;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 115px;
+}
+.title span{
+  color: rgb(34, 238, 1);
+}
+#advantage .item{
+  display: flex;
+  margin-bottom: 80px;
+}
+#advantage .item .picture {
+  background: url(../img/diamond.png) no-repeat;
+  width: 220px;
+}
+#advantage .item .picture i{
+  position: relative;
+  left: 36%;
+  top: 26%;
+  font-size: 25px;
+  color: rgb(34, 238, 1);
+}
+#advantage .item .text h3{
+  font-size: 22px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+#advantage .item .text p{
+  margin-top: 20px;
+  font-family: 'Lato', sans-serif;
+}
+#advantage .item .text{
+  margin: 5px 0 0 15px;
+}
+#services .title{
+  margin-bottom: 85px;
+}
+.services-item h4 {
+  font-size: 24px;
+  font-family: "Lato";
+  color: rgb(34, 238, 1);
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.services-item p {
+  font-family: "Lato";
+  color: rgb(119, 119, 119);
+  line-height: 1.717;
+  letter-spacing: 1.5px;
+  padding: 0 20px;
+  width: 95%;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+#priority .title{
+  margin-bottom: 50px;
+}
+.title p {
+  font-size: 18px;
+  /*font-family: "Lato";*/
+  color: rgb(55, 55, 55);
+  line-height: 1.5;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 31px;
+}
+.items{
+  width: 90%;
+  margin: auto;
+}
+.item{
+  display: flex;
+  margin-bottom: 40px;
+}
+.item img{
+  padding-right: 30px;
+}
+.item .text{
+  font-size: 18px;
+  padding-top: 15px;
+}
+#task .title{
+  margin-top: 60px;
+}
+#contact{
+  background: #030303;
+}
+#contact .contact-form{
+  margin-bottom: 40px;
+}
+#contact .form-group{
+  margin-right: 10px;
+}
+#contact form{
+  display: flex;
+}
+#contact .title {
+  font-size: 36px;
+  font-family: "Lato";
+  color: rgb(34, 238, 1);
+  text-transform: uppercase;
+  line-height: 1.194;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+footer{
+  background: #f2f7f8;
+}
+footer .pravicy{
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(103, 103, 103);
+  line-height: 2.143;
+  text-align: center;
+}
+footer h5{
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(103, 103, 103);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.cont{
+  display: flex;
+}
+.address{
+  margin-left: 100px;
+  padding-top: 30px;
+}
+.tellefon{
+  padding-top: 30px;
+  margin-left: 90px;
+}
+.cont p{
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(103, 103, 103);
+  font-weight: bold;
+}
+.email{
+  width: 30%;
+  padding-top: 30px;
+  margin-left: 100px;
+}
+.email .form-control{
+  height: 45px;
+  border: 0;
+}
+.email .input-group-addon{
+  border: 0;
+}
+
+.email i{
+  color: rgb(34, 238, 1);
+}
+
+
+

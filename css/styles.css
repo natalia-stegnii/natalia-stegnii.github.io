@@ -128,3 +128,60 @@ h3 {
 }
 
 }
+.item-project{
+	display: flex;
+
+}
+.desctop-screen{
+	width: 360px;
+	height: 250px;
+	border: 10px solid black;
+	border-bottom: 40px solid black;
+	border-radius: 10px;
+	background: green;
+}
+.desctop-leg{
+	background: black;
+    height: 15px;
+    width: 25px;
+    margin: auto;
+}
+.desctop-botton{
+	background: black;
+    height: 10px;
+    width: 105px;
+    margin: auto;
+}
+.tablet{
+	width: 190px;
+	height: 220px;
+	border: 12px solid black;
+	border-top: 20px solid black;
+	border-bottom: 20px solid black;
+	border-radius: 10px;
+	margin-left: -45px;
+	margin-top: 60px;
+	background: yellow;
+}
+.tablet::before{
+	content: " .";
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+}
+.phone{
+    height: 85px;
+    width: 220px;
+    border-left: 17px solid black;
+    border-right: 15px solid black;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-radius: 8px;
+    margin-left: -100px;
+    margin-top: 195px;
+    background: red;
+}
