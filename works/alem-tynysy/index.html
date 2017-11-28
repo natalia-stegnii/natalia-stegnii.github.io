@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/media.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -278,6 +282,33 @@
     </div>
   </div>
 </div>
+
+<div id="ourwork">
+
+<div class="slider">
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+  </div>
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+  </div>
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+  </div>
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+  </div>
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+  </div>
+  <div>
+    <img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+  </div>
+</div>
+
+
+</div>
+
 <div id="priority">
   <div class="container">
     <div class="row">
@@ -438,10 +469,21 @@
   </div>
 </footer>
 
-  <script src="js/jquery-1.12.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--   <script src="js/bootstrap.min.js"></script>
   <script src="slick/slick.min.js"></script>
-  <script src="js/common.js"></script>
+  <script src="js/common.js"></script> -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+$('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    infinite: true,
+    cssEase: 'linear'
+});
+  </script>
 
 </body>
 
