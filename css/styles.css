@@ -173,15 +173,15 @@ h3 {
     bottom: 20px;
     left: 50%;
 }
-.phone{
-    height: 85px;
-    width: 220px;
-    border-left: 17px solid black;
-    border-right: 15px solid black;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
-    border-radius: 8px;
-    margin-left: -100px;
-    margin-top: 195px;
-    background: red;
-}
+/* .phone{ */
+    /* height: 85px; */
+    /* width: 220px; */
+    /* border-left: 17px solid black; */
+    /* border-right: 15px solid black; */
+    /* border-bottom: 5px solid black; */
+    /* border-top: 5px solid black; */
+    /* border-radius: 8px; */
+    /* margin-left: -100px; */
+    /* margin-top: 195px; */
+    /* background: red; */
+/* } */
