@@ -35,6 +35,9 @@ header .logo{
   display: flex;
   padding-top: 10px;
 }
+.carousel-inner img{
+	width:100%;
+}
 .contact a, .shipping{
   color: #ffffff;
   padding-top: 25px;
