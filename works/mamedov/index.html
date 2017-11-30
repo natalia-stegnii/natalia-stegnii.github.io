@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-language">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/response.css" type="text/css">
+  </head>
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="logo pull-left">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="contacts pull-right">
+        <div class="shipping">
+          Доставка по г. Алматы  <span>Бесплатно</span>
+        </div>
+        <div class="contact">
+          <div><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>87051188866</a></div>
+          <div><a href=""><i class="fa fa-phone" aria-hidden="true"></i>87026766610</a></div>
+          <div><a href=""><i class="fa fa-envelope" aria-hidden="true"></i>87026766610@mail.ru</a></div>
+        </div>
+        <div class="request-call">Заказать звонок</div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar pull-left">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="search pull-right">
+        <form method="post" action="#">           
+          <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" name="search" id="search"  placeholder="Поиск"/>
+                <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/main.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/main.png" alt="">
+      </div>
+
+      <div class="item">
+        <img src="img/main.png" alt="">
+      </div>
+    </div>
+      <div class="carousel-caption">
+        <h3>Сроки поставки 7-10 дней<br>для всего товара</h3>
+        <div class="request-call">Заказать звонок</div>
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+        <div class="title">Каталог</div>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Лампы для проекторов
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                  <ul>
+                    <li>3M</li>
+                    <li>Acer</li>
+                    <li>Ask</li>
+                    <li>BenQ</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ТОВАР</th>
+              <th>НАИМЕНОВАНИЕ</th>
+              <th>ЦЕНА роз.<br>(дост. 7-10д.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="img/item1.png" alt=""></td>
+              <td>3M EP1635 lamp bulb</td>
+              <td>$298</td>
+            </tr>
+            <tr>
+              <td><img src="img/item2.png" alt=""></td>
+              <td>3M EP8775 lamp bulb</td>
+              <td>$298</td>
+            </tr>
+            <tr>
+              <td><img src="img/item3.png" alt=""></td>
+              <td>3M EP8775I lamp bulb</td>
+              <td>$298</td>
+            </tr>
+          </tbody>
+        </table>
+          <div class="pagination">
+            <a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">...</a>
+            <a href="#">23</a>
+            <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about">
+  <div class="picture">
+    <img src="img/map.png" alt="">
+  </div>
+  <div class="text">
+    <div class="title">О нас</div>
+    <p>Покупки, отнимающие слишком много времени, ушли в прошлое.</p>
+    <p>Сегодня все намного проще и даже не выходя из дома.</p>
+    <p>Интернет–магазин самый оптимальный вариант для покупки телефонов, аксессуаров и гаджетов. Огромный ассортимент товаров, скорость и удобство покупки – вот основные критерии, на которые опирается наша команда.
+    </p>
+    <p>Наша компания предлагает покупателям максимально широкий спектр самых различных услуг и сервисов, который объединяется во единое целое
+    Покупки, отнимающие слишком много времени, ушли в прошлое.</p>
+    <p>Сегодня все намного проще и даже не выходя из дома.</p>
+    <p>Интернет–магазин самый оптимальный вариант для покупки телефонов, аксессуаров и гаджетов. Огромный ассортимент товаров, скорость и удобство покупки – вот основные критерии, на </p>
+    <div class="request-call">Заказать звонок</div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+        <div class="logo">
+          <img src="img/logo-footer.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+        <div class="social">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="copyright">
+        <i class="fa fa-copyright" aria-hidden="true"></i>2017 Все права сохранены
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
