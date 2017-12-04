@@ -1,4 +1,8 @@
 @media (max-width: 768px){
+    .main{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
 	.address {
     margin-left: 0;
     } 
@@ -11,15 +15,17 @@
     .p-l, .p-m{
     	padding: 0;
     }
+    .nav>li>a{
+        padding: 15px 10px;
+    }
 
 }
 @media (max-width: 540px){
+    .logo {
+    margin-left: 30%;
+    }
 	#advantage .advantage{
 		display: block;
-	}
-	.main{
-	margin-top: 0;
-    margin-bottom: 0;
 	}
 	.contact-us{
 		margin-left: 30%;
@@ -27,4 +33,7 @@
 	.contact {
     margin-right: 20%;
 	}
+    #stages .item .btn{
+        padding: 14px 5px;
+    }
 }

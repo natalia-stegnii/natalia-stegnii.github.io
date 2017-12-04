@@ -27,27 +27,26 @@ a, a:hover{
   text-decoration: none;
 }
 .logo{
-  margin-left: 130px;
+  margin-left: 10px;
 }
 .icon-bar{
   background: #5a5479;
 }
-.logo img{
-  width: 70%;
-}
 .contact-us{
-  margin-left: 80px;
+  margin-left: 190px;
   margin-top: 10px;
 }
 .contact-us a{
-  padding: 9px 30px;
+  padding: 14px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .btn, .btn:hover{
   background: #fd3838;
   color: #fff;
-}
-.contact{
-  margin-right: 130px;
+  padding: 14px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .contact a{
   color: #81868e;
@@ -61,16 +60,15 @@ a, a:hover{
 }
 .main{
   background: url(../img/main.png) no-repeat;
-  margin-top: -81px;
+  margin-top: -100px;
   margin-bottom: -75px;
+  padding: 17% 0 19%;
 }
 .main h1{
   color: #fff;
-  font-size: 45px;
-  padding-left: 16%;
+  font-size: 65px;
+  padding-left: 20%;
   margin: 0;
-  padding-top: 18%;
-  padding-bottom: 35%;
 }
 .menu{
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,8 +89,10 @@ a, a:hover{
 .nav>li>a{
   text-align: center;
   color: #000000;
-  line-height: 1;
+  line-height: 0.9;
   font-weight: bold;
+  font-size: 18px;
+  padding: 15px 45px;
 }
 .nav>li{
   height: 75px;
@@ -111,15 +111,35 @@ a, a:hover{
   color: #000000;
   font-weight: bold;
 }
-#about .row, .menu .row, #advantage .row, #stages .row, #contact .row{
+
+#about h2{
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#about p{
+  font-size: 16px;
+}
+#about .text{
+  margin-left: 5%;
+}
+ #advantage .row, #contact .row{
   width: 80%;
   margin: auto;
 }
+#stages .row{
+  width: 77%;
+  margin: auto;  
+}
 #about .btn{
-  padding: 7px 20px;
+  margin-top: 20px;
+  margin-bottom: 15%;
 }
 #advantage{
   background: url(../img/bg-advantage.png);
+  padding-bottom: 6%;
 }
 #advantage .col{
   width: 50%;
@@ -137,37 +157,40 @@ a, a:hover{
   padding-top: 60px;
   padding-left: 40px;
 }
-
+#stages .title{
+  padding-top: 0;
+}
 #stages .item{
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
+  font-size: 19px;
   font-family: "Lato";
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
   margin: 3px 40px;
-  padding: 8px;
+  padding: 16px;
 }
 #stages .item:hover{
   border-left: 8px solid #5a5479;
 }
 #stages .item .btn{
   background: #5a5479;
-  padding: 7px 22px;
-  margin-right: 20px;
 }
 #stages .item .btn:hover{
   background: #fd3838;
 }
 #stages .number{
   width: 4%;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
 }
 #stages .text{
   width: 80%;
   padding-top: 5px;
   padding-left: 20px;
+}
+#cost .title{
+  padding: 110px 0 80px;
 }
 #cost .item{
   display: flex;
@@ -199,6 +222,9 @@ a, a:hover{
 #our-work{
   padding-bottom: 50px;
 }
+#our-work .title{
+  padding-top: 60px;
+}
 .title{
   font-size: 30px;
   font-family: "Lato";
@@ -207,6 +233,7 @@ a, a:hover{
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 40px;
 }
 .carousel-inner{
   width: 80%;
