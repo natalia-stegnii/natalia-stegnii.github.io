@@ -1,0 +1,30 @@
+@media (max-width: 768px){
+	.address {
+    margin-left: 0;
+    } 
+    #stages .item{
+    	margin: 3px 0;
+    }
+    #stages .row{
+    	width: 100%;
+    }
+    .p-l, .p-m{
+    	padding: 0;
+    }
+
+}
+@media (max-width: 540px){
+	#advantage .advantage{
+		display: block;
+	}
+	.main{
+	margin-top: 0;
+    margin-bottom: 0;
+	}
+	.contact-us{
+		margin-left: 30%;
+	}
+	.contact {
+    margin-right: 20%;
+	}
+}
