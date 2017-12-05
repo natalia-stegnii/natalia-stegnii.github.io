@@ -30,7 +30,36 @@
           <div><a href=""><i class="fa fa-phone" aria-hidden="true"></i>87026766610</a></div>
           <div><a href=""><i class="fa fa-envelope" aria-hidden="true"></i>87026766610@mail.ru</a></div>
         </div>
-        <div class="request-call">Заказать звонок</div>
+
+        <button type="button" class="btn btn-lg request-call request-call-header" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
+
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Заказать звонок</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="" method="post" action="#">           
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" id="name"  placeholder="Имя"/>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="phone" id="phone"  placeholder="Номер"/>
+                    </div>
+                    <div class="form-group">
+                      <button type="button" id="button" class="btn request-call">Заказать звонок</button>
+                    </div>            
+                </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -87,7 +116,7 @@
     </div>
       <div class="carousel-caption">
         <h3>Сроки поставки 7-10 дней<br>для всего товара</h3>
-        <div class="request-call">Заказать звонок</div>
+        <button type="button" class="btn btn-lg request-call" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
       </div>
 
     <!-- Left and right controls -->
@@ -118,10 +147,9 @@
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                   <ul>
-                    <li>3M</li>
-                    <li>Acer</li>
-                    <li>Ask</li>
-                    <li>BenQ</li>
+                    <li><a href="#zm" ria-controls="home" role="tab" data-toggle="tab"> 3M</a></li>
+                    <li><a href="#aser" ria-controls="aser" role="tab" data-toggle="tab">Acer</a></li>
+                    <li><a href="#ask" ria-controls="ask" role="tab" data-toggle="tab">Ask</a></li>
                   </ul>
               </div>
             </div>
@@ -137,18 +165,18 @@
               <th>ЦЕНА роз.<br>(дост. 7-10д.)</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
+          <tbody class="tab-content">
+            <tr id="zm" role="tabpanel" class="tab-pane active">
               <td><img src="img/item1.png" alt=""></td>
               <td>3M EP1635 lamp bulb</td>
               <td>$298</td>
             </tr>
-            <tr>
+            <tr id="aser" role="tabpanel" class="tab-pane">
               <td><img src="img/item2.png" alt=""></td>
               <td>3M EP8775 lamp bulb</td>
               <td>$298</td>
             </tr>
-            <tr>
+            <tr id="ask" role="tabpanel" class="tab-pane">
               <td><img src="img/item3.png" alt=""></td>
               <td>3M EP8775I lamp bulb</td>
               <td>$298</td>
@@ -182,7 +210,7 @@
     Покупки, отнимающие слишком много времени, ушли в прошлое.</p>
     <p>Сегодня все намного проще и даже не выходя из дома.</p>
     <p>Интернет–магазин самый оптимальный вариант для покупки телефонов, аксессуаров и гаджетов. Огромный ассортимент товаров, скорость и удобство покупки – вот основные критерии, на </p>
-    <div class="request-call">Заказать звонок</div>
+    <button type="button" class="btn btn-lg request-call" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
   </div>
 </div>
 <footer>

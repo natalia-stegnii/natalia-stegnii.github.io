@@ -48,6 +48,9 @@ header .logo{
 .contact a:hover{
   text-decoration: none;
 }
+.btn.focus, .btn:focus, .btn:hover{
+  color: #fff;
+}
 .shipping span{
   color: rgb(133, 175, 22);
   text-transform: uppercase;
@@ -62,7 +65,7 @@ header .logo{
 .contact i.fa-whatsapp{
   color: #17950d;
 }
-header .request-call {
+.request-call-header{
   margin-top: 10px;
   margin-left: 40px;
 }
@@ -154,7 +157,6 @@ header .request-call {
 }
 .main .request-call{
   margin-top: 20px;
-  padding-top: 25px;
 }
 .catalog{
   padding-top: 30px;
@@ -191,12 +193,13 @@ header .request-call {
   border: 20px solid transparent;
   border-top: 10px solid rgb(133, 175, 22);
  }
-.panel-body li{
+.panel-body li a{
   font-size: 16px;
   color: #797979;
   line-height: 1.5;
+  text-decoration: none;
 }
-.panel-body li:hover{
+.panel-body li a:hover{
   color: rgb(133, 175, 22);
 }
 .table{
@@ -210,6 +213,9 @@ thead th{
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
   vertical-align: middle;
+}
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active{
+  background-color: transparent;
 }
 .table>tbody>tr>td:first-child{
   width: 25%;
@@ -274,6 +280,26 @@ footer{
 }
 .copyright i{
   padding-right: 10px;
+}
+.modal-body form{
+  width: 80%;
+  margin: auto;
+}
+.modal-content{
+  border: 2px solid rgb(133, 175, 22);
+}
+.form-group:last-child{
+  text-align: center;
+}
+.modal-title{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+.modal-header{
+  border: 0;
 }
 
 

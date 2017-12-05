@@ -11,10 +11,12 @@
 }
 @font-face{
   font-family: "Lato"; /* Имя шрифта */
-  src: url('../fonts/Lato-Regular.ttf'); /* Путь к файлу со шрифтом */
+  src: url('../fonts/LatoRegular.ttf'); /* Путь к файлу со шрифтом */
+  src: url('../fonts/LatoRegular.eot'); /* Путь к файлу со шрифтом */
+  src: url('../fonts/LatoRegular.woff'); /* Путь к файлу со шрифтом */
  }
  body{
-    font-family: "Lato"; /* Имя шрифта */
+    /*font-family: "Lato";*/
     background: url(../img/bg.png);
  }
 header{
@@ -69,6 +71,7 @@ a, a:hover{
   font-size: 65px;
   padding-left: 20%;
   margin: 0;
+  font-family: "Lato";
 }
 .menu{
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,8 +94,9 @@ a, a:hover{
   color: #000000;
   line-height: 0.9;
   font-weight: bold;
+  /*font-family: "Lato";*/
   font-size: 18px;
-  padding: 15px 45px;
+  padding: 15px 35px;
 }
 .nav>li{
   height: 75px;
@@ -150,7 +154,7 @@ a, a:hover{
 }
 #advantage .text{
   font-size: 16px;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.222;
@@ -163,7 +167,7 @@ a, a:hover{
 #stages .item{
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 19px;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -200,7 +204,7 @@ a, a:hover{
 }
 #cost .item p{
   font-size: 16px;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   color: rgb(0, 0, 0);
   text-align: left;
   padding: 10px;
@@ -227,7 +231,7 @@ a, a:hover{
 }
 .title{
   font-size: 30px;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   color: rgb(0, 0, 1);
   font-weight: bold;
   text-transform: uppercase;
@@ -279,7 +283,7 @@ a, a:hover{
 }
 #contact p{
   font-size: 16px;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   color: rgb(255, 255, 255);
   line-height: 1.25;
   opacity: 0.8;
