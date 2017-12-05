@@ -95,6 +95,10 @@ header .logo{
   color: #747474;
   display: inline-block;
   padding-right: 20px;
+  font-size: 28px;
+}
+.nav>li:hover{
+  padding-top: 5px;
 }
 .nav>li>a:hover:before {
   display: none;
@@ -102,6 +106,7 @@ header .logo{
 .nav>li>a{
   color: #747474;
   font-size: 16px;
+  padding-right: 0;
 }
 .nav>li>a:hover{
   background: transparent;
@@ -149,7 +154,7 @@ header .logo{
   text-align: left;
   text-transform: uppercase;
   line-height: 2px;
-  bottom: 20%;
+  bottom: 35%;
   left: 15%;
 }
 .carousel-caption h3{
