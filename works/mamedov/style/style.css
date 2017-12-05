@@ -250,9 +250,16 @@ thead th{
   font-weight: bold;
   padding: 25px 0;
 }
+.about img{
+  width: 100%;
+}
+.about .picture{
+  width: 60%;
+}
 .about .text{
   padding-left: 50px;
   padding-right: 100px;
+  width: 50%;
 }
 .about .text p {
   font-size: 14px;
