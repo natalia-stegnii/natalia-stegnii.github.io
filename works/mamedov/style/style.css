@@ -220,6 +220,9 @@ thead th{
 .table>tbody>tr>td:first-child{
   width: 25%;
 }
+.tab-content>.active{
+  display: table-row;
+}
 .pagination {
   position: relative;
   left: 50%;
