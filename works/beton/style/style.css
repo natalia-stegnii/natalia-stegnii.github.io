@@ -10,13 +10,13 @@
   src: url(../fonts/FontAwesome.otf);
 }
 @font-face{
-  font-family: "Lato"; /* Имя шрифта */
+  font-family: "LatoRegular"; /* Имя шрифта */
   src: url('../fonts/LatoRegular.ttf'); /* Путь к файлу со шрифтом */
   src: url('../fonts/LatoRegular.eot'); /* Путь к файлу со шрифтом */
   src: url('../fonts/LatoRegular.woff'); /* Путь к файлу со шрифтом */
  }
  body{
-    /*font-family: "Lato";*/
+    font-family: "LatoRegular";
     background: url(../img/bg.png);
  }
 header{
