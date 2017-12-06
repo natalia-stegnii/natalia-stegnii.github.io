@@ -45,4 +45,7 @@
     #about .text{
         margin: 0 10px;
     }
+    #advantage .text{
+        padding-top: 35px;
+    }
 }
