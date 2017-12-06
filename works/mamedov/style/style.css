@@ -106,13 +106,14 @@ header .logo{
 .nav>li>a{
   color: #747474;
   font-size: 16px;
-  padding-right: 0;
+  width: 150px;
 }
 .nav>li>a:hover{
   background: transparent;
   color: #030303;
   font-size: 18px;
   font-weight: bold;
+  padding-left: 40px;
 }
 .icon-bar{
   background: #828386;
