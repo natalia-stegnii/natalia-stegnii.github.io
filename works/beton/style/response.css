@@ -18,6 +18,12 @@
     .nav>li>a{
         padding: 15px 10px;
     }
+    #advantage .row, #contact .row{
+        width: 100%;
+    }
+    #advantage .item{
+        margin-left: 0;
+    }
 
 }
 @media (max-width: 540px){
@@ -35,5 +41,8 @@
 	}
     #stages .item .btn{
         padding: 14px 5px;
+    }
+    #about .text{
+        margin: 0 10px;
     }
 }
