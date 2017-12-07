@@ -14,6 +14,9 @@
 	.contact, header .request-call, .navbar {
     margin-left: 0;
 	}
+	.request-call-header{
+		margin-bottom: 15px;
+	}
 	.search{
 		margin-right: 0;
 	}
@@ -72,6 +75,10 @@
 	.carousel-control{
 		display: none;
 	}
-
+	.search .form-group{
+	  margin-top: 0px;
+	  margin-bottom: 10px;
+	  margin-right: 15px;
+	}
 
 }

@@ -324,6 +324,9 @@ footer{
 .modal-header{
   border: 0;
 }
+.navbar-header{
+  margin-left: 5px;
+}
 
 
 
