@@ -311,6 +311,8 @@ footer{
 }
 .form-group:last-child{
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 .modal-title{
   text-transform: uppercase;
