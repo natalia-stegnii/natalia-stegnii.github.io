@@ -155,7 +155,7 @@ header .logo{
   text-align: left;
   text-transform: uppercase;
   line-height: 2px;
-  bottom: 35%;
+  bottom: 25%;
   left: 15%;
 }
 .carousel-caption h3{
@@ -211,6 +211,9 @@ header .logo{
 .table{
   width: 90%;
   margin-left: 50px;
+}
+.table img{
+  width: 100%;
 }
 thead th{
   color: rgb(133, 175, 22);
@@ -274,6 +277,8 @@ thead th{
 }
 .about .request-call{
   margin: auto;
+  position: relative;
+  left: 25%;
 }
 
 footer{

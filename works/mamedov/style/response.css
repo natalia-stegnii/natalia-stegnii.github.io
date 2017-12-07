@@ -1,3 +1,8 @@
+@media (min-width: 1400px){
+	.about .request-call{
+		margin-top: 40px;
+	}
+}
 @media (max-width: 768px){
 	.about{
 		display: block;
