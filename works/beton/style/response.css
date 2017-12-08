@@ -5,6 +5,8 @@
     }
 	.address {
     margin-left: 0;
+    width: 75%;
+    margin: auto;
     } 
     #stages .item{
     	margin: 3px 0;
@@ -50,7 +52,7 @@
         padding: 14px 5px;
     }
     #stages .text{
-        padding-top: 10px;
+        padding: 10px 10px 0 10px;
     }
     #about .text{
         margin: 0 10px;
@@ -64,5 +66,11 @@
     }
     .main h1{
         padding: 0 20px;
+    }
+    footer .contact{
+        margin: 0 25% 10px 0;
+    }
+    #contact .form-group:last-child{
+        margin-bottom: 40px;
     }
 }
