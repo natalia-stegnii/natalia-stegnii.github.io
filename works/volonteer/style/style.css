@@ -1,0 +1,30 @@
+ @font-face {
+  font-family: 'FontAwesome'; 
+  src: url(../fonts/fontawesome-webfont.eot);
+  src: url(../fonts/fontawesome-webfont.svg);
+  src: url(../fonts/fontawesome-webfont.ttf); 
+  src: url(../fonts/fontawesome-webfont.woff);
+  src: url(../fonts/fontawesome-webfont.woff2);
+  src: url(../fonts/FontAwesome.otf);
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url(../fonts/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url(../fonts/HelveticaNeueCyr-Light.otf);
+}
+
+
+
+
+
+
+
+
+

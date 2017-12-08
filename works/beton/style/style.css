@@ -10,6 +10,12 @@
   src: url(../fonts/FontAwesome.otf);
 }
 @font-face{
+  font-family: "LatoLight"; /* Имя шрифта */
+  src: url('../fonts/LatoLight/LatoLight.eot'); /* Путь к файлу со шрифтом */
+  src: url('../fonts/LatoLight/LatoLight.ttf'); /* Путь к файлу со шрифтом */
+  src: url('../fonts/LatoLight/LatoLight.woff'); /* Путь к файлу со шрифтом */
+ }
+ @font-face{
   font-family: "LatoRegular"; /* Имя шрифта */
   src: url('../fonts/LatoRegular.ttf'); /* Путь к файлу со шрифтом */
   src: url('../fonts/LatoRegular.eot'); /* Путь к файлу со шрифтом */
@@ -17,7 +23,7 @@
  }
  body{
     font-family: "LatoRegular";
-    background: url(../img/bg.png);
+    
  }
 header{
   background-color: rgba(255, 255, 255, 0.8);
@@ -49,6 +55,8 @@ a, a:hover{
   padding: 14px 35px;
   font-size: 16px;
   text-transform: uppercase;
+  box-shadow: 0px 2px 3px 0px rgba(159, 6, 6, 0.75);
+  border-radius: 0;
 }
 .contact a{
   color: #81868e;
@@ -94,7 +102,7 @@ a, a:hover{
   color: #000000;
   line-height: 0.9;
   font-weight: bold;
-  /*font-family: "Lato";*/
+  font-family: "LatoLight";
   font-size: 18px;
   padding: 15px 35px;
 }
@@ -114,6 +122,7 @@ a, a:hover{
   background-size: cover;
   color: #000000;
   font-weight: bold;
+  background: url(../img/bg.png);
 }
 
 #about h2{
@@ -162,6 +171,10 @@ a, a:hover{
   padding-top: 60px;
   padding-left: 40px;
 }
+#stages{
+  background: url(../img/bg.png);
+  padding-top: 40px;
+}
 #stages .title{
   padding-top: 0;
 }
@@ -181,6 +194,7 @@ a, a:hover{
 }
 #stages .item .btn{
   background: #5a5479;
+  box-shadow: none;
 }
 #stages .item .btn:hover{
   background: #fd3838;
@@ -189,11 +203,15 @@ a, a:hover{
   width: 4%;
   font-size: 25px;
   text-align: center;
+  padding-top: 10px;
 }
 #stages .text{
   width: 80%;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-left: 20px;
+}
+#cost{
+  background: url(../img/bg.png);
 }
 #cost .title{
   padding: 110px 0 80px;
@@ -227,6 +245,7 @@ a, a:hover{
 }
 #our-work{
   padding-bottom: 50px;
+  background: url(../img/bg.png);
 }
 #our-work .title{
   padding-top: 60px;
@@ -293,10 +312,10 @@ a, a:hover{
 
 footer{
   padding-top: 15px;
+  background: url(../img/bg.png);
 }
 .copyright{
   font-size: 16px;
-  font-family: "ProximaNova";
   color: rgb(0, 0, 0);
   line-height: 3.875;
   text-align: center;

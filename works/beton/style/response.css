@@ -24,6 +24,12 @@
     #advantage .item{
         margin-left: 0;
     }
+    .nav>li:hover{
+        border-bottom: 0;
+    }
+    .nav>li {
+        height: auto;
+    }
 
 }
 @media (max-width: 540px){
@@ -34,10 +40,11 @@
 		display: block;
 	}
 	.contact-us{
-		margin-left: 30%;
+		margin-left: 25%;
 	}
 	.contact {
-    margin-right: 20%;
+    margin-right: 25%;
+    margin-top: 10px;
 	}
     #stages .item .btn{
         padding: 14px 5px;
@@ -47,5 +54,8 @@
     }
     #advantage .text{
         padding-top: 35px;
+    }
+    #cost .item{
+        margin: 0 0 20px;
     }
 }
