@@ -62,4 +62,7 @@
     #cost .item{
         margin: 0 0 20px;
     }
+    .main h1{
+        padding: 0 20px;
+    }
 }
