@@ -49,6 +49,9 @@
     #stages .item .btn{
         padding: 14px 5px;
     }
+    #stages .text{
+        padding-top: 10px;
+    }
     #about .text{
         margin: 0 10px;
     }
