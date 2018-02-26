@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Lato';
-	src: url(../fonts/Lato-Regular.ttf);
+	src: url(/fonts/Lato-Regular.ttf);
 }
 body{
 	font-family: 'Lato';
@@ -647,9 +647,11 @@ footer a.footer-menu li{
 }
 .caption{
 	background: rgba(0,0,0,0.6);
-	color: #ffffff;
 	padding-top: 55px;
     padding-bottom: 65px;
+}
+.caption .title{
+	color: #ffffff;
 }
 .tariff{
 	padding-bottom: 100px;
@@ -849,4 +851,54 @@ footer a.footer-menu li{
 }
 .prices-bottom .text{
 	padding-bottom: 30px;
+}
+.support{
+	padding-top:65px;
+}
+.support .row{
+	padding-bottom: 35px;
+}
+.support-question .text{
+	padding-top: 40px;
+}
+.support .email{
+	font-size: 26px;
+    font-weight: 900;
+}
+.support .email span{
+	color: grey;
+    font-size: 20px;
+}
+.support-head{
+	font-size: 26px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.support-conditions .support-head{
+	padding-bottom: 10px;
+}
+.support-4col img{
+	padding-bottom: 15px;
+}
+.support-4col .text{
+	width: 72%;
+    margin: auto;
+}
+.support-b{
+	border-right: 1px solid #dbdbdb;
+}
+.btn-support{
+	padding: 8px 50px;
+	margin-top: 30px;
+}
+.support p{
+	font-size: 16px;
+	padding-top: 5px;
+}
+.support-bottom{
+	padding-bottom: 65px;
+}
+.support-bottom .text-center{
+	width: 66%;
+    margin: auto;
 }
