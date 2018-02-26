@@ -242,6 +242,8 @@ h3{
     box-shadow: 0px 0px 8px rgba(0,0,0,0.07);
 	border-radius: 50px;
     padding: 25px;
+    width: 100px;
+    height: 100px;
 }
 .opportunity .text-l{
 	padding-top: 25px;
@@ -901,4 +903,30 @@ footer a.footer-menu li{
 .support-bottom .text-center{
 	width: 66%;
     margin: auto;
+}
+.capabilities{
+	padding-top: 50px;
+}
+.capabilities .text-side{
+	padding-top: 60px;
+}
+.capabilities .content{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.opportunity .text{
+    padding-left: 30px;
+}
+.capabilities .head{
+	padding-bottom: 15px;
+}
+.capabilities-bottom .picture{
+	padding-top: 60px;
+}
+.capabilities-bottom .head{
+	font-size: 40px;
+    line-height: 1.1;
+    padding: 20px 0;
+    font-weight: 700;
 }
