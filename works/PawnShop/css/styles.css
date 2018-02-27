@@ -449,7 +449,7 @@ h3{
     text-transform: uppercase;
     padding-top: 40px;
 }
-#blog .date{
+.date{
 	color: #d9a608;
 }
 #blog .head{
@@ -1092,4 +1092,49 @@ p{
 .security-bottom{
 	padding-top: 35px;
     padding-bottom: 70px;
+}
+.blog-article{
+	padding: 40px 60px;
+}
+.blog-social{
+	position: absolute;
+    top: 120%;
+    margin-left: -70px;
+}
+.single-atricle .picture{
+	padding-bottom: 30px;
+}
+.single-atricle .head{
+	font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.right-side .picture{
+	padding-right: 20px;
+}
+.right-side .head{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.subscribe{
+	padding: 80px;
+}
+.subscribe .title{
+	text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.subscribe form{
+	width: 365px;
+    margin: auto;
+}
+.subscribe form button{
+	width: 100%;
+    color: #ffffff;
+    padding: 8px;
+}
+.subscribe form button:hover{
+	color: #ffffff;
 }
