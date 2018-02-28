@@ -1,0 +1,228 @@
+
+@media (max-width: 768px){
+	header .contact{
+	display: none;
+	}
+	.navbar-header .icon-bar{
+		background: #000000;
+	}
+	/*.logo{
+		display: inherit;
+	}*/
+	header .logo .form-group{
+		display: none;
+	}
+	.navbar-collapse{
+		background-color: #fff;
+	}
+	/*.local{
+		padding-top: 20px;
+    	padding-left: 40px;
+	}*/
+	.main-botton h1, .main h2, .main h3, .main a, .main-botton p{
+		text-align: center;
+	}
+	.main-botton .flex{
+		display: none;
+	}
+	.main h2{
+		font-size: 52px;
+	}
+	.main-botton h1 {
+	    font-size: 30px;
+	    padding: 10px;
+	    font-weight: bold;
+	}
+	.main-botton .text{
+		margin-top: 0;
+		text-align: center;
+	}
+	.main button{
+		width: 100%;
+	}
+	.opportunity .float-right{
+		float: none;
+	}
+	.opportunity .content{
+		display: block;
+	}
+	.opportunity .content .img{
+		margin: auto;
+	}
+	.opportunity .text-l, .opportunity .text-r{
+		padding: 0;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.box-title .text{
+		width: 100%;
+    	font-size: 34px;
+	}
+	.box-title button{
+		width: 100%;
+	}
+	.trust-us .text{
+		padding: 60px 0;
+		text-align: center;
+	}
+	.trust-us .text .head{
+		font-size: 36px;
+	}
+	.reviews{
+		display: block;
+	}
+	.reviews-side{
+		width: 100%;
+	}
+	.reviews-side .text{
+		padding: 60px 0;
+    	font-size: 30px;
+	}
+	.reviews-slider{
+		width: 100%;
+	}
+	.title{
+		font-size: 26px;
+    	font-weight: bold;
+	}
+	.carousel-control{
+		display: none;
+	}
+	.reviews-slider .item {
+	    width: auto;
+	    margin: 0 20px;
+	    padding-top: 0
+	}
+	.reviews-slider .item .text{
+		text-align: center;
+		padding-top: 20px;
+	}
+	.all-reviews {
+     display: none;
+	}
+	.reviews-slider .carousel-indicators{
+		top: 460px;
+	}
+	.prices .flex{
+		display: block;
+	}
+	.pawnshop-text{
+		text-align: center;
+		padding: 60px 0;
+	}
+	.pawnshop-text .text{
+		width: auto;
+	}
+	.contact-us{
+		display: block;
+		width: auto;
+	}
+	.form {
+	    padding: 20px 10px;
+	    width: auto;
+	    text-align: center;
+	    height: 380px;
+	}
+	.link{
+		width: auto;
+		margin-top: 10px;
+		height: 380px;
+	}
+	.pricing-plan-top{
+		width: 248px;
+	}
+	.form button{
+		width: 100%;
+	    margin: auto;
+	    top: 10px;
+	    position: relative;
+	}
+	footer{
+		text-align: center;
+	}
+	footer p{
+		font-size: 20px;
+	}
+	footer p.copyright{
+		font-size: 13px;
+	}
+	.blog-social{
+		display: none;
+	}
+	.blog-article img, .capabilities img, .report-bottom img, .chart img, .legal img{
+		width: 100%;
+	}
+	.inline-flex{
+		display: inline-flex;
+	}
+	.we-get .flex, .capabilities .flex, .document-flex, .security .flex-bottom, .report-flex, .report-bottom, .flexibility .flex{
+		display: block;
+	}
+	.try-free .you-get{
+		width: 300px;
+	    padding: 20px 20px;
+	    margin: auto;
+	}
+	.form-order .input-group, .picture-report img, .try-free .form-block, .try-free .input-group, .try-free button, .document-bottom, .document-flex img, .picture-security img, .picture-document img{
+		width: 100%;
+	}
+	.try-free .form-block .title{
+		font-size: 30px;
+    	font-weight: 700;
+	}
+	.report .text-top, .document .text-top{
+		margin: 0;
+		text-align: center;
+	}
+	.we-get, .document .text-top .head, .security, .security .head, .report .head, .report p.function-pbold{
+		text-align: center;
+	}
+	.document .content{
+		margin-left: 0;
+	}
+	.security .flex-bottom .picture, .security .flex-bottom .text{
+		padding: 0;
+		border: 0;
+	}
+	.report{
+		height: 1650px;
+	}
+	.flexibility .picture, .flexibility .text{
+		padding: 0;
+	}
+	.flexibility, .chart, .branch, .legal, .prices-bottom, .support{
+		text-align: center;
+	}
+	.we-get .text{
+		margin: 0;
+		padding-bottom: 20px;
+	}
+	.calc{
+		padding: 0;
+	}
+	.subscribe form, .calc button, .calc-left, .support .btn-support, .support-bottom .text-center, .support-4col .text{
+		width: 100%;
+	}
+	.order .description{
+		display: block;
+		width: 100%;
+	}
+	.order .content{
+		display: inline-flex;
+		width: 100%;
+		margin: 10px 0;
+	}
+	.order .img{
+		margin: 0 10px;
+	}
+	.pay{
+		padding: 25px 15px;
+	}
+	.subscribe {
+    	padding: 80px 0;
+	}
+	.blog-article {
+    padding: 40px 10px;
+    text-align: center;
+	}
+}
