@@ -596,6 +596,9 @@ footer a.footer-menu{
 footer a.footer-menu li{
 	padding: 5px 0;
 }
+.try-free .picture{
+
+}
 .try-free .form-block{
 	width: 50%;
     margin: auto;
@@ -643,6 +646,15 @@ footer a.footer-menu li{
 	box-shadow: 4px 4px 7px rgba(24,24,24,0.19);
 	border-radius: 5px;
 	padding: 20px 55px;
+	margin-right: -190px;
+    margin-top: -25px;
+    z-index: 100;
+}
+.try-free .bottom{
+	padding-top: 20px;
+    width: 82%;
+    margin: auto;
+    padding-bottom: 70px;
 }
 .try-free .you-get .caption, .try-free .you-get span{
 	color: #149f4a;
@@ -669,6 +681,9 @@ footer a.footer-menu li{
 .caption .title{
 	color: #ffffff;
 }
+.inline-flex{
+		display: inline-flex;
+	}
 .tariff{
 	padding-bottom: 100px;
 }
