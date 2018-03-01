@@ -178,6 +178,7 @@ h3{
 	color: #1e1e1e;
 	font-size: 50px;
 	text-align: center;
+	font-weight: bold;
 }
 .main-botton{
 	margin-top: 55px;
@@ -478,10 +479,9 @@ h3{
     padding: 0;
 }
 #contact{
-	background: url(../img/contact.png);
+	background: url(../img/ncontact.png);
 	background-color: rgba(10,10,10,0.6);
 	padding-top: 55px;
-	opacity: 0.3;
 	padding-bottom: 100px;
 }
 #contact .title{
@@ -709,6 +709,7 @@ border:1px solid #ccc !important;
 	font-size: 28px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 .order .title p{
 	font-size: 15px;
@@ -751,6 +752,12 @@ border:1px solid #ccc !important;
 .select{
 	width: 100px;
 	margin: 0 10px 10px;
+}
+.select.luzensia{
+	margin: 0;
+}
+.luzensia{
+	margin-top: 40px;
 }
 .col1{
 	width: 100px;
@@ -834,8 +841,19 @@ border:1px solid #ccc !important;
 .calc{
 	padding: 60px;
 }
+.price2 hr{
+	margin: 5px 0;
+}
+.price2 .green{
+	padding: 0;
+	font-size: 14px;
+}
+.price2-item-b p{
+	font-size: 26px;
+	font-weight: bold;
+}
 .calc .title{
-	font-size: 28px;
+	font-size: 26px;
 	padding-bottom: 40px;
 }
 .calc-left{
@@ -854,7 +872,7 @@ border:1px solid #ccc !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 	border: 0;
-	border-top: 1px solid red;
+	border-top: 2px solid #0ebc6c;
 	border-right: 0;
 }
 .nav-tabs > li > a:hover{
