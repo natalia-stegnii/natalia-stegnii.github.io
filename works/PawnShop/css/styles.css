@@ -102,14 +102,14 @@ header .active{
 .main{
 	background: url(../img/main.png) no-repeat;
 	background-size: cover;
-	padding-bottom: 270px;
+    padding-bottom: 80px;
 }
 h2{
 	color: #fffefe;
 	font-family: 'Lato';
 	font-size: 65px;
 	font-weight: 500;
-	padding-top: 55px;
+	padding-top: 75px;
 	line-height: 0.8;
 }
 h3{	 
@@ -121,6 +121,11 @@ h3{
 }
 .main .btn{
 	padding: 8px 20px;
+}
+.main .call{
+	float: right;
+	position: relative;
+    top: 60px
 }
 .main-botton .text p{
 	padding-bottom: 10px;
@@ -616,6 +621,14 @@ footer a.footer-menu li{
 }
 .input-group{
     margin-bottom: 10px;
+}
+.try-free .input-group:hover, .try-free .input-group:focus{
+	border: 1px solid #1bb258;;
+}
+input[type="text"], textarea {
+outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
 }
 .try-free .input-group{
 	width: 72%;

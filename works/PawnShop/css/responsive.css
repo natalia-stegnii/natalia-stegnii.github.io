@@ -1,4 +1,8 @@
-
+@media (min-width: 1408px){
+	.main{
+	padding-bottom: 220px;
+	}
+}
 @media (max-width: 768px){
 	header .contact{
 	display: none;
