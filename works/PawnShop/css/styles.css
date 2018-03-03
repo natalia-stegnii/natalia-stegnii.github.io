@@ -1,6 +1,11 @@
 @font-face {
 	font-family: 'Lato';
 	src: url(../fonts/Lato-Regular.ttf);
+	src: url(../fonts/Lato-Regular.eot);
+	src: url(../fonts/Lato-Regular.svg);
+	src: url(../fonts/Lato-Regular.woff);
+	src: url(../fonts/Lato-Regular.woff2);
+	src: url(../fonts/Lato-Regular.otf);
 }
 body{
 	font-family: 'Lato';
