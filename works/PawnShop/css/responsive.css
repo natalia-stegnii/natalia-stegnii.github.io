@@ -7,6 +7,9 @@
 	header .contact{
 	display: none;
 	}
+	.trust-us p{
+	width: 100%;
+	}
 	.navbar-header .icon-bar{
 		background: #000000;
 	}

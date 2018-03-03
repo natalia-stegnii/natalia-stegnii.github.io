@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Lato';
-	src: url(/fonts/Lato-Regular.ttf);
+	src: url(../fonts/Lato-Regular.ttf);
 }
 body{
 	font-family: 'Lato';
@@ -54,12 +54,12 @@ ul.dropdown-menu > li {
 	font-weight: 400;
 	padding: 30px 20px;
 }
-header .nav > li > a:hover, header .nav > li > a:focus, header .nav .open > a, header .nav .open > a:hover, header .nav .open > a:focus, header .dropdown-menu{
-	 background: #fbfbfb;
+header .dropdown-menu{
+	background: #fbfbfb;
 	box-shadow: 0px 2px 6px #cecece;
 	border: 0;
 }
-header .active{
+header .active, header .nav > li > a:hover, header .nav > li > a:focus, header .nav .open > a, header .nav .open > a:hover, header .nav .open > a:focus{
 	background: #efefef;
     border-top: 3px solid #0ebc6c;
     height: 80px;
@@ -71,6 +71,25 @@ header .active{
 }
 .m-t{
 	margin-top: -10px;
+}
+.connect{
+    background: transparent;
+    position: absolute;
+    right: 60px;
+    bottom: 140px;
+    z-index: 100;
+}
+.connect.main{
+	background: transparent;
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    z-index: 100;
+}
+.connect img{
+	width: 40px;
+	height: 40px;
+	margin: 8px;
 }
 .dropdown-menu > li > a:hover{
 	color: #1bb258;
@@ -288,12 +307,15 @@ h3{
     top: -3px;
 }
 .box-title{
-	background: url(../img/bitmap2.png);
+	background: url(../img/ntrust.png) no-repeat;
 	padding: 30px 0;
 }
 .trust-us{
 	background: url(../img/map.png);
 	background-size: cover;
+}
+.trust-us p{
+	width: 80%;
 }
 .box-title .text{
 	font-size: 42px;
@@ -309,7 +331,7 @@ h3{
     font-weight: 500;
 }
 .trust-us .head, .prices-bottom .head{
-	font-size: 55px;
+	font-size: 50px;
     line-height: 0.9;
     padding-bottom: 35px;
 }
@@ -318,14 +340,21 @@ h3{
 	padding-bottom: 250px;
 }
 .reviews-side{
-	background: grey;
+	background: url(../img/nreview.png) no-repeat;
     width: 43%;
+}
+.reviews-side.reviews-download{
+	background: url(../img/trust.png) no-repeat;
+	background-size: cover;
+}
+.reviews-side.reviews-download .text{
+	line-height: 1.2;
 }
 .reviews-side .text{
 	font-size: 45px;
 	line-height: 0.9;
 	padding-top: 190px;
-    padding-bottom: 210px;
+    padding-bottom: 250px;
 }
 .reviews-slider{
 	width: 58%;
@@ -365,7 +394,7 @@ h3{
     top: 50%;
     font-size: 16px;
 }
-.carousel-indicators .active{
+.carousel-indicators .slide.active{
 	background-color: #1bb258;
 }
 .carousel-indicators .slide{
@@ -373,13 +402,13 @@ h3{
 }
 .carousel-indicators {
     position: relative;
-    top: 410px;
+    top: 425px;
     left: 120px;
     bottom: 10px;
     width: auto;
 }
 .all-reviews{
-	top: 410px;
+	top: 425px;
     position: relative;
     right: 100px;
 }
@@ -479,10 +508,11 @@ h3{
     padding: 0;
 }
 #contact{
-	background: url(../img/ncontact.png);
+	background: url(../img/ncontact.png) no-repeat;
 	background-color: rgba(10,10,10,0.6);
 	padding-top: 55px;
 	padding-bottom: 100px;
+	background-size: cover;
 }
 #contact .title{
 	color: #ffffff;
@@ -593,6 +623,7 @@ footer a.title, footer a.title:hover{
 footer a.title li{
 	padding-bottom: 5px;
 	padding-top: 20px;
+	font-weight: bold;
 }
 footer a.footer-menu{
 	color: #fffefe;
@@ -685,11 +716,25 @@ border:1px solid #ccc !important;
     padding-bottom: 8px;
 }
 .caption{
-	background: rgba(0,0,0,0.6);
 	padding-top: 55px;
     padding-bottom: 65px;
-    background: url(../img/caption.png);
+    background: url(../img/caption.png) no-repeat;
     background-size: cover;
+}
+.caption.tariff{
+	background: url(../img/caption-tariff.png) no-repeat;
+}
+.caption.prices1{
+	background: url(../img/caption-prices.png) no-repeat;
+	background-size: cover;
+}
+.caption-capabilities{
+	background: url(../img/caption-capabilities.png) no-repeat;
+	background-size: cover;
+}
+.caption-function{
+	background: url(../img/caption-capabilities.png) no-repeat;
+	background-size: cover;
 }
 .caption .title{
 	color: #ffffff;
@@ -764,6 +809,7 @@ border:1px solid #ccc !important;
 }
 .select .input-group-addon{
 	padding: 4px 10px;
+	background: #f8f8f8;
 }
 .select .form-control{
 	height: 38px;
@@ -934,6 +980,9 @@ border:1px solid #ccc !important;
 	color: grey;
     font-size: 20px;
 }
+.color-white{
+	color: #ffffff;
+}
 .support-head{
 	font-size: 26px;
     font-weight: 900;
@@ -941,6 +990,9 @@ border:1px solid #ccc !important;
 }
 .support-conditions .support-head{
 	padding-bottom: 10px;
+}
+.support-conditions .btn-support{
+	color: #ffffff;
 }
 .support-4col img{
 	padding-bottom: 15px;
@@ -997,17 +1049,22 @@ border:1px solid #ccc !important;
 	background: #f8f8f8;
 }
 .report{
-	height: 938px;
+	height: 1338px;
 	padding-top: 150px;
 }
 .report .text-top, .document .text-top{
-	margin-left: 20%;
+	margin-left: 110px;
 	margin-right: 100px;
 }
 .report .head, .legal .head, .document .head, .security .head{
 	font-size: 25px;
     font-weight: bold;
     padding-bottom: 25px;
+}
+.function-number p{
+	border-bottom: 1px solid #dbdbdb;
+	padding: 30px 0;
+	line-height: 1.5;
 }
 p{
 	font-size: 16px;
@@ -1020,6 +1077,7 @@ p{
 }
 .picture-number{
 	padding-right: 20px;
+	padding-top: 30px;
 }
 .report-bottom{
 	padding-top: 30px;
@@ -1037,14 +1095,26 @@ p{
     padding-top: 55px;
     padding-bottom: 35px;
 }
+.flex-flexibility{
+	padding-bottom: 90px;
+}
+.flex-flexibility2{
+	padding-bottom: 120px;
+}
+.text-flexibility{
+	padding-bottom: 60px;
+}
+.text-flexibility p{
+	font-weight: 100;
+}
+.flexibility .flex-flexibility2 .text{
+	padding-top: 30px;
+}
 .chart{
 	padding: 50px 0 90px;
 }
-.branch{
-	padding: 70px 0 150px;
-}
 .branch .head{
-	padding-bottom: 25px;
+	padding: 0;
 }
 .flexibility .pbold{
 	font-size: 18px;
@@ -1182,6 +1252,7 @@ p{
 }
 .subscribe{
 	padding: 80px;
+	background: url(../img/);
 }
 .subscribe .title{
 	text-transform: uppercase;
