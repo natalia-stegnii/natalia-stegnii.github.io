@@ -73,18 +73,9 @@ header .active, header .nav > li > a:hover, header .nav > li > a:focus, header .
 	margin-top: -10px;
 }
 .connect{
-    background: transparent;
-    position: absolute;
-    right: 60px;
-    bottom: 140px;
-    z-index: 100;
-}
-.connect.main{
-	background: transparent;
-    position: absolute;
-    right: 10px;
-    bottom: 60px;
-    z-index: 100;
+	position: absolute;
+    right: 30px;
+    top: 120px;
 }
 .connect img{
 	width: 40px;
@@ -724,9 +715,20 @@ border:1px solid #ccc !important;
 .caption.tariff{
 	background: url(../img/caption-tariff.png) no-repeat;
 }
+.caption.luzensia-caption{
+	background: url(../img/luzensia.png) no-repeat;
+}
 .caption.prices1{
 	background: url(../img/caption-prices.png) no-repeat;
 	background-size: cover;
+}
+.caption.prices3{
+	background: url(../img/price3.png) no-repeat;
+	background-size: cover;
+}
+.we-get-border{
+	border-right: 1px solid #bababa;
+	height: 80px;
 }
 .caption-capabilities{
 	background: url(../img/caption-capabilities.png) no-repeat;
@@ -810,6 +812,7 @@ border:1px solid #ccc !important;
 .select .input-group-addon{
 	padding: 4px 10px;
 	background: #f8f8f8;
+	border-radius: 0;
 }
 .select .form-control{
 	height: 38px;
@@ -839,6 +842,9 @@ border:1px solid #ccc !important;
 .pay p{
 	font-size: 18px;
     padding-top: 10px;
+}
+.pay p .price-small{
+	font-size: 13px;
 }
 .pay .form-inline{
 	padding-bottom: 20px;
@@ -882,7 +888,7 @@ border:1px solid #ccc !important;
 	padding-left: 10px;
 }
 .we-get .picture{
-	margin-right: 40px;
+	margin-right: 70px;
 }
 .calc{
 	padding: 60px;
@@ -893,6 +899,7 @@ border:1px solid #ccc !important;
 .price2 .green{
 	padding: 0;
 	font-size: 14px;
+	margin-top: -5px;
 }
 .price2-item-b p{
 	font-size: 26px;
@@ -902,8 +909,37 @@ border:1px solid #ccc !important;
 	font-size: 26px;
 	padding-bottom: 40px;
 }
+.calc .price2 .title{
+	padding-bottom: 15px;
+}
 .calc-left{
 	width: 80%;
+}
+.calc.price3 .nav-tabs{
+	margin-bottom: 30px;
+}
+.color-price{
+	color: #959595;
+}
+.calc-color{
+	color: #5c5c5c;
+}
+.btn-grey{
+	background: #dddddd;
+	color: #7b7b7b;
+}
+.nav-tabs > li > a{
+	background: #f8f8f8;
+}
+.price3 .flex{
+	margin-top: 30px;
+}
+.price3 .select{
+	margin: -10px 20px 0;
+}
+.calc-left.price3 .btn{
+	padding: 8px 45px;
+	margin-top: 20px;
 }
 .calc .nav-tabs{
 	width: 82%;
@@ -912,14 +948,26 @@ border:1px solid #ccc !important;
 }
 .calc .nav-tabs li{
 	width: 50%;
-  	background: #f8f8f8;
   	padding-right: 10px;
   	border-radius: 0;
+}
+.price3 p.green{
+	font-size: 14px;
+}
+.font15{
+	font-size: 15px;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 	border: 0;
 	border-top: 2px solid #0ebc6c;
-	border-right: 0;
+	border-right: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+}
+.mt{
+	margin-top: -10px;
+}
+.nav-tabs > li > a{
+	border: 1px solid #d8d8d8;
 }
 .nav-tabs > li > a:hover{
 	border: 0;
@@ -1252,13 +1300,15 @@ p{
 }
 .subscribe{
 	padding: 80px;
-	background: url(../img/);
+	background: url(../img/blog-subscribe.png) no-repeat;
+	background-size: contain;
 }
 .subscribe .title{
 	text-transform: uppercase;
     font-size: 26px;
     font-weight: bold;
     padding-bottom: 30px;
+    padding-top: 50px;
 }
 .subscribe form{
 	width: 365px;
