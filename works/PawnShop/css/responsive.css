@@ -13,6 +13,10 @@
 	.navbar-header .icon-bar{
 		background: #000000;
 	}
+	.navbar-header{
+		top: -60px;
+    	position: relative;
+	}
 	/*.logo{
 		display: inherit;
 	}*/
@@ -39,6 +43,30 @@
 	    font-size: 30px;
 	    padding: 10px;
 	    font-weight: bold;
+	}
+	.main-botton .item{
+		margin-right: 5px;
+    	margin-left: 5px;
+	}
+	.main-botton .item img{
+		margin: auto;
+	}
+	.legal{
+		padding: 50px 0;
+	}
+	.legal .head{
+		padding-top: 25px;
+	}
+	.main-botton .carousel-indicators{
+		bottom: 0;
+	}
+	.opportunity{
+		text-align: center;
+		margin-top: 40px;
+		padding-bottom: 50px;
+	}
+	#blog ul{
+		padding: 0;
 	}
 	.main-botton .text{
 		margin-top: 0;
@@ -109,6 +137,7 @@
 	}
 	.reviews-slider .carousel-indicators{
 		top: 460px;
+		left: 160px;
 	}
 	.prices .flex{
 		display: block;
@@ -156,19 +185,33 @@
 	.blog-social{
 		display: none;
 	}
-	.blog-article img, .capabilities img, .report-bottom img, .chart img, .legal img{
+	.blog-article img, .report-bottom img, .chart img, .legal img{
 		width: 100%;
-	}
-	.inline-flex{
-		display: inline-flex;
 	}
 	.we-get .flex, .capabilities .flex, .document-flex, .security .flex-bottom, .report-flex, .report-bottom, .flexibility .flex{
 		display: block;
 	}
+	.we-get .flex{
+		float: none;
+	}
+	.we-get .flex.float-right{
+		margin-top: 50px;
+	}
 	.try-free .you-get{
-		width: 300px;
-	    padding: 20px 20px;
+		padding: 10px;
 	    margin: auto;
+	    height: 180px;
+	}
+	.learn-more-garantee{
+		margin: 15px 0;
+	}
+	.we-get .picture{
+		margin: 30px 40px 0;
+	}
+
+	.try-free .you-get .head{
+		font-size: 30px;
+    	text-align: center;
 	}
 	.form-order .input-group, .picture-report img, .try-free .form-block, .try-free .input-group, .try-free button, .document-bottom, .document-flex img, .picture-security img, .picture-document img{
 		width: 100%;
@@ -192,20 +235,81 @@
 		border: 0;
 	}
 	.report{
-		height: 1650px;
+		height: 2570px;
+		padding-top: 0;
 	}
-	.flexibility .picture, .flexibility .text{
+	.picture-report{
+		padding: 30px 0;
+	}
+	.report p.function-pbold{
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+	.report-bottom .text{
+		margin: 0;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.flexibility .picture, .flexibility .text, .chart{
 		padding: 0;
 	}
 	.flexibility, .chart, .branch, .legal, .prices-bottom, .support{
 		text-align: center;
 	}
-	.we-get .text{
-		margin: 0;
-		padding-bottom: 20px;
+	.flex-flexibility, .flex-flexibility2, .text-flexibility.text-flexibility3 {
+    	padding-bottom: 0;
 	}
+	.flexibility .text{
+		margin: 20px 0;
+	}
+	.we-get .text{
+		margin-right: 0;
+	}
+	.mt {
+    margin-top: 30px;
+    margin-bottom: -15px
+    }
+    .calc-left.price3 .btn{
+    	margin-top: 0;
+    }
 	.calc{
-		padding: 0;
+		padding: 50px 0;
+	}
+	.prices-bottom{
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.prices-bottom .head{
+		font-size: 35px;
+    	padding-top: 50px;
+	}
+	.prices-bottom .flex{
+		display: block;
+	}
+	.prices-bottom .btn{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 10px;
+	}
+	.calc .nav-tabs{
+		width: 100%;
+	}
+	#contact{
+		padding-top: 35px;
+		padding-bottom: 25px;
+	}
+	#contact .title {
+    font-size: 35px;
+    padding-bottom: 15px;
+	}
+	.prices-bottom .btn.call{
+		padding: 12px;
+	}
+	.prices-bottom .text{
+		padding-bottom: 0;
+	}
+	.calc-right{
+		display: none;
 	}
 	.subscribe form, .calc button, .calc-left, .support .btn-support, .support-bottom .text-center, .support-4col .text{
 		width: 100%;
@@ -219,11 +323,18 @@
 		width: 100%;
 		margin: 10px 0;
 	}
+	.document .picture-bottom{
+		padding-bottom: 30px;
+	}
+	.security hr{
+		margin: 0;
+	}
 	.order .img{
 		margin: 0 10px;
 	}
 	.pay{
 		padding: 25px 15px;
+		margin-top: 30px;
 	}
 	.subscribe {
     	padding: 80px 0;
@@ -231,5 +342,59 @@
 	.blog-article {
     padding: 40px 10px;
     text-align: center;
+	}
+	.support{
+		padding-top: 0;
+	}
+	.support-conditions .support-head{
+		padding-top: 50px;
+	}
+	.support-head{
+		padding-top: 40px;
+	}
+	.support-m{
+		margin-top: 40px;
+	}
+	.order .text{
+		margin-top: 40px;
+    	margin-left: 30px;
+	}
+	.checkout{
+		padding-top: 0;
+	}
+	.tariff{
+		padding-bottom: 50px;
+	}
+	.checkout .radio{
+		padding: 10px 20px;
+	}
+	.mt-p{
+		margin-top: -15px;
+    	margin-bottom: 20px;
+	}
+	.capabilities{
+		text-align: center;
+	}
+	.capabilities-bottom .btn{
+		width: 100%;
+	}
+	.capabilities-bottom .head{
+		font-size: 26px;
+	}
+	.capabilities .content{
+		width: 100%;
+		padding-bottom: 0;
+	}
+	.capabilities .text-side{
+		padding: 0;
+	}
+	.opportunity .text{
+		padding: 20px 10px 40px;
+	}
+	.connect{
+		display: none;
+	}
+	.p-xs{
+		padding-bottom: 40px;
 	}
 }

@@ -396,7 +396,7 @@ h3{
 .carousel-indicators .slide{
 	background-color:  #ededed;
 }
-.carousel-indicators {
+.reviews-slider .carousel-indicators {
     position: relative;
     top: 425px;
     left: 120px;
@@ -1167,7 +1167,7 @@ p{
 	padding: 50px 0 90px;
 }
 .branch .head{
-	padding: 0;
+	padding-top: 0;
 }
 .flexibility .pbold{
 	font-size: 18px;
