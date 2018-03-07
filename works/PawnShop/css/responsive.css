@@ -3,10 +3,33 @@
 	padding-bottom: 220px;
 	}
 }
+@media (max-width: 368px){
+	.try-free .bottom{
+		width: 100%;
+	}
+	.try-free .you-get{
+		width: 100%;
+	}
+	.reviews-slider .carousel-indicators{
+		top: 570px;
+    	left: 130px;
+	}
+	.report{
+		height: 2900px !important; 
+	}
+	.prices .flex{
+		width: auto;
+	}
+	.pricing-plan-top {
+	    width: 252px !important;
+	    margin-top: 10px;
+	}
+}
 @media (max-width: 768px){
 	.trust-us p{
 	width: 100%;
 	}
+	
 	.navbar-header .icon-bar{
 		background: #000000;
 	}
@@ -198,6 +221,8 @@
 	}
 	.pricing-plan-top{
 		width: 248px;
+		margin-top: 10px;
+		display: none;
 	}
 	.form button{
 		width: 100%;
