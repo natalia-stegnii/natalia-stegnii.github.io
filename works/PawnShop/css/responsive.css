@@ -4,32 +4,59 @@
 	}
 }
 @media (max-width: 768px){
-	header .contact{
-	display: none;
-	}
 	.trust-us p{
 	width: 100%;
 	}
 	.navbar-header .icon-bar{
 		background: #000000;
 	}
-	.navbar-header{
-		top: -60px;
-    	position: relative;
+	ul.dropdown-menu{
+		column-count: inherit;
 	}
-	/*.logo{
-		display: inherit;
-	}*/
+	header .active, header .nav > li > a:hover, header .nav > li > a:focus, header .nav .open > a, header .nav .open > a:hover, header .nav .open > a:focus{
+		height: 0;
+		border-top: 0;
+	}
+	.navbar-nav .open .dropdown-menu > li > a{
+		padding: 20px;
+	}
+	.navbar-nav{
+	    margin-left: -20px;
+	    margin-right: -20px;
+	}
+	.nav li{
+		background: #fff;
+		z-index: 10000;
+		border-top: 1px solid #dbdbdb;
+	}
+	.navbar-nav > li a{
+		padding: 20px;
+	}
+	header{
+		height: 60px;
+	}
 	header .logo .form-group{
 		display: none;
+	}
+	header .logo span {
+	    font-size: 24px;
+	    padding-top: 15px;
+	    padding-left: 35px;
+	}
+	.navbar-header{
+		position: relative;
+    	top: -45px;
 	}
 	.navbar-collapse{
 		background-color: #fff;
 	}
-	/*.local{
-		padding-top: 20px;
-    	padding-left: 40px;
-	}*/
+	.contact-xs{
+		padding: 10px 20px;
+	}
+	.contact-xs .btn{
+		width: 100%;
+		margin: 5px 0;
+	}
 	.main-botton h1, .main h2, .main h3, .main a, .main-botton p{
 		text-align: center;
 	}
@@ -38,6 +65,11 @@
 	}
 	.main h2{
 		font-size: 52px;
+		padding-top: 30px;
+	}
+	.pawnshop-text .title{
+		font-size: 30px;
+		font-weight: bold;
 	}
 	.main-botton h1 {
 	    font-size: 30px;
