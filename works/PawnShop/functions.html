@@ -19,6 +19,7 @@
 <body>
 <header>
   <div class="container">
+    <!-- only for mobile -->
     <div class="visible-xs">
       <div class="logo pull-left flex">
         <a href="#" class="logo">
@@ -36,11 +37,79 @@
         </button>   
       </div>
       <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="contact-xs">
+            <button class="btn call">Позвонить +7499 7099321</button>
+            <button class="btn try">Попробовать бесплатно</button>
+          </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Возможности
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Цены
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Поддержка
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li><a class="page-scroll" page-scroll href="#pricing">Блог</a></li>
+            <li><a class="page-scroll" page-scroll href="#clients">Контакты</a></li>
+        </ul>
+    </div>
+    </div><!-- end only for mobile -->
+    
+    <!-- end only for ipad -->
+    <nav class="navbar navbar-fixed-top hidden-xs none-lg">
+      <div class="container flex">
+        <div class="logo">
+          <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo">
+              </a>
+              <div class="local flex">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <div class="form-group">
+                    <select class="form-control" id="sel1">
+                    <option>Россия</option>
+                    <option>Россия</option>
+                    <option>Россия</option>
+                    <option>Россия</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+        <div class="contact">
+          <a href=""><button class="btn call">Позвонить +7499 7099321</button></a>
+          <a href=""><button class="btn try">Попробовать бесплатно</button></a>
+        </div>
+      </div>
+        <div class="menu"> 
+          <div class="navbar-header pull-right">
+            <button aria-controls="navbar-md" aria-expanded="false" data-target="#navbar-md" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>   
+          </div>
+          <div id="navbar-md" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="contact-xs">
-                  <button class="btn call">Позвонить +7499 7099321</button>
-                  <button class="btn try">Попробовать бесплатно</button>
-                </li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Возможности
                     <span class="caret"></span></a>
@@ -72,9 +141,10 @@
                   <li><a class="page-scroll" page-scroll href="#clients">Контакты</a></li>
               </ul>
           </div>
-    </div>
-    
-    <nav class="navbar navbar-fixed-top hidden-xs">
+        </div>
+    </nav><!-- end only for ipad -->
+
+    <nav class="navbar navbar-fixed-top hidden-xs none">
       <div class="container flex">
         <div class="logo">
           <a href="#" class="logo">
@@ -200,8 +270,8 @@
     <p class="document-bottom">Широкий спектр действий, который пользователь может производить с документами, не содержит угрозы для сохранности или безопасности информации, поскольку в настройках предусмотрена возможность разграничить пользователей в правах в отношении отдельных документов.</p>
     <p class="document-pbold">Формирование документов в программе предусмотрено по следующим событиям:</p>
     <div class="picture-bottom">
-      <img class="hidden-xs" src="img/function-document3.png" alt="">
-      <img class="hidden-lg hidden-md" src="img/function-document3-xs.png" alt="">
+      <img class="hidden-xs img-responsive" src="img/function-document3.png" alt="">
+      <img class="visible-xs" src="img/function-document3-xs.png" alt="">
     </div>
   </div>
 </div>
@@ -462,8 +532,8 @@
       <div class="col-lg-6 col-md-6 col-xm-12 col-sm-12"></div>
     </div>
     <div class="picture">
-      <img class="hidden-xs" src="img/branch.png" alt="">
-      <img class="hidden-md hidden-lg" src="img/branch-xs.png" alt="">
+      <img class="hidden-xs img-responsive" src="img/branch.png" alt="">
+      <img class="visible-xs" src="img/branch-xs.png" alt="">
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xm-12 col-sm-12">
@@ -483,7 +553,7 @@
     <div class="row">
       <div class="col-lg-7 col-md-7 col-xm-12 col-sm-12">
         <div class="picture visible-xs">
-          <img src="img/legal.png" alt="">
+          <img class="img-responsive" src="img/legal.png" alt="">
         </div>
         <div class="text">
           <div class="head text-uppercase">Законодательство</div>

@@ -1092,6 +1092,9 @@ border:1px solid #ccc !important;
 .capabilities-bottom .picture{
 	padding-top: 60px;
 }
+.capabilities-bottom img{
+	margin: auto;
+}
 .capabilities-bottom .head{
 	font-size: 40px;
     line-height: 1.1;

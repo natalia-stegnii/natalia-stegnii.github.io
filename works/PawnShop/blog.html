@@ -19,6 +19,7 @@
 <body>
 <header>
   <div class="container">
+    <!-- only for mobile -->
     <div class="visible-xs">
       <div class="logo pull-left flex">
         <a href="#" class="logo">
@@ -36,11 +37,79 @@
         </button>   
       </div>
       <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="contact-xs">
+            <button class="btn call">Позвонить +7499 7099321</button>
+            <button class="btn try">Попробовать бесплатно</button>
+          </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Возможности
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Цены
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Поддержка
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li><a href="#">Обслуживание клиента</a></li>
+                <li class="m-t"><a href="#">Обслуживание клиента</a></li>
+              </ul>
+            </li>
+            <li><a class="page-scroll" page-scroll href="#pricing">Блог</a></li>
+            <li><a class="page-scroll" page-scroll href="#clients">Контакты</a></li>
+        </ul>
+    </div>
+    </div><!-- end only for mobile -->
+    
+    <!-- end only for ipad -->
+    <nav class="navbar navbar-fixed-top hidden-xs none-lg">
+      <div class="container flex">
+        <div class="logo">
+          <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo">
+              </a>
+              <div class="local flex">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <div class="form-group">
+                    <select class="form-control" id="sel1">
+                    <option>Россия</option>
+                    <option>Россия</option>
+                    <option>Россия</option>
+                    <option>Россия</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+        <div class="contact">
+          <a href=""><button class="btn call">Позвонить +7499 7099321</button></a>
+          <a href=""><button class="btn try">Попробовать бесплатно</button></a>
+        </div>
+      </div>
+        <div class="menu"> 
+          <div class="navbar-header pull-right">
+            <button aria-controls="navbar-md" aria-expanded="false" data-target="#navbar-md" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>   
+          </div>
+          <div id="navbar-md" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="contact-xs">
-                  <button class="btn call">Позвонить +7499 7099321</button>
-                  <button class="btn try">Попробовать бесплатно</button>
-                </li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Возможности
                     <span class="caret"></span></a>
@@ -72,9 +141,10 @@
                   <li><a class="page-scroll" page-scroll href="#clients">Контакты</a></li>
               </ul>
           </div>
-    </div>
-    
-    <nav class="navbar navbar-fixed-top hidden-xs">
+        </div>
+    </nav><!-- end only for ipad -->
+
+    <nav class="navbar navbar-fixed-top hidden-xs none">
       <div class="container flex">
         <div class="logo">
           <a href="#" class="logo">
@@ -134,14 +204,6 @@
       </div>
     </nav>
   </div>
-  <div class="connect">
-    <div class="call-img">
-      <img src="img/ncall.png" alt="">
-    </div>
-    <div class="chat-img">
-      <img src="img/nchat.png" alt="">
-    </div>
-  </div>
 </header>
 <div class="blog-article">
   <div class="container">
@@ -177,10 +239,13 @@
           <div class="date">20 Янв 2018 / Блог</div>
           <div class="text">
             <div class="head">Летопись холдинга "Ломбард-1" начиная с 1839</div>
-            <p>1 июля 1839 года Император Всероссийский Николай Павлович Романов (Николай-1) подписал Манифест «Об устройстве денежной системы».</p>
-            <p>1 июля 1839 года Император Всероссийский Николай Павлович Романов (Николай-1) подписал Манифест «Об устройстве денежной системы».</p>
-            <p>1 июля 1839 года Император Всероссийский Николай Павлович Романов (Николай-1) подписал Манифест «Об устройстве денежной системы».</p>
-            <p>1 июля 1839 года Император Всероссийский Николай Павлович Романов (Николай-1) подписал Манифест «Об устройстве денежной системы».</p>
+            <p>Инициатором реформы финансовой системы России выступил министр финансов Егор Францевич Канкрин.Финансовая реформа предусматривала обмен всех ассигнаций на государственные кредитные билеты, обменивающиеся на золото и серебро.</p>
+
+            <p>С целью повышения контроля и оперетивности денежного обращения Канкрин Е.Ф. предусмотрел создание в Сибири Первого Общественного банка и Первого Ломбарда.</p>
+
+            <p>Главным городом Сибири в то время являлся г. Томск. Губерния Томская включала в себя территории нынешних Алтайского края, Кемеровской, Новосибирской и Томской областей, Восточно-Казахстанской области (нынешний Казахстан) и Красноярский край. Поэтому, отрытые первого общественного банка и первого муниципального ломбарда за Уралом было решено сделать в городе Томске.</p>
+
+            <p>Первоначальный капитал Банка в и Ломбарда размере 86 тысяч рублей был предоставлен коммерции советниками Федотом Ивановичем Поповым.</p>
           </div>
         </div>
       </div>
