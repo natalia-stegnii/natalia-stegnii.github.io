@@ -1,0 +1,87 @@
+@media (min-width: 1400px){
+	.about .request-call{
+		margin-top: 40px;
+	}
+}
+@media (max-width: 768px){
+	.about{
+		display: block;
+	}
+	.contacts {
+	    display: block; 
+	    padding-top: 0; 
+	    margin-left: -40px;
+    	z-index: 100;
+    	position: relative;
+	}
+	.contact, header .request-call, .navbar {
+    margin-left: 0;
+	}
+	.request-call-header{
+		margin-bottom: 15px;
+	}
+	.search{
+		margin-right: 0;
+	}
+	.carousel-caption{
+		bottom: 0;
+    	padding-bottom: 10px;
+	}
+	.panel-group{
+		width: auto;
+	}
+	footer .logo{
+		text-align: center;
+	}
+	.about .text {
+    width: 100%;
+	}
+	.about .picture{
+    width: 100%;
+	}
+	.pagination{
+		left: 45%;
+	}
+
+}
+@media (max-width: 540px){
+	.table {
+	    width: 100%;
+	    margin-left: 0;
+	}
+	.picture img, footer .logo img{
+		width: 100%;
+	}
+	.pagination{
+		left: 35%;
+	}
+	.about .text {
+		padding: 0 10px;
+	}
+	header .logo{
+		float: none;
+		width: 10px;
+	}
+	header .logo img{
+		width: 150px;
+		margin-top: 30px;
+	}
+	.carousel-caption{
+		display: none!important;
+	}
+	.search{
+		width: 80%;
+	}
+	.main {
+    margin-top: 0;
+	}
+	.carousel-control{
+		display: none;
+	}
+	.search .form-group{
+	  margin-top: 0px;
+	  margin-bottom: 10px;
+	  margin-right: 15px;
+	}
+
+}

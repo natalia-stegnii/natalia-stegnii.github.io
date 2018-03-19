@@ -1,0 +1,26 @@
+@media(max-width:1200px) {}
+
+@media(max-width:992px) {}
+
+@media(max-width:767px) {
+      #content {
+        overflow-y: scroll;
+    }
+    .header {
+        margin-top: 45px;
+    }
+    .fixed-phone{
+        display: block;
+    }
+    .circlephone{
+    display: none !important;
+}
+.circle-fill{
+  right:0px;
+  bottom:-14px;
+}
+.img-circle{
+  right: 14px;
+  bottom: 0px;
+  }
+}
