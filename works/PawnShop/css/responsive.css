@@ -1,9 +1,13 @@
 @media (min-width: 1200px) {
-	.none{
+	.none-lg{
 		display: none;
 	}
 }
 @media (max-width: 1200px) {
+		.navbar-header{
+		position: relative;
+    	top: -60px;
+	}
     .navbar-header {
         float: none;
     }
@@ -41,7 +45,18 @@
 }
 @media (min-width: 1408px){
 	.main{
-	padding-bottom: 220px;
+	padding-bottom: 180px;
+	background: url(../img/main-lg.png) no-repeat;
+	background-size: contain;
+	}
+	.report .text-top, .document .text-top {
+    margin-left: 19%;
+	}
+	.main-botton{
+		margin-top: 0;
+	}
+	.connect{
+		right: 100px;
 	}
 }
 @media (max-width: 568px){
@@ -66,6 +81,7 @@
 	}
 	.try-free .you-get{
 		width: 100%;
+		padding: 0;
 	}
 	.reviews-slider .carousel-indicators{
 		top: 570px;
@@ -89,9 +105,8 @@
 	.trust-us p{
 	width: 100%;
 	}
-	.navbar-header{
-		position: relative;
-    	top: -60px;
+	.margin-auto{
+		margin: auto;
 	}
 	.navbar-header .icon-bar{
 		background: #000000;
@@ -306,7 +321,7 @@
 		margin-top: 50px;
 	}
 	.try-free .you-get{
-		padding: 10px;
+		padding: 0px;
 	    margin: auto;
 	    height: 180px;
 	}

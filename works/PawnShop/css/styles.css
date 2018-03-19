@@ -117,14 +117,14 @@ header .active, header .nav > li > a:hover, header .nav > li > a:focus, header .
 .main{
 	background: url(../img/main.png) no-repeat;
 	background-size: cover;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 h2{
 	color: #fffefe;
 	font-family: 'Lato';
 	font-size: 65px;
 	font-weight: 500;
-	padding-top: 75px;
+	padding-top: 60px;
 	line-height: 0.8;
 }
 h3{	 
@@ -136,6 +136,9 @@ h3{
 }
 .main .btn{
 	padding: 8px 20px;
+}
+.videomac{
+	padding-top: 70px;
 }
 .main .call{
 	float: right;
@@ -250,7 +253,9 @@ h3{
 .opportunity{
 	background: #f8f8f8;
 	padding-top: 40px;
-    padding-bottom: 130px;
+}
+.opportunity-top{
+	margin-top: -100px;
 }
 .float-right{
 	float: right;
@@ -1105,8 +1110,10 @@ border:1px solid #ccc !important;
 	background: #f8f8f8;
 }
 .report{
-	height: 1338px;
-	padding-top: 150px;
+	background: url(../img/report-bg.png) no-repeat;
+	padding-top: 130px;
+	height: 1365px;
+	margin-bottom: 120px;
 }
 .report .text-top, .document .text-top{
 	margin-left: 110px;
@@ -1244,7 +1251,6 @@ p{
 }
 .document .picture-bottom{
 	padding-top: 15px;
-    padding-bottom: 110px;
 }
 .content-right{
 	margin-top: 50px;
@@ -1287,8 +1293,11 @@ p{
 }
 .blog-social{
 	position: absolute;
-    top: 120%;
+    top: 780px;
     margin-left: -70px;
+}
+.blog-social .picture{
+	padding-bottom: 10px;
 }
 .single-atricle .picture{
 	padding-bottom: 30px;
@@ -1309,7 +1318,7 @@ p{
 .subscribe{
 	padding: 80px;
 	background: url(../img/blog-subscribe.png) no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 .subscribe .title{
 	text-transform: uppercase;
