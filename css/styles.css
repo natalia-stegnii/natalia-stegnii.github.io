@@ -3,9 +3,9 @@ body{
 	color: #6C7A89;
 	font-family:'Dosis',Helvetica
 }
-a {
+a, a:hover{
 	color: #6C7A89;
-	text-transform: capitalize;
+	text-transform: none;
 }
 h1 {
 	font-size: 48px;
