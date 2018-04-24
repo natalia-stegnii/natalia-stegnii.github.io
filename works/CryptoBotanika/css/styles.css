@@ -1,0 +1,159 @@
+ @font-face {
+  font-family: 'ApercuPro'; 
+  src: url(../fonts/apercu_regular_pro.otf);
+}
+.flex{
+	display: flex;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+section{
+	padding: 30px 0;
+}
+.title{
+  font-family: 'ApercuPro';
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #383838;
+}
+.award{
+	width: 38px;
+	height: 51px;
+	object-fit: contain;
+/*	opacity: 0.25;*/
+}
+.awards-item{
+	padding: 20px 50px 20px 0;
+}
+.you-achievement p{
+  font-family: 'ApercuPro';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #383838;
+}
+.lessons{
+  width: 445px;
+  height: 109px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.lesson-title {
+ width: 398px;
+  font-family: 'ApercuPro';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: left;
+  color: #378ddf;
+  padding-bottom: 12px;
+}
+.lesson-footer .pull-left{
+  font-family: 'ApercuPro';
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #999999;
+}
+.lesson-footer .pull-right{
+  font-family: 'ApercuPro';
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffa326;
+}
+.clock-circular-outline {
+  object-fit: contain;
+  padding-right: 5px;
+}
+.spesial-offers .pull-right{
+  width: 658px;
+  height: 21px;
+  font-family: 'ApercuPro';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #999999	
+}
+.offer{
+	width: 540px;
+	height: 193px;
+	border-radius: 7px;
+	margin-top: 30px;
+	padding: 25px 110px 0px 35px;
+}
+.offer1{
+	background-image: radial-gradient(circle at 67% -11%, #4741ff, #0453a8);
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);	
+}
+.offer2{
+	background-image: radial-gradient(circle at 67% -11%, #ff4d41, #f1ab18);
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.offer-title{
+	font-family: 'ApercuPro';
+	font-size: 32px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+.offer-subtitle{
+  opacity: 0.75;
+  /*font-family: 'ApercuPro';*/
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff;
+}
+.offer-desc{
+	/*font-family: 'ApercuPro';*/
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #ffffff;
+	padding-top: 10px;
+}
