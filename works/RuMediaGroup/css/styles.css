@@ -7,6 +7,7 @@
 }
 body{
    font-family: 'Calibri'; 
+    background: url(../img/bg.png) no-repeat;
 }
 .flex{
 	display: flex;
@@ -20,15 +21,24 @@ body{
 .bold{
 	font-weight: bold;
 }
+header{
+  padding-top: 30px;
+}
+.logo{
+  margin-left: -10px;
+}
 .address{
   font-size: 20px;
   color: rgb(0, 0, 0);
   line-height: 1.2;
+  margin-left: 40px;
 }
 .phone{
   font-size: 20px;
   color: rgb(0, 0, 0);
   line-height: 1.5;
+  margin-left: 45px;
+  margin-right: 50px;
 }
 .time{
   font-size: 16px;
@@ -45,6 +55,7 @@ body{
 .menu{
 	background-color: rgb(52, 146, 79);
 	padding: 10px 22px;
+  margin-top: 30px;
 }
 .menu img{
 	padding: 10px;
@@ -103,11 +114,21 @@ body{
 	font-weight: bold;
     text-transform: uppercase;
 }
+.side p{
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+hr{
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
 .main_block_title {
   font-size: 30px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.333;
+  margin-bottom: 5px;
 }
 .main_block_title_top{
 	margin-top: -7px;
@@ -118,6 +139,7 @@ body{
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 0.952;
+  margin: 10px 0;
 }
 .service{
 	text-align: center;
@@ -192,14 +214,14 @@ body{
     height: 2px;
     background-color: rgb(52, 146, 79);
     margin: auto;
-    margin-top: 33px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 .advance .text_top{
   font-size: 20px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  line-height: 2;
+  margin-top: 25px;
 }
 .advance .text_botton{
   font-size: 16px;
@@ -211,10 +233,10 @@ body{
   height: -webkit-fill-available;
 }
 .map_desc{
-    width: 350px;
-    height: 400px;
+    width: 390px;
+    height: 420px;
     background: #fff;
-    padding: 30px 35px;
+    padding: 35px 40px;
     font-size: 19px;
     color: rgb(0, 0, 0);
     line-height: 1.2;
