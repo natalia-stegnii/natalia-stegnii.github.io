@@ -41,6 +41,12 @@ body{
 .btn:hover, .btn:focus, .btn.focus{
 	color: rgb(255, 255, 255);
 }
+.breadcramps span{
+    color: rgb(124, 124, 124);
+}
+.breadcramps {
+	color: rgb(13, 146, 213);
+}
 header{
 	background: url(../img/bg-header.png);
 	font-size: 14px;
@@ -53,20 +59,20 @@ header a{
   font-size: 16px;
   padding-top: 5px;
 }
-.phone img, .mail img, .address img{
+header .phone img, header .mail img, header .address img{
     padding-right: 10px;
 }
-.mail, .address{
+header .mail, header .address{
 	padding-top: 30px;
 }
-.address{
+header .address{
 	padding-right: 11%;
 	padding-left: 5%;
 }
-.mail{
+header .mail{
 	padding-right: 9%;
 }
-.phone img{
+header .phone img{
 	padding-top: 10px;
 }
 .menu{
@@ -237,6 +243,18 @@ footer{
 .footer-contact a:hover{
 	text-decoration: none;
 }
+.footer-contact img{
+	margin-right: 15px;
+}
+.footer-contact .phone img{
+	width: 20px;
+}
+.footer-contact .requisites, .footer-contact .address, .footer-contact .phone, .footer-contact .mail{
+	margin-bottom: 10px;
+}
+.footer-contact p{
+	padding-top: 10px;
+}
 footer .menu{
 	background: transparent;
 	margin: 20px 0;
@@ -259,6 +277,7 @@ footer .menu .active{
   color: rgb(56, 56, 56);
   text-transform: uppercase;
   line-height: 0.958;
+  padding-bottom: 20px;
 }
 footer .address{
 	padding: 0;
@@ -266,7 +285,7 @@ footer .address{
 footer p{
   font-family: 'Circe Light';	
 }
-footer p strong{
+footer strong{
   	font-family: 'Circe Regular';	
 }
 
@@ -275,7 +294,17 @@ footer p strong{
   color: rgb(68, 68, 68);
   font-weight: bold;
 }
-
+.project-item{
+	display: inline-flex;
+	position: relative;
+	margin: 9.8px;
+}
+.line{
+	background: rgb(13, 146, 213);
+    height: 1px;
+    width: 82%;
+    margin-top: 15px;
+}
 /*servise*/
 .service{
 	margin-top: 50px;
@@ -314,4 +343,44 @@ footer p strong{
 .service-item:last-child{
 	margin-right: 0;
 }
-
+@media only screen and (max-width: 768px){
+	header .flex, .what-we-do .flex, .footer.flex, .contact-page.flex{
+		display: block;
+	}
+	.do-item.m-l{
+		margin-left: 0;
+	}
+	.do-item img, footer img, .contact-page img{
+		max-width: -webkit-fill-available
+	}
+	.menu .pull-left, .menu ul{
+		display: none;
+	}
+	header .address, header .mail{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	header .flex{
+		text-align: center;
+	}
+	.phone .flex{
+		display: flex;
+		padding-top: 10px;
+		padding-left: 15%;
+	}
+	.carousel-inner .item img{
+		height: -webkit-fill-available;
+	}
+	.carousel-caption {
+	    left: auto;
+	    right: auto;
+	    bottom: 23%;
+	    text-align: center;
+	}
+	.privacy-policy{
+		padding-top: 15px;
+	}
+	footer .map{
+		margin-bottom: 50px;
+	}
+}	
