@@ -62,7 +62,9 @@ font-style: normal;
 .bg-white{
 	background: #ffffff;
 }
-
+header{
+	padding-top: 15px;
+}
 .choose-menu{
   font-size: 18px;
 /*  font-family: "SFUIText";*/
@@ -77,7 +79,7 @@ font-style: normal;
   font-size: 14px;
   font-family: 'San Francisco Text Light';
   color: rgb(107, 107, 107);
-  line-height: 3.727;
+  padding: 0 20px;
 }
 .btn.login {
   font-size: 14px;
@@ -98,12 +100,14 @@ font-style: normal;
 }
 .logo{
 	background: #f4f4f4;
+	padding: 10px 0;
 }
 .logo .title{
   font-size: 24px;
   font-family: 'San Francisco Text Light';
   color: rgb(57, 59, 69);
   line-height: 1.2;
+  margin-right: 100px;
 }
 .logo .city{
   font-size: 16px;
@@ -123,6 +127,10 @@ font-style: normal;
   font-family: 'San Francisco Text Bold';
   color: rgb(255, 255, 255);
   font-weight: bold;
+  margin-left: 20px;
+}
+.banner{
+	padding: 100px 0;
 }
 .banner .title{
   font-size: 48px;
@@ -136,5 +144,4 @@ font-style: normal;
   font-size: 18px;
   font-family: 'San Francisco Text Light';
   color: rgb(107, 107, 107);
-  line-height: 2.665;
 }
