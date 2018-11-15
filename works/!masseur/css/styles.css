@@ -1,0 +1,140 @@
+/*colors
+фиолет 
+чорный
+серый
+белый #ffffff
+
+*/
+.banner-img{
+	width: 80%;
+}
+@font-face {
+font-family: 'San Francisco Text Bold';
+src: url('../fonts/SFUIText-Bold.eot');
+src: url('../fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFUIText-Bold.woff') format('woff'),
+url('../fonts/SFUIText-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'San Francisco Text Light';
+src: url('../fonts/SFUIText-Light.eot');
+src: url('../fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFUIText-Light.woff') format('woff'),
+url('../fonts/SFUIText-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'San Francisco Text Semibold';
+src: url('../fonts/SFUIText-Semibold.eot');
+src: url('../fonts/SFUIText-Semibold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFUIText-Semibold.woff') format('woff'),
+url('../fonts/SFUIText-Semibold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'San Francisco Text Heavy';
+src: url('../fonts/SFUIText-Heavy.eot');
+src: url('../fonts/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFUIText-Heavy.woff') format('woff'),
+url('../fonts/SFUIText-Heavy.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.font-heavy{
+  font-family: 'San Francisco Text Heavy';	
+}
+.text-violet{
+	color: rgb(98, 78, 145);
+}
+.bg-violet{
+	background: rgb(98, 78, 145);
+}
+.flex{
+	display: flex;
+}
+.bg-white{
+	background: #ffffff;
+}
+
+.choose-menu{
+  font-size: 18px;
+/*  font-family: "SFUIText";*/
+  font-family: 'San Francisco Text Bold';
+  color: rgb(57, 59, 69);
+  font-weight: bold;
+  line-height: 3.037;
+  border: 0;
+}
+
+.menu-item{
+  font-size: 14px;
+  font-family: 'San Francisco Text Light';
+  color: rgb(107, 107, 107);
+  line-height: 3.727;
+}
+.btn.login {
+  font-size: 14px;
+  font-family: 'San Francisco Text Semibold';
+  color: rgb(107, 107, 107);
+}
+.btn{
+  border: 1px solid 
+  border-color: rgb(121, 121, 121);
+  border-style: solid;
+  border-radius: 5px;
+}
+.btn.bg-grey{
+	border-color: rgb(121, 121, 121);
+}
+.btn.bg-transparent{
+	background: transparent;
+}
+.logo{
+	background: #f4f4f4;
+}
+.logo .title{
+  font-size: 24px;
+  font-family: 'San Francisco Text Light';
+  color: rgb(57, 59, 69);
+  line-height: 1.2;
+}
+.logo .city{
+  font-size: 16px;
+  font-family: 'San Francisco Text Bold';
+  color: rgb(57, 59, 69);
+  font-weight: bold;
+  line-height: 2.999;
+}
+.logo .text{
+  font-size: 20px;
+  font-family: 'San Francisco Text Bold';
+   color: rgb(57, 59, 69);
+  font-weight: bold;
+}
+.logo .resume {
+  font-size: 14px;
+  font-family: 'San Francisco Text Bold';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.banner .title{
+  font-size: 48px;
+  font-family: 'San Francisco Text Bold';
+  color: rgb(98, 78, 145);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.banner .subtitle{
+  font-size: 18px;
+  font-family: 'San Francisco Text Light';
+  color: rgb(107, 107, 107);
+  line-height: 2.665;
+}
