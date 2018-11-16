@@ -44,7 +44,7 @@
 		<div class="pull-left">
 			<div class="flex">
 				<div class="title"><span class="font-heavy">Massage</span><br> Therapist</div>
-				<div class="city"><img src="img/menu.png" alt="menu">Portland</div>
+				<div class="city"><img src="img/city.png" alt="menu">Portland</div>
 			</div>
 		</div>
 		<div class="pull-right">
@@ -59,21 +59,18 @@
 </section>
 <section class="banner">
 	<div class="container">
-		<div class="flex">
-			<div class="banner-img"><!-- <img src="img/menu.png" alt="menu"> --></div>
-			<div>
-				<div class="title">570 masters found on our website customers</div>
-				<div class="subtitle">Sea bass whale catfish crappie velvet catfish mola mola sunfish shark paradise fish rice eel spotted danio. </div>
-			</div>
+		<div class="banner-text">
+			<div class="title">570 masters found on our website customers</div>
+			<div class="subtitle">Sea bass whale catfish crappie velvet catfish mola mola sunfish shark paradise fish rice eel spotted danio. </div>
 		</div>
 	</div>
 </section>
 <section class="search">
 	<div class="container">
 		<form>
-			<div class="flex">
+			<div class="flex box-shadow">
 				<div class="form-group">
-				  <select class="form-control" id="Category">
+				  <select class="form-control b-l" id="Category">
 				    <option>Category</option>
 				    <option>2</option>
 				    <option>3</option>
@@ -88,23 +85,32 @@
 				    <option>4</option>
 				  </select>
 				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="Area" placeholder="Area, metro, highway">
+				<div class="form-group inherit">
+					<input type="text" class="form-control b-r" id="aea" placeholder="Area, metro, highway">
+					<span class="select-area form-control text-violet b-l">
+						<img src="img/icon-area.png" alt="icon-area"/> Select area
+					</span>
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="From" placeholder="From">
+					<input type="text" class="form-control" id="from" placeholder="From">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="To" placeholder="To">
+					<input type="text" class="form-control b-r" id="to" placeholder="To">
+				</div>
+				<div class="form-group">
+					<div class="form-control b-l">$</div>
+				</div>
+				<div class="form-group">
+					<button class="btn form-control bg-yellow b-l b-r"><img src="img/icon-search.png" alt="icon-search"></button>
 				</div>
 			</div>
 
-			<div class="flex">
-				<div> <button class="btn">Heating</button></div>
-				<div> <button class="btn">Heating</button></div>
-				<div> <button class="btn">Heating</button></div>
-				<div> <button class="btn">Heating</button></div>
-				<div> <button class="btn">Heating</button></div>
+			<div class="flex search-tag">
+				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
 			</div>
 		</form>
 	</div>
@@ -113,7 +119,7 @@
 	<div class="container">
 		<div class="master-item">
 			<div class="flex">
-				<div>
+				<div class="left-side box-shadow bg-white">
 					<div class="flex">
 						<div class="master-picture">
 							<img src="img/img-master.png" alt="img-master">
@@ -122,12 +128,12 @@
 							<div class="flex">
 								<div>John Smith</div>
 								<div class="">
-									<img src="img/icon-star.png" alt="icon-star"> 4.3
+									<img src="img/star.png" alt="icon-star"> 4.3
 								</div>
 							</div>
 							<p>gvdsfgvf</p>
 							<div class="inline">
-								<div><button class="btn">Heating</button></div>
+								<div><button class="btn bg-transparent border-violet text-grey">Heating</button></div>
 								<span>Qualification</span>
 								<span>7 years</span>
 							</div>
@@ -142,28 +148,28 @@
 									<span>...........</span>
 									<span>30$/hour</span>
 								</div>
-								<div><a href="">All price</a></div>
+								<div class="text-violet all-price"><a href="">All price</a></div>
 							</div>
 						</div>
 						<div class="master-contact">
-							<div class="master-phone">
+							<div class="master-phone bg-violet text-white">
 								<a href="tel:+144543565711">+1-445-435-657-11</a>
 							</div>
 							<div>
-								<span><button class="btn bg-red">Demand</button></span>
+								<span><button class="btn bg-red text-white">Demand</button></span>
 								<span>3 appeals for last day</span>
 							</div>
 							<div>
-								<a href=""><button class="btn bg-yellow">View profile</button></a>
+								<a href=""><button class="btn bg-yellow text-white">View profile</button></a>
 							</div>
 						</div>
-						<div class="right-side">
-							<div><span>Prices:</span>200$</div>
-							<div><span>Reviews:</span>32</div>
-							<div><span>Area:</span>Eastlake</div>
-							<div class="text-red"><img src="img/icon-best-option.png" alt="icon-best-option">One of the most popular masters in the area</div>
-						</div>
 					</div>
+				</div>
+				<div class="right-side bg-grey">
+						<div class="text-grey"><span class="text-black">Prices: </span>200$</div>
+						<div class="text-grey"><span class="text-black">Reviews: </span>32</div>
+						<div class="text-grey"><span class="text-black">Area: </span>Eastlake</div>
+						<div class="text-red"><img src="img/icon-best-area.png" alt="icon-best-option">One of the most popular masters in the area</div>
 				</div>
 			</div>
 		</div>
@@ -172,7 +178,7 @@
 		<div class="reviews">
 			<div class="title">Verified reviews</div>
 			<div class="flex">
-				<div class="review-item m-r">
+				<div class="review-item m-r bg-grey box-shadow">
 					<div class="bg-white">
 						<div class="top flex">
 							<div class="img-master"><img src="img/img-master.png" alt="img-master"></div>
@@ -248,5 +254,93 @@
 		</div>
 	</div>
 </section>
+<section class="place"></section>
+<section class="keywords">
+	<div class="container">
+		<div class="flex">
+			<div class="picture">
+				<div>
+					<img src="img/img-keyword.png" alt="img-keyword">
+				</div>
+				<div>
+					<img src="img/img-keyword.png" alt="img-keyword">
+				</div>
+			</div>
+			<div class="text">
+				A local plumber registered on our website will repair the water supply, eliminate the blockage of the sewer or the leak of the bath, repair the clogged drain or even perform urgent repairs 24/7. At a convenient time on our website you will always find a qualified specialist who can be called for plumber repair of any complexity.
+
+				Need plumbing repairs? A pipe burst in the house or a blockage in the bathroom? And how often do you have to deal with situations where you just need an urgent call around the clock plumbing? Until some time it was simply impossible to call a professional plumber urgently. Had to rely on the integrity of the first available specialist or company. 
+
+				To order the installation of plumbing or see urgent plumbers near you do not have to look for specialists all over the Internet. It is enough to open our website. To find the best price and specialist you just need to use easily customizable filters. 
+				Professional plumbing repair at low prices in Seattle 
+
+				Now it is possible, because you can compare prices of different specialists and choose the best option not to the detriment of the quality of the plumbing. 
+
+				On our website you can find the best prices for plumbing services in Seattle. 
+
+				Types of plumbing
+
+				If you need to choose a quality specialist and solve the necessary problems, on our website are plumbers that can solve such problems as: 
+
+				pipe burst
+				drain leak
+				bathtub drain
+				clogged drain
+				24 hour plumber / emergency plumber
+				replacement of pipes
+				installation of heating radiators
+				boiler connection
+
+				If you are looking for an experienced and professional artist, no need to contact repair shops or unqualified sites. Better find a performer with us. The simplicity of the resource allows you to quickly get complete information about each specialist. Due to the fact that we specialize only in plumbing services and have a narrow specialization - we accommodate only professionals. You will be satisfied with the quality of their work.
+			</div>
+		</div>
+	</div>
+</section>
+<section class="banner-bottom">
+	<div class="text-center text-white">
+		<div class="title">Masters Join US</div>
+		<div class="subtitle">Join the more than 570 masters which find customers and fulfill orders with</div>
+		<div><a href=""><button class="btn bg-violet">Learn more</button></a></div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="flex">
+			<div>
+				<div class="flex">
+					<div>
+						<div>Massage</div>
+						<div>Massage</div>
+						<div>Massage</div>
+					</div>
+					<div>
+						<div>Massage</div>
+						<div>Massage</div>
+						<div>Massage</div>
+					</div>
+				</div>
+				<div></div>
+			</div>
+			<div>
+				<span>LOGO</span>
+				<span>
+					<img src="img/icon-visa.png" alt="icon-visa">
+				</span>
+				<span>
+					<img src="img/icon-visa.png" alt="icon-visa">
+				</span>
+				<span>
+					<img src="img/icon-visa.png" alt="icon-visa">
+				</span>
+			</div>
+			<div>
+				<div>For masters</div>
+				<div><a href=""><button class="btn bg-violet text-white">Get more orders</button></a></div>
+				<div>For masters</div>
+				<div><a href=""><button class="btn bg-violet text-white">Get more orders</button></a></div>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
