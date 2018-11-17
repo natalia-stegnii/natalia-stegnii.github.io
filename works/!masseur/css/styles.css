@@ -59,6 +59,25 @@ font-style: normal;
 .font-heavy{
   font-family: 'San Francisco Text Heavy';	
 }
+.font-light{
+	font-family: 'San Francisco Text Light';
+}
+.font-bold{
+	font-family: 'San Francisco Text Bold';
+}
+.font-medium{
+	font-family: 'San Francisco Text Medium';	
+}
+.f-14{
+	font-size: 14px;
+	line-height: 1.6;
+}
+.f-12{
+	font-size: 12px;
+}
+.text-bold{
+	font-weight: bold;
+}
 .text-white{
 	color: #ffffff;
 }
@@ -67,6 +86,9 @@ font-style: normal;
 }
 .text-grey{
 	color: rgb(149, 150, 153);
+}
+.text-black-grey{
+	  color: rgb(107, 107, 107);
 }
 .text-black{
   color: rgb(57, 59, 69);
@@ -221,7 +243,7 @@ header{
 .right-side{
 	height: fit-content;
 	border-left: 1px solid rgba(98, 78, 145, 0.302);
-	padding: 10px;
+	padding: 10px 20px;
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
 }
@@ -235,16 +257,22 @@ header{
 .right-side .text-red{
 	font-family: 'San Francisco Text Semibold';
 	font-size: 16px;
+	margin-top: 20px;
+	line-height: 1.2;
+}
+.right-side .text-red img{
+	margin-right: 10px;
 }
 .right-side img{
 	margin-right: 10px;
 }
-.reviews .title{
+.title{
   font-size: 20px;
   font-family: 'San Francisco Text Bold';
   color: rgb(57, 59, 69);
   font-weight: bold;
   line-height: 1.5;
+  margin: 20px 0;
 }
 .reviews-for{
   font-size: 14px;
@@ -260,6 +288,53 @@ header{
 .master-item{
 	margin: 20px 0;
 }
+.master-item .btn:hover, .btn:focus, .btn.focus{
+	color: #ffffff;
+}
+.view-profile{
+	margin-top: 25px;
+}
+.view-profile a{
+	font-size: 16px;
+	font-family: 'San Francisco Text Bold';
+}
+.demand{
+	padding: 2px 6px;
+}
+.left-side{
+	padding-bottom: 10px;
+}
+.master-name{
+	font-size: 20px;
+}
+.master-contact{
+	padding-right: 20px;
+}
+.master-picture{
+	margin-right: 20px;
+}
+.master-desc{
+	width: 500px;
+}
+.master-desc, .master-contact{
+	margin-top: 20px;
+}
+.master-phone{
+	font-size: 18px;
+	font-family: 'San Francisco Text Semibold';
+	margin-bottom: 5px;
+    padding: 3px 8px;
+}
+.master-item .search-tag{
+	padding: 1px 8px;
+    margin: 15px 20px 20px 0;
+}
+.p{
+	font-size: 12px;
+	  font-family: 'San Francisco Text Light';
+}
+
+
 .review-item .text{
   font-size: 12px;
   font-family: 'San Francisco Text Light';
@@ -275,7 +350,8 @@ header{
   font-size: 14px;
   font-family: 'San Francisco Text Semibold';
   color: rgb(107, 107, 107);
-  line-height: 3.427;
+	line-height: 2;
+	margin-left: 10px;
 }
 .feedback-time{
   font-size: 14px;
@@ -287,7 +363,7 @@ header{
   font-size: 14px;
   font-family: 'San Francisco Text Medium';
   color: rgb(149, 150, 153);
-  line-height: 3.427;
+  line-height: 2;
 }
 .bg-grey{
   border-radius: 5px;
@@ -313,13 +389,14 @@ header{
 	padding: 10px
 }
 .review-item .bottom{
-	padding: 20px;
+    padding: 20px 10px 40px 10px;
 }
 .img-master{
 	margin-right: 10px;
 }
 .img-master img{
 	width: 70px;
+	border-radius: 5px;
 }
 .banner-bottom{
 	background: url(../img/banner-bottom.png) no-repeat;
