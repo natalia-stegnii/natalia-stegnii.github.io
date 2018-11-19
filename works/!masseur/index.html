@@ -8,6 +8,8 @@
 	<meta name=viewport content="width=device-width">
 	<link rel="stylesheet" href="css/bootstrap.css" >
   	<link rel="stylesheet" href="css/styles.css" type="text/css">
+  	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<link rel="shortcut icon" href="" type="image/x-icon">
 	<link rel="apple-touch-icon" href=""/>
 </head>
@@ -35,7 +37,7 @@
 			</div>
 		</div>
 		<div class="pull-right">
-			<button class="btn bg-transparent bg-grey login">Login</button>
+			<a class="btn bg-transparent bg-grey login">Login</a>
 		</div>
 	</div>
 </header>
@@ -86,10 +88,40 @@
 				  </select>
 				</div>
 				<div class="form-group inherit" style="width: 50%;">
-					<input type="text" class="form-control b-r" id="aea" placeholder="Area, metro, highway">
-					<span class="select-area form-control text-violet font-medium b-l">
-						<img src="img/icon-area.png" alt="icon-area"/> Select area
-					</span>
+					<div class="form-control" data-toggle="modal" data-target="#myModal">
+						<div class="pull-left">Area, metro, highway</div>
+						<div class="pull-right select-area text-violet font-medium b-l"><img src="img/icon-area.png" alt="icon-area"/> Select area</div>
+					</div>
+
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Select area</h4>
+					      </div>
+					      <div class="modal-body">
+					        <div class="checkbox">
+							  <label><input type="checkbox" value="">Option 1</label>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Option 2</label>
+							</div>
+							<div class="checkbox disabled">
+							  <label><input type="checkbox" value="" disabled>Option 3</label>
+							</div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+
 				</div>
 				<div class="form-group" style="width: 11%;">
 					<input type="text" class="form-control" id="from" placeholder="From">
@@ -176,7 +208,17 @@ Installation of systems of heating, Installation of systems of</div>
 				</div>
 			</div>
 		</div>
-		<div class="paggination"></div>
+		<div class="paggination border-violet">
+			<div class="pull-left flex">
+				<div><a href=""><img src="img/icon-left.png" alt="icon-left"></a></div>
+				<div class="active bg-violet text-white"><a href="">1</a></div>
+				<div><a href="">2</a></div>
+				<div><a href="">...</a></div>
+				<div><a href="">56</a></div>
+				<div><a href=""></a><img src="img/icon-right.png" alt="icon-right"></div>
+			</div>
+			<div class="pull-right"><a href="">Seen 1 - 55</a></div>
+		</div>
 
 		<div id="reviews" class="reviews">
 			<div class="section-title">Verified reviews</div>
