@@ -55,27 +55,33 @@ font-style: normal;
 .font-medium{
 	font-family: 'San Francisco Text Medium';	
 }
+.f-48{
+	font-size: 48px;
+}
 .H1{
 	font-size: 36px;
+	margin: 0;
 }
 .h1{
 	font-size: 24px;
+	margin: 0;
 }
 .h2{
 	font-size: 18px;
+	margin: 0;
 }
 .h3{
 	font-size: 16px;
+	margin: 0;
 }
 .h4{
 	font-size: 14px;
-	line-height: 1.6;
+	line-height: 1.3;
+	margin: 0;
 }
 .p{
 	font-size: 12px;
-}
-.text-bold{
-	font-weight: bold;
+	margin: 0;
 }
 .text-white{
 	color: #ffffff;
@@ -150,12 +156,14 @@ header{
   line-height: 3.037;
   border: 0;
 }
-
+header .type{
+	margin-right: 20px;
+}
 .menu-item{
   font-size: 14px;
   font-family: 'San Francisco Text Light';
   color: rgb(107, 107, 107);
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .btn.login {
   font-size: 14px;
@@ -180,20 +188,17 @@ header{
   font-family: 'San Francisco Text Light';
   color: rgb(57, 59, 69);
   line-height: 1.2;
-  margin-right: 100px;
+  margin: 0 100px 0 0;
 }
 .logo .city{
   font-size: 16px;
   font-family: 'San Francisco Text Bold';
   color: rgb(57, 59, 69);
-  font-weight: bold;
-  line-height: 2.999;
+  padding-top: 30px;
 }
-.logo .text{
-  font-size: 20px;
-  font-family: 'San Francisco Text Bold';
-   color: rgb(57, 59, 69);
-  font-weight: bold;
+.logo .city img{
+	margin-right: 8px;
+    margin-top: -10px;
 }
 .logo .resume {
   font-size: 14px;
@@ -201,6 +206,7 @@ header{
   color: rgb(255, 255, 255);
   font-weight: bold;
   margin-left: 20px;
+  margin-top: 10px;
 }
 .banner{
 	background: url(../img/banner.png) no-repeat;
@@ -209,27 +215,30 @@ header{
 .banner-text{
 	width: 50%;
     margin-left: 60%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 12%;
+    margin-bottom: 15%;
 }
 .banner .title{
-  font-size: 48px;
-  font-family: 'San Francisco Text Bold';
   color: rgb(98, 78, 145);
-  font-weight: bold;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 .banner .subtitle{
   font-size: 18px;
   font-family: 'San Francisco Text Light';
   color: rgb(107, 107, 107);
+  line-height: 1.2;
+
 }
 .search form{
 	margin-top: -20px;
   font-size: 12px;
   font-family: 'San Francisco Text Light';
   color: rgb(107, 107, 107);
+}
+.select-area{
+	text-align: right;
 }
 .search .form-group{
 	margin-bottom: 0;
@@ -248,7 +257,7 @@ header{
 	margin-right: 20px; 
 }
 .search-tag .btn{
-	margin: 20px 20px 20px 0; 
+	margin: 30px 20px 20px 0; 
 }
 
 .right-side{
@@ -277,7 +286,7 @@ header{
 .right-side img{
 	margin-right: 10px;
 }
-.title{
+.section-title{
   font-size: 20px;
   font-family: 'San Francisco Text Bold';
   color: rgb(57, 59, 69);
@@ -318,6 +327,13 @@ header{
 .master-name{
 	font-size: 20px;
 }
+.rating{
+	margin-left: 15px;
+}
+.rating img{
+	margin-right: 5px;
+    margin-top: -5px;
+}
 .master-contact{
 	padding-right: 20px;
 }
@@ -328,7 +344,7 @@ header{
 	width: 500px;
 }
 .master-desc, .master-contact{
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .master-phone{
 	font-size: 18px;
@@ -340,12 +356,6 @@ header{
 	padding: 1px 8px;
     margin: 15px 20px 20px 0;
 }
-.p{
-	font-size: 12px;
-	  font-family: 'San Francisco Text Light';
-}
-
-
 .review-item .text{
   font-size: 12px;
   font-family: 'San Francisco Text Light';

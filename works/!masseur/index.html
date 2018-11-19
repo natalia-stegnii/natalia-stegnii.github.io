@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="pull-left">
 			<div class="flex">
-				<div>
+				<div class="type">
 					<form class="flex">
 						<div><img src="img/menu.png" alt="menu"></div>
 						<div class="form-group">
@@ -29,9 +29,9 @@
 						</div>
 					</form>
 				</div>
-				<div class="menu-item" id="">Reviews</div>
-				<div class="menu-item" id="">Help</div>
-				<div class="menu-item" id="">How to place an ad</div>
+				<div class="menu-item"><a href="#reviews">Reviews</a></div>
+				<div class="menu-item"><a href="#help">Help</a></div>
+				<div class="menu-item"><a href="#place">How to place an ad</a></div>
 			</div>
 		</div>
 		<div class="pull-right">
@@ -43,13 +43,13 @@
 	<div class="container">
 		<div class="pull-left">
 			<div class="flex">
-				<div class="title"><span class="font-heavy">Massage</span><br> Therapist</div>
+				<div class="title"><span class="font-heavy">Massage</span><br> Therapists</div>
 				<div class="city"><img src="img/city.png" alt="menu">Portland</div>
 			</div>
 		</div>
 		<div class="pull-right">
 			<div class="flex">
-				<div class="text">
+				<div class="h2 font-bold">
 					<span class="text-violet">570</span> masters found on our website customers
 				</div>
 				<div><a href="" class="btn bg-violet resume">Add your resume</a></div>
@@ -60,8 +60,8 @@
 <section class="banner">
 	<div class="container">
 		<div class="banner-text">
-			<div class="title">570 masters found on our website customers</div>
-			<div class="subtitle">Sea bass whale catfish crappie velvet catfish mola mola sunfish shark paradise fish rice eel spotted danio. </div>
+			<div class="title H1 font-bold"><span class="f-48">570</span> masters found on<br> our website customers</div>
+			<div class="subtitle">Sea bass whale catfish crappie velvet catfish mola<br> mola sunfish shark paradise fish rice eel spotted danio. </div>
 		</div>
 	</div>
 </section>
@@ -69,7 +69,7 @@
 	<div class="container">
 		<form>
 			<div class="flex box-shadow">
-				<div class="form-group">
+				<div class="form-group" style="width: 13%;">
 				  <select class="form-control b-l" id="Category">
 				    <option>Category</option>
 				    <option>2</option>
@@ -77,7 +77,7 @@
 				    <option>4</option>
 				  </select>
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="width: 14%;">
 				  <select class="form-control" id="Reviews">
 				    <option>Reviews</option>
 				    <option>2</option>
@@ -85,26 +85,26 @@
 				    <option>4</option>
 				  </select>
 				</div>
-				<div class="form-group inherit">
+				<div class="form-group inherit" style="width: 50%;">
 					<input type="text" class="form-control b-r" id="aea" placeholder="Area, metro, highway">
-					<span class="select-area form-control text-violet b-l">
+					<span class="select-area form-control text-violet font-medium b-l">
 						<img src="img/icon-area.png" alt="icon-area"/> Select area
 					</span>
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="width: 11%;">
 					<input type="text" class="form-control" id="from" placeholder="From">
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="width: 7%;">
 					<input type="text" class="form-control b-r" id="to" placeholder="To">
 				</div>
 				<div class="form-group">
 					<div class="form-control b-l">$</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="width: 6%;">
 					<button class="btn form-control bg-yellow b-l b-r"><img src="img/icon-search.png" alt="icon-search"></button>
 				</div>
 			</div>
-			<div class="flex search-tag">
+			<div class="flex search-tag font-light p">
 				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
 				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
 				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
@@ -126,11 +126,11 @@
 						<div class="master-desc">
 							<div class="flex">
 								<div class="master-name font-heavy">John Smith</div>
-								<div class="">
+								<div class="text-black-grey h3 font-medium rating">
 									<img src="img/star.png" alt="icon-star"> 4.3
 								</div>
 							</div>
-							<div class="h4 text-grey">Installation of systems of heating, water supply, Sewerage. Design 
+							<div class="h4 text-grey font-light" style="width: 90%;">Installation of systems of heating, water supply, Sewerage. Design 
 and installation of boiler houses in private houses and cottages.
 Installation of systems of heating, Installation of systems of</div>
 							<div class="inline">
@@ -178,8 +178,8 @@ Installation of systems of heating, Installation of systems of</div>
 		</div>
 		<div class="paggination"></div>
 
-		<div class="reviews">
-			<div class="title">Verified reviews</div>
+		<div id="reviews" class="reviews">
+			<div class="section-title">Verified reviews</div>
 			<div class="flex">
 				<div class="review-item m-r bg-grey box-shadow">
 					<div class="bg-white">
@@ -257,9 +257,9 @@ Installation of systems of heating, Installation of systems of</div>
 		</div>
 	</div>
 </section>
-<section class="place bg-light-grey">
+<section id="place" class="place bg-light-grey">
 	<div class="container">
-		<div class="title text-center">How to place an ad</div>
+		<div class="section-title text-center">How to place an ad</div>
 		<div class="flex">
 			<div class="place-item box-shadow">
 				<div class="picture"><img src="img/place1.png" alt="place"></div>
@@ -293,9 +293,9 @@ Installation of systems of heating, Installation of systems of</div>
 		</div>
 	</div>	
 </section>
-<section class="keywords">
+<section id="help" class="keywords">
 	<div class="container">
-		<div class="title">Keyword</div>
+		<div class="section-title">Keyword</div>
 		<div class="flex">
 			<div class="picture">
 				<div>
