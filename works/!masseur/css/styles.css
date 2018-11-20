@@ -83,6 +83,13 @@ font-style: normal;
 	font-size: 12px;
 	margin: 0;
 }
+.f-30{
+	font-size: 30px;
+	border-bottom: 2px dotted rgb(126, 166, 233);
+	width: fit-content;
+	color: rgb(126, 166, 233);
+	margin-bottom: 20px;
+}
 .text-white{
 	color: #ffffff;
 }
@@ -541,7 +548,7 @@ footer a.btn{
 	padding: 35px 0 10px;
 }
 .breadcramp img{
-	margin-right: 10px;
+	margin: 0 10px;
 }
 
 /*profil*/
@@ -584,4 +591,12 @@ footer a.btn{
 }
 .profil .right-side{
 	padding-top: 0;
+}
+/*faq*/
+.faq-item-title{
+	line-height: 3;
+}
+.answer{
+	padding: 10px;
+    margin-bottom: 20px;
 }
