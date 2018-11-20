@@ -104,6 +104,12 @@ font-style: normal;
 .text-red{
   color: rgb(250, 39, 76);
 }
+.text-coral{
+  color: rgb(221, 95, 95);
+}
+.bg-coral{
+  background: rgb(221, 95, 95);
+}
 .text-underline{
 	text-decoration: underline;   
 }
@@ -143,6 +149,9 @@ font-style: normal;
 }
 .b-r{
 	border-right: 0;
+}
+.border-none{
+	border: 0 !important;
 }
 a, a:hover{
 	color: inherit;
@@ -527,5 +536,52 @@ footer a.btn{
     margin: 5px 0;
 }
 
+/*breadcramp*/
+.breadcramp{
+	padding: 35px 0 10px;
+}
+.breadcramp img{
+	margin-right: 10px;
+}
 
-
+/*profil*/
+.profil .master-item .price{
+	margin: 20px 0;
+    padding: 10px;
+    width: fit-content;
+}
+.info{
+	padding: 8px;
+	margin-top: 30px;
+	border-radius: 5px;
+}
+.info img{
+	margin: 0 20px;
+}
+.rewies-box{
+	width: 85%;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+.add-rewies .btn{
+	height: fit-content;
+}
+.rewies-item .text{
+	margin-left: 15px;
+}
+.feedback-time .text-black{
+	margin-right: 40px;
+}
+.load-more{
+	margin-top: 20px;
+}
+.profil .master-desc{
+	width: auto;
+	padding-right: 20px;
+}
+.profil .master-contact{
+	margin-top: 0;
+}
+.profil .right-side{
+	padding-top: 0;
+}
