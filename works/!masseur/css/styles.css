@@ -93,6 +93,9 @@ font-style: normal;
 .border-radius{
 	border-radius: 5px;
 }
+.text-blue{
+  color: rgb(126, 166, 233);
+}
 .text-white{
 	color: #ffffff;
 }
@@ -654,15 +657,35 @@ footer a.btn{
 .cabinet-profil img{
 	width: 90px;
 }
+.cabinet-profil .h1{
+	padding: 20px 0 40px;
+}
 .cabinet-profil{
 	width: 80%;
 }
+.cabinet-profil .master-desc{
+	margin-top: -15px;
+}
+.cabinet-profil .price{
+	line-height: 1.6;
+    margin-bottom: 10px;	
+}
+.qualification{
+	margin: 15px 0;
+}
+.qualification div{
+	padding: 5px 0;
+}
+.cabinet-profil .master-picture {
+    margin-right: 10px;
+}
 .cabinet-profil .box-shadow{
-	padding: 10px;
+	padding: 10px 10px 20px;
 }
 .go-edit{
 	height: fit-content;
 	margin-left: 20px;
+	margin-top: 90px;
 }
 .go-edit img{
 	padding: 5px;
@@ -681,6 +704,16 @@ footer a.btn{
 }
 .cabinet-menu div{
 	line-height: 2;
+}
+.rules{
+	margin-bottom: 80px;
+}
+.rules-item{
+	margin-bottom: 85px;
+}
+.rules .text{
+	margin-left: 60px;
+    margin-top: 55px;
 }
 .modal-footer, .modal-header {
     text-align: left;
