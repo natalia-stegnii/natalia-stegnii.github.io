@@ -90,6 +90,9 @@ font-style: normal;
 	color: rgb(126, 166, 233);
 	margin-bottom: 20px;
 }
+.border-radius{
+	border-radius: 5px;
+}
 .text-white{
 	color: #ffffff;
 }
@@ -138,7 +141,9 @@ font-style: normal;
 .bg-red{
    background-color: rgb(250, 39, 76);
 }
-
+.bg-sun{
+	background: #e8ae39;
+}
 .flex{
 	display: flex;
 }
@@ -146,7 +151,9 @@ font-style: normal;
 	display: inherit;
 	cursor: pointer;
 }
-
+.inline{
+	display: inline;
+}
 .border-violet{
 	border: 1px solid rgb(98, 78, 145);
 	border-radius: 5px;
@@ -200,6 +207,7 @@ header .type{
 	font-size: 14px;
 	font-family: 'San Francisco Text Semibold';
 	color: rgb(107, 107, 107);
+	margin-top: -6px;
 }
 .btn:active, .btn.active{
 	box-shadow: none;
@@ -242,8 +250,25 @@ header .type{
 }
 /*section banner*/
 .banner{
-	background: url(../img/banner.png) no-repeat;
 	background-size: cover;
+}
+.banner-head{
+	background: url(../img/banner.png) no-repeat;
+}
+.banner1{
+	background: url(../img/banner1.png) no-repeat;
+}
+.banner2{
+	background: url(../img/banner2.png) no-repeat;
+}
+.banner3{
+	background: url(../img/banner3.png) no-repeat;
+}
+.banner4{
+	background: url(../img/banner4.png) no-repeat;
+}
+.banner5{
+	background: url(../img/banner5.png) no-repeat;
 }
 .banner-text{
 	width: 50%;
@@ -468,14 +493,35 @@ header .type{
     margin: 0 10px;
     border-radius: 5px;
 }
-.banner-bottom{
+.banner-bottom-head{
 	background: url(../img/banner-bottom.png) no-repeat;
+}
+.banner-bottom1{
+	background: url(../img/banner-bottom1.png) no-repeat;
+}
+.banner-bottom2{
+	background: url(../img/banner-bottom2.png) no-repeat;
+}
+.banner-bottom3{
+	background: url(../img/banner-bottom3.png) no-repeat;
+}
+.banner-bottom4{
+	background: url(../img/banner-bottom4.png) no-repeat;
+}
+.banner-bottom5{
+	background: url(../img/banner-bottom5.png) no-repeat;
+}
+.banner-bottom{
 	background-size: cover;
 	padding: 70px 0 30px 0;
 }
 .banner-bottom .btn{
 	padding: 6px 50px;
 	margin-top: 10px;
+}
+.banner-bottom-how-it-work{
+	background: #f7f7f7;
+		padding: 30px 0;
 }
 /*section place*/
 .place-item{
@@ -489,7 +535,9 @@ header .type{
 	padding: 20px;
 	margin-top: -70px;
 }
-
+.place-item .picture{
+	height: 310px;
+}
 .place-item .title{
 	height: 40px;
 }
@@ -537,6 +585,8 @@ footer{
 .payments .f-logo{
 	margin: 0;
     padding-right: 30px;
+    position: relative;
+    top: 8px;
 }
 footer a.btn{
 	padding: 6px 40px;
@@ -548,7 +598,7 @@ footer a.btn{
 	padding: 35px 0 10px;
 }
 .breadcramp img{
-	margin: 0 10px;
+	margin: -1px 10px 0;
 }
 
 /*profil*/
@@ -599,4 +649,47 @@ footer a.btn{
 .answer{
 	padding: 10px;
     margin-bottom: 20px;
+}
+/*cabinet*/
+.cabinet-profil img{
+	width: 90px;
+}
+.cabinet-profil{
+	width: 80%;
+}
+.cabinet-profil .box-shadow{
+	padding: 10px;
+}
+.go-edit{
+	height: fit-content;
+	margin-left: 20px;
+}
+.go-edit img{
+	padding: 5px;
+}
+.go-edit .text{
+	padding: 10px 20px 30px;
+}
+.go-edit .text a{
+	position: relative;
+	top: 10px;
+}
+.cabinet-menu{
+	height: fit-content;
+	margin-right: 9%;
+	padding: 20px 30px;
+}
+.cabinet-menu div{
+	line-height: 2;
+}
+.modal-footer, .modal-header {
+    text-align: left;
+    border: 0; 
+}
+.rewies-head span{
+	margin: 0 5px;
+	line-height: 2;
+}
+.rewies-head span:first-child{
+	margin-left: 0;
 }
