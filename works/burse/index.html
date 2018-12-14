@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-language" content="ru">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="stylesheet" href="css/bootstrap.css" >
+  	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="text-center">
+					<img src="img/balance-grey.png" >
+					<div>Баланс:<br><span class="text-green">25,489</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="text-center">
+					<form>
+						<div class="form-group">
+						  <select class="form-control" id="binance">
+						    <option>Binance</option>
+						    <option>Binance</option>
+						    <option>Binance</option>
+						    <option>Binance</option>
+						  </select>
+						</div>
+						<div class="form-group">
+						  <select class="form-control" id="aebtc">
+						    <option>AEBTC</option>
+						    <option>AEBTC</option>
+						    <option>AEBTC</option>
+						    <option>AEBTC</option>
+						  </select>
+						</div>
+						<div class="form-group">
+							<button class="btn bg-green text-uppercase">выбрать</button>
+						</div>
+						<div>Баланс: <span class="text-green">25,489</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="top flex">
+					<div class="btn bg-transparent border-white">Рус</div>
+					<div class="btn bg-transparent opacity">Eng</div>
+					<div class="btn bg-green">Выход</div>
+				</div>
+				<div class="btn bg-orange text-uppercase"><img src="img/balance-white.png" alt="balance">Продать все</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="title">Покупка</div>
+				<div>
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#left">Отложенный ордер</a></li>
+					    <li><a data-toggle="tab" href="#right">Рыночный ордер</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+					    <div id="left" class="tab-pane fade in active">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Цена:</label>
+							    <input class="form-control" placeholder="0.00">
+							  </div>
+							  <div class="form-group">
+							    <label>Кол-во</label>
+							    <input class="form-control" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-green">КУПИТЬ</button>
+							  </div>
+							</form>
+					    </div>
+					    <div id="right" class="tab-pane fade">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Кол-во</label>
+							    <input class="form-control" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-green">КУПИТЬ</button>
+							  </div>
+							</form>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="title">Открытые ордера</div>
+				<table class="table">
+				    <thead>
+				      <tr>
+				        <th>Дата/время</th>
+				        <th>Валюта</th>
+				        <th>Тип</th>
+				        <th>Статус</th>
+				        <th>Объем</th>
+				        <th>Цена</th>
+				        <th>Сумма</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>АЕВТС</th>
+				        <th class="bg-grey">takeprofit</th>
+				        <th>обрабатывается</th>
+				        <th class="bg-grey">45%</th>
+				        <th>4</th>
+				        <th class="text-green bg-grey">1.050600</th>
+				      </tr>
+				      <tr>
+				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>АЕВТС</th>
+				        <th class="bg-grey">takeprofit</th>
+				        <th>обрабатывается</th>
+				        <th class="bg-grey">45%</th>
+				        <th>4</th>
+				        <th class="text-green bg-grey">1.050600</th>
+				      </tr>
+				    </tbody>
+				  </table>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>

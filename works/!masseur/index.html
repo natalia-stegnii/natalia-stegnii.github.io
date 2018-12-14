@@ -16,24 +16,34 @@
 <body>
 <header class="bg-white">
 	<div class="container">
-		<div class="pull-left">
+		<div class="for-mobile">
+				<button class=" btn bg-transparent navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="img/m_menu.png" alt="menu"></button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="menu-item"><a href="#reviews">Reviews</a></div>
+					<div class="menu-item"><a href="#help">Help</a></div>
+					<div class="menu-item"><a href="#place">How to place an ad</a></div>
+				</div>
+			</div>
+		<div class="pull-left">	
 			<div class="flex">
 				<div class="type">
 					<form class="flex">
-						<div><img src="img/menu.png" alt="menu"></div>
-						<div class="form-group">
-						  <select  class="choose-menu" id="sel1">
-						    <option>Type of massage</option>
-						    <option>2</option>
-						    <option>3</option>
-						    <option>4</option>
+						<div class="for-desktop"><img src="img/menu.png" alt="menu"></div>
+						<div class="custom-select h2 font-bold" style="width:200px; margin-top: -8px;">
+						  <select>
+						    <option value="0">Type of massage</option>
+						    <option value="1">Type of massage</option>
+						    <option value="2">Type of massage</option>
+						    <option value="3">Type of massage</option>
+						    <option value="4">Type of massage</option>
 						  </select>
 						</div>
 					</form>
 				</div>
-				<div class="menu-item"><a href="#reviews">Reviews</a></div>
-				<div class="menu-item"><a href="#help">Help</a></div>
-				<div class="menu-item"><a href="#place">How to place an ad</a></div>
+					<div class="menu-item for-desktop"><a href="#reviews">Reviews</a></div>
+					<div class="menu-item for-desktop"><a href="#help">Help</a></div>
+					<div class="menu-item for-desktop"><a href="#place">How to place an ad</a></div>
 			</div>
 		</div>
 		<div class="pull-right">
@@ -51,7 +61,7 @@
 		</div>
 		<div class="pull-right">
 			<div class="flex">
-				<div class="h2 font-bold">
+				<div class="h2 font-bold for-desktop">
 					<span class="text-violet">570</span> masters found on our website customers
 				</div>
 				<div data-toggle="modal" data-target="#resume" class="btn bg-violet resume">Add your resume</div>
@@ -123,64 +133,40 @@
 <section class="search">
 	<div class="container">
 		<form>
-			<div class="flex box-shadow">
-				<div class="form-group" style="width: 13%;">
-				  <select class="form-control b-l" id="Category">
-				    <option>Category</option>
-				    <option>2</option>
-				    <option>3</option>
-				    <option>4</option>
-				  </select>
-				</div>
-				<div class="form-group" style="width: 14%;">
-				  <select class="form-control" id="Reviews">
+			<div class="flex box-shadow font-light p">
+				  <div class="custom-select form-control border-none" style="width:13%;">
+						  <select>
+						    <option value="0">Category</option>
+						    <option value="1">Category</option>
+						    <option value="2">Category</option>
+						  </select>
+						</div>
+				<div class="custom-select form-control" style="width: 14%;">
+				  <select id="Reviews">
 				    <option>Reviews</option>
-				    <option>2</option>
-				    <option>3</option>
-				    <option>4</option>
+				    <option>Reviews</option>
+				    <option>Reviews</option>
+				    <option>Reviews</option>
 				  </select>
 				</div>
-				<div class="form-group inherit" style="width: 50%;">
-					<div class="form-control" data-toggle="modal" data-target="#myModal">
-						<div class="pull-left">Area, metro, highway</div>
-						<div class="pull-right select-area text-violet font-medium b-l"><img src="img/icon-area.png" alt="icon-area"/> Select area</div>
+				<div class="custom-select area inherit" style="width: 50%;">
+					<div class="form-control border-none">
+						<div class="pull-left" style="margin-top: 3px;">Area, metro, highway</div>
+						<img src="img/icon-area.png" alt="icon-area">
+						<select class="form-control" style="width: 29%;">
+					    <option class="pull-right select-area text-violet font-medium">
+					    	 Select area</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					  </select>
 					</div>
-
-					<!-- Modal -->
-					<div id="myModal" class="modal fade" role="dialog">
-					  <div class="modal-dialog">
-
-					    <!-- Modal content-->
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal">&times;</button>
-					        <h4 class="modal-title">Select area</h4>
-					      </div>
-					      <div class="modal-body">
-					        <div class="checkbox">
-							  <label><input type="checkbox" value="">Option 1</label>
-							</div>
-							<div class="checkbox">
-							  <label><input type="checkbox" value="">Option 2</label>
-							</div>
-							<div class="checkbox disabled">
-							  <label><input type="checkbox" value="" disabled>Option 3</label>
-							</div>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-
-					  </div>
-					</div>
-
 				</div>
 				<div class="form-group" style="width: 11%;">
 					<input type="text" class="form-control" id="from" placeholder="From">
 				</div>
 				<div class="form-group" style="width: 7%;">
-					<input type="text" class="form-control b-r" id="to" placeholder="To">
+					<input type="text" class="form-control border-none" id="to" placeholder="To">
 				</div>
 				<div class="form-group">
 					<div class="form-control b-l">$</div>
@@ -190,79 +176,78 @@
 				</div>
 			</div>
 			<div class="flex search-tag font-light p">
-				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
-				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
-				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
-				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
-				<div> <button class="btn bg-transparent border-violet text-violet">Heating</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Thai Massage</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Swedish Massage</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Reflexology</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Chiropractors</button></div>
+				<div> <button class="btn bg-transparent border-violet text-violet">Deep Tissue Massage/Sports Massage</button></div>
 			</div>
 		</form>
 	</div>
 </section>
 <section class="masters">
 	<div class="container">
-		<div class="master-item">
-			<div class="flex">
-				<div class="left-side box-shadow bg-white">
-					<div class="flex">
-						<div class="master-picture">
-							<img src="img/img-master.png" alt="img-master">
-						</div>
-						<div class="master-desc">
-							<div class="flex">
-								<div class="master-name font-heavy">John Smith</div>
-								<div class="rating">
-									<img src="img/star.png" alt="icon-star"> 4.3
-								</div>
-							</div>
-								<div class="h4 text-grey font-light" style="width: 90%; margin: 5px 0;">	Installation of systems of heating, water supply, Sewerage. Design 
-									and installation of boiler houses in private houses and cottages.
-									Installation of systems of heating, Installation of systems of</div>
-							<div class="inline">
-								<span class="search-tag"><button class="btn bg-transparent border-violet text-grey">Heating</button></span>
-								<span class="p font-bold">Qualification</span>
-								<span class="p font-light text-grey">7 years</span>
-							</div>
-							<div class="price h4 font-medium">
-								<div class="price-item">
-									<span>Thai massage</span>
-									<span>...........</span>
-									<span>30$/hour</span>
-								</div>
-								<div class="price-item">
-									<span>Thai massage</span>
-									<span>...........</span>
-									<span>30$/hour</span>
-								</div>
-								<div class="text-violet all-price font-medium text-underline"><a href="">All price</a></div>
+		<div class="master-item flex">
+			<div class="left-side box-shadow bg-white">
+				<div class="flex">
+					<div class="master-picture">
+						<img src="img/img-master.png" alt="img-master">
+					</div>
+					<div class="master-desc">
+						<div class="flex top">
+							<div class="master-name font-heavy"><a href="">John Smith</a></div>
+							<div class="rating">
+								<img src="img/star.png" alt="icon-star"> 4.3
 							</div>
 						</div>
-						<div class="master-contact">
-							<div class="master-phone btn bg-violet text-white">
-								<a href="tel:+144543565711">+1-445-435-657-11</a>
+							<div class="h4 text-grey font-light desc desc-for-mobile" style="width: 90%; margin: 5px 0;">	Installation of systems of heating, water supply, Sewerage. Design 
+								and installation of boiler houses in private houses and cottages.
+								Installation of systems of heating, Installation of systems of</div>
+						<div class="inline desc-for-mobile">
+							<span class="search-tag"><button class="btn bg-transparent border-violet text-grey">Heating</button></span>
+							<span class="p font-bold">Qualification</span>
+							<span class="p font-light text-grey">7 years</span>
+						</div>
+						<div class="price h4 font-medium desc-for-mobile">
+							<div class="price-item">
+								<span>Thai massage</span>
+								<span>...........</span>
+								<span>30$/hour</span>
 							</div>
-							<div>
-								<span class="demand btn bg-red text-white p">Demand</span>
-								<span class="text-black-grey p">3 appeals for last day</span>
+							<div class="price-item">
+								<span>Thai massage</span>
+								<span>...........</span>
+								<span>30$/hour</span>
 							</div>
-							<div class="view-profile btn bg-yellow text-white pull-right">
-								<a href="">View profile</a>
-							</div>
+							<div class="text-violet all-price font-medium text-underline"><a href="">All price</a></div>
 						</div>
 					</div>
-				</div>
-				<div class="right-side bg-grey">
-					<div class="text-grey"><span class="text-black">Prices: </span>200$</div>
-					<div class="text-grey"><span class="text-black">Reviews: </span>32</div>
-					<div class="text-grey"><span class="text-black">Area: </span>Eastlake</div>
-					<div class="text-red flex">
-						<div><img src="img/icon-best-area.png" alt="icon-best-option"></div>
-						<div>One of the most popular<br> masters in the area</div>
+					<div class="master-contact">
+						<div class="master-phone btn bg-violet text-white">
+							<a href="tel:+144543565711">+1-445-435-657-11</a>
+						</div>
+						<div>
+							<span class="demand btn bg-red text-white p">Demand</span>
+							<span class="text-black-grey p">3 appeals for last day</span>
+						</div>
+						<div class="view-profile btn bg-yellow text-white pull-right">
+							<a href="">View profile</a>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="right-side bg-grey">
+				<div class="right-side-left">
+					<div class="text-grey"><span class="text-black">Reviews: </span>32</div>
+					<div class="text-grey"><span class="text-black">Area: </span>Eastlake</div>
+				</div>
+				<div class="text-red flex">
+					<div><img src="img/icon-best-area.png" alt="icon-best-option"></div>
+					<div>One of the most popular<br> masters in the area</div>
+				</div>
+			</div>
 		</div>
-		<div class="paggination border-violet">
+		<div class="paggination border-violet for-desktop">
 			<div class="pull-left flex">
 				<div><a href=""><img src="img/icon-left.png" alt="icon-left"></a></div>
 				<div class="active bg-violet text-white"><a href="">1</a></div>
@@ -273,10 +258,16 @@
 			</div>
 			<div class="pull-right"><a href="">Seen 1 - 55</a></div>
 		</div>
+		<div class="paggination for-mobile">
+			<div class="pull-left font-semibold h2 text-black">
+				Page 1 of 57
+			</div>
+			<div class="pull-right"><a href="" class="btn bg-violet text-white font-bold h2">Next page ></a></div>
+		</div>
 
 		<div id="reviews" class="reviews">
 			<div class="section-title">Verified reviews</div>
-			<div class="flex">
+			<div class="flex flex-reviews">
 				<div class="review-item m-r bg-grey box-shadow">
 					<div class="bg-white">
 						<div class="top flex">
@@ -325,7 +316,7 @@
 					</div>
 				</div>
 
-				<div class="review-item bg-grey box-shadow">
+				<div class="review-item bg-grey box-shadow for-desktop">
 					<div class="bg-white">
 						<div class="top flex">
 							<div class="img-master"><img src="img/img-master.png" alt="img-master"></div>
@@ -389,16 +380,16 @@
 		</div>
 	</div>	
 </section>
-<section id="help" class="keywords">
+<section id="" class="keywords for-desktop">
 	<div class="container">
 		<div class="section-title">Keyword</div>
 		<div class="flex">
 			<div class="picture">
 				<div>
-					<img src="img/img-keyword.png" alt="img-keyword">
+					<img src="img/img-keyword.png"  alt="img-keyword">
 				</div>
 				<div>   
-					<img src="img/img-keyword.png" alt="img-keyword">
+					<img src="img/img-keyword2.png" alt="img-keyword">
 				</div>
 			</div>
 			<div class="text">
@@ -441,10 +432,56 @@
 		</div>
 	</div>
 </section>
+<section id="" class="keywords for-mobile">
+	<div class="container">
+		<div class="section-title">Keyword</div>
+			<div class="picture">
+				<img src="img/img-keyword.png"  alt="img-keyword">
+			</div>
+			<div class="h3 font-light">
+				A local plumber registered on our website will repair the water supply, eliminate the blockage of the sewer or the leak of the bath, repair the clogged drain or even perform urgent repairs 24/7. At a convenient time on our website you will always find a qualified specialist who can be called for plumber repair of any complexity.
+			</div>
+		<div class="h3 font-light">
+			Need plumbing repairs? A pipe burst in the house or a blockage in the bathroom? And how often do you have to deal with situations where you just need an urgent call around the clock plumbing? Until some time it was simply impossible to call a professional plumber urgently. Had to rely on the integrity of the first available specialist or company. 
+		</div>
+		<div>   
+			<img src="img/img-keyword2.png"  alt="img-keyword">
+		</div>
+		<div class="h3 font-light">
+			To order the installation of plumbing or see urgent plumbers near you do not have to look for specialists all over the Internet. It is enough to open our website. To find the best price and specialist you just need to use easily customizable filters. 
+			Professional plumbing repair at low prices in Seattle 
+		</div>		
+		<div class="h3 font-light">
+			Now it is possible, because you can compare prices of different specialists and choose the best option not to the detriment of the quality of the plumbing. 
+		</div>
+		<div class="h3 font-light">
+			On our website you can find the best prices for plumbing services in Seattle. 
+		</div>
+		<div class="h3 font-light">
+			Types of plumbing
+		</div>
+		<div class="h3 font-light">
+			If you need to choose a quality specialist and solve the necessary problems, on our website are plumbers that can solve such problems as: 
+		</div>
+		<div class="h3 font-light">
+			pipe burst<br>
+			drain leak<br>
+			bathtub drain<br>
+			clogged drain<br>
+			24 hour plumber / emergency plumber<br>
+			replacement of pipes<br>
+			installation of heating radiators<br>
+			boiler connection
+		</div>
+		<div class="h3 font-light">
+			If you are looking for an experienced and professional artist, no need to contact repair shops or unqualified sites. Better find a performer with us. The simplicity of the resource allows you to quickly get complete information about each specialist. Due to the fact that we specialize only in plumbing services and have a narrow specialization - we accommodate only professionals. You will be satisfied with the quality of their work.
+		</div>
+	</div>
+</section>
 <section class="banner-bottom banner-bottom-head">
 	<div class="text-center text-white">
-		<div class="H1 font-bold">Masters Join US</div>
-		<div class="h1 font-medium">Join the more than 570 masters which<br> find customers and fulfill orders with</div>
+		<div class="H1 font-bold">Masters Join Us</div>
+		<div class="h1 font-medium">Join the more than 570 masters which find customers and fulfill orders with</div>
 		<div><a href="" class="btn bg-violet h1 font-bold">Learn more</a></div>
 	</div>
 </section>
@@ -452,22 +489,22 @@
 	<div class="container">
 		<div class="flex">
 			<div>
-				<div class="flex">
+				<div class="flex footer-menu">
 					<div class="f-menu">
-						<div class="h2 font-bold">Massage</div>
-						<div class="h2 font-light">Massage</div>
-						<div class="h2 font-light">Massage</div>
+						<div class="h2 font-bold"><a href="">Massage</a></div>
+						<div class="h2 font-light"><a href="">Reviews</a></div>
+						<div class="h2 font-light"><a href="">Price</a></div>
 					</div>
 					<div class="f-menu">
-						<div class="h2 font-bold">Massage</div>
-						<div class="h2 font-light">Massage</div>
-						<div class="h2 font-light">Massage</div>
+						<div class="h2 font-bold"><a href="">Help</a></div>
+						<div class="h2 font-light"><a href="">How it works</a></div>
+						<div class="h2 font-light"><a href="">About us</a></div>
 					</div>
 				</div>
-				<div><a href="" class="h2 font-light">Privacy Policy<span class="cookies">Cookies and Interest-Based Ads</span></a>
+				<div class="width-for-menu"><a href="" class="h2 font-light">Privacy Policy<span class="cookies">Cookies and Interest-Based Ads</span></a>
 				</div>
-				<div class="line"></div>
-				<div class="copyright h4 font-medium">Copyright © 2018, INP Media Group, All rights reserved.</div>
+				<div class="line width-for-menu"></div>
+				<div class="copyright h4 font-medium width-for-menu">Copyright © 2018, INP Media Group, All rights reserved.</div>
 			</div>
 			<div class="payments">
 				<span class="f-logo H1 font-bold">LOGO</span>
@@ -481,7 +518,7 @@
 					<img src="img/master.png" alt="visa">
 				</span>
 			</div>
-			<div>
+			<div class="order">
 				<div class="h2 font-medium">For masters</div>
 				<div><a href="" class="btn bg-violet h2 font-medium">Get more orders</a></div>
 				<div class="h2 font-medium text-white">For masters</div>
@@ -490,5 +527,6 @@
 		</div>
 	</div>
 </footer>
+<script src="js/select.js"></script>
 </body>
 </html>

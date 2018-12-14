@@ -1,0 +1,67 @@
+@font-face {
+font-family: 'Roboto';
+src: url('../fonts/SFUIText-Bold.eot');
+src: url('../fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFUIText-Bold.woff') format('woff'),
+url('../fonts/Roboto-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body{
+	font-family: 'Roboto';
+}
+.bg-grey{
+	background: #f4f6fa;
+}
+.bg-green{
+	background: #35a947;
+}
+.bg-orange{
+	background: #ff5722;
+}
+.text-green{
+  color: rgb(53, 169, 71);
+}
+.text-orange{
+	color: rgb(255, 87, 34);
+}
+header{
+	background: #262a42;
+}
+header .col-md-4{
+	
+}
+table{
+	font-size: 14px;
+	color: rgb(38, 42, 66);
+}
+table thead{
+	background: #292e46;
+	color: #fff;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.title-table{
+	font-size: 20px;
+}
+
+._2018_12_01_18:44:41_ {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(38, 42, 66);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: scale(1.02, 1);
+  -webkit-transform: scale(1.02, 1);
+  -ms-transform: scale(1.02, 1);
+  position: absolute;
+  left: 335.253px;
+  top: 982.266px;
+  width: 116.253px;
+  height: 9.968px;
+  z-index: 156;
+}
+
