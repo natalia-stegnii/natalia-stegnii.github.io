@@ -52,8 +52,8 @@
 			<div class="col-md-4">
 				<div class="text-center right">
 					<div class="top flex">
-						<div class="btn form-control bg-transparent border-white text-white">Рус</div>
-						<div class="btn form-control bg-transparent border-white text-white opacity">Eng</div>
+						<div class="btn form-control bg-transparent border-white text-white language">Рус</div>
+						<div class="btn form-control bg-transparent border-white text-white opacity language">Eng</div>
 						<div class="btn form-control bg-green text-white">Выход</div>
 					</div>
 					<div class="bottom btn form-control bg-orange text-uppercase text-white btn-large bold"><img src="img/balance-white.png" alt="balance">Продать все</div>
@@ -62,7 +62,42 @@
 		</div>
 	</div>
 </header>
-
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div>
+					<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container">
+					  <div id="tradingview_3206b"></div>
+					  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">График AAPL</span></a> предоставлен TradingView</div>
+					  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+					  <script type="text/javascript">
+					  new TradingView.widget(
+					  {
+					  "width": 980,
+					  "height": 610,
+					  "symbol": "NASDAQ:AAPL",
+					  "interval": "D",
+					  "timezone": "Etc/UTC",
+					  "theme": "Light",
+					  "style": "1",
+					  "locale": "ru",
+					  "toolbar_bg": "#f1f3f6",
+					  "enable_publishing": false,
+					  "allow_symbol_change": true,
+					  "container_id": "tradingview_3206b"
+					}
+					  );
+					  </script>
+					</div>
+					<!-- TradingView Widget END -->
+				</div>
+			</div>
+			<div class="col-md-6"></div>
+		</div>
+	</div>
+</section>
 <section>
 	<div class="container">
 		<div class="row">
@@ -218,25 +253,49 @@
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>2018-12-01 18:44:41</th>
 				        <th>АЕВТС</th>
-				        <th class="bg-grey">takeprofit</th>
+				        <th>takeprofit</th>
 				        <th>обрабатывается</th>
-				        <th class="bg-grey">45%</th>
+				        <th>45%</th>
 				        <th>4</th>
-				        <th class="text-green bg-grey">1.050600</th>
+				        <th class="text-green">1.050600</th>
 				      </tr>
 				      <tr>
-				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>2018-12-01 18:44:41</th>
 				        <th>АЕВТС</th>
-				        <th class="bg-grey">takeprofit</th>
+				        <th>takeprofit</th>
 				        <th>обрабатывается</th>
-				        <th class="bg-grey">45%</th>
+				        <th>45%</th>
 				        <th>4</th>
-				        <th class="text-green bg-grey">1.050600</th>
+				        <th class="text-green">1.050600</th>
 				      </tr>
 				    </tbody>
 				  </table></div>
+				  	<div class="click-table" style="display: none;">
+					  <div class="click-edit">
+					  	<div class="bg-grey text-orange">Отмена</div>
+					  	<div class="bg-white">Редактирование</div>
+					  </div>
+					  <div class="edit bg-grey text-center" style="">
+					  	<div class="edit-title">Редактирование: Take Profit</div>
+					  	<form>
+				      	<div class="form-inline">
+						  <div class="form-group">
+						    <label>Цена:</label>
+						    <input class="form-control border-grey" placeholder="1">
+						  </div>
+						  <div class="form-group">
+						    <label>Кол-во:</label>
+						    <input class="form-control border-grey" placeholder="45">
+						  </div>
+						 </div>
+						  <div class="form-group">
+						  	<button type="submit" class="btn bg-green form-control text-white bold text-uppercase">изменить ордер</button>
+						  </div>
+						</form>
+					  </div>
+					</div>
 			</div>
 			<div class="col-md-6">
 				<div class="title">История ордеров</div>
@@ -252,18 +311,18 @@
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>2018-12-01 18:44:41</th>
 				        <th>АЕВТС</th>
-				        <th class="bg-grey">takeprofit</th>
+				        <th>takeprofit</th>
 				        <th></th>
-				        <th class="text-green bg-grey">исполнен</th>
+				        <th class="text-green">исполнен</th>
 				      </tr>
 				      <tr>
-				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>2018-12-01 18:44:41</th>
 				        <th>АЕВТС</th>
-				        <th class="bg-grey">takeprofit</th>
+				        <th>takeprofit</th>
 				        <th></th>
-				        <th class="text-green bg-grey">исполнен</th>
+				        <th class="text-green">исполнен</th>
 				      </tr>
 				    </tbody>
 				  </table></div>

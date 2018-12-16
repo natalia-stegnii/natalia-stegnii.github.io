@@ -1,8 +1,9 @@
 @font-face {
 font-family: 'Roboto';
-src: url('../fonts/SFUIText-Bold.eot');
-src: url('../fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
-url('../fonts/SFUIText-Bold.woff') format('woff'),
+src: url('../fonts/Roboto-Regular.eot');
+src: url('../fonts/Roboto-Regular.otf'),
+url('../fonts/Roboto-Regular.woff') format('woff'),
+url('../fonts/Roboto-Regular.svg') format('woff'),
 url('../fonts/Roboto-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
@@ -29,6 +30,9 @@ body{
 .bg-transparent{
   background: transparent;
 }
+.bg-white{
+  background: #fff;
+}
 .border-white{
   border: 1px solid #fff !important;
 }
@@ -52,27 +56,23 @@ body{
 }
 header{
 	background: #262a42;
+  padding: 15px 0;
 }
 header .top{
   background-image: linear-gradient(to right, #2c3048 , #1e2238);
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .top.flex div{
-  margin: 0 5px;
+  margin: 0 2px;
 }
 header .bottom{
-  margin: 20px 20px;
+  margin: 25px 60px 34px;
 }
 header .col-md-4{
   padding: 0 7px;
 }
-table{
-	font-size: 14px;
-	color: rgb(38, 42, 66);
-}
-table thead{
-	background: #292e46;
-	color: #fff;
+.language{
+  width: 82px !important;
 }
 .title{
   font-size: 18px;
@@ -83,13 +83,14 @@ table thead{
 .title-table{
 	font-size: 20px;
 }
-header{
-  padding: 10px 0;
+header .left{
+  padding-top: 20px;
+  padding-bottom: 28px;
 }
 header .text-center{
   background: #2b2f48;
 }
-header .left, header .center{
+header .center{
   padding: 10px 50px;
 }
 .btn img{
@@ -160,16 +161,20 @@ header .form-group{
   text-align: center;
   box-shadow: 0 10px 10px -5px #dae0eb;
 }
-.tab-content .form-group{
+.tab-content .form-group, .edit .form-group{
   margin-bottom: 5px;
 }
-.tab-content .form-control{
+.tab-content .form-control, .edit .form-control{
   height: 45px;
 }
-.tab-content label{
+.tab-content label, .edit label{
   font-size: 16px;
   color: rgb(38, 42, 66);
   width: 80px;
+  font-weight: 100;
+}
+.edit label{
+  width: 60px;
 }
 .tab-content .btn{
   width: 50%;
@@ -199,10 +204,62 @@ header .form-group{
 table{
     box-shadow: 0 10px 10px -5px #dae0eb;
 }
+table thead{
+  background: #292e46;
+  color: #fff;
+}
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
   text-align: center;
   vertical-align: middle;
+  font-size: 13px;
+  padding: 8px 0;
 }
+.table > thead > tr > th{
+  padding: 14px 0;
+}
+.table > tbody > tr > th, .table > tfoot > tr > th,  .table > tbody > tr > td, .table > tfoot > tr > td{
+  font-weight: 100;
+  color: rgb(38, 42, 66);
+}
+.table > tbody > tr > th:nth-child(2n+3), .table > tbody > tr > th:first-child {
+  background: #f4f6fa;
+}
+.click-edit{
+  width: fit-content;
+  border: 1px solid #f4f6fa;
+  position: relative;
+  top: 230px;
+  left: 60px;
+}
+.click-edit div{
+  padding: 8px 12px;
+}
+.edit{
+  margin: 0 100px;
+  position: relative;
+  left: 100px;
+}
+.edit .btn{
+  margin: 20px auto;
+  padding: 8px 50px;
+}
+.edit-title{
+  font-size: 16px;
+  color: rgb(41, 46, 70);
+  font-weight: bold;
+  padding: 15px 0;
+}
+table{
+  position: relative;
+}
+.click-table{
+  position: absolute;
+  bottom: 0;
+
+}
+
+
+
 
 
 
