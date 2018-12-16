@@ -18,16 +18,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<div class="text-center">
+				<div class="text-center left">
 					<img src="img/balance-grey.png" >
-					<div>Баланс:<br><span class="text-green">25,489</div>
+					<div class="large balance">Баланс:<br><span class="text-green">25,489</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="text-center">
+				<div class="text-center center">
 					<form>
 						<div class="form-group">
-						  <select class="form-control" id="binance">
+						  <select class="form-control text-white" id="binance">
 						    <option>Binance</option>
 						    <option>Binance</option>
 						    <option>Binance</option>
@@ -35,7 +35,7 @@
 						  </select>
 						</div>
 						<div class="form-group">
-						  <select class="form-control" id="aebtc">
+						  <select class="form-control text-white" id="aebtc">
 						    <option>AEBTC</option>
 						    <option>AEBTC</option>
 						    <option>AEBTC</option>
@@ -43,19 +43,21 @@
 						  </select>
 						</div>
 						<div class="form-group">
-							<button class="btn bg-green text-uppercase">выбрать</button>
+							<button class="btn form-control bg-green text-uppercase text-white btn-large bold">выбрать</button>
 						</div>
-						<div>Баланс: <span class="text-green">25,489</div>
+						<div class="small balance">Баланс: <span class="text-green">25,489</div>
 					</form>
 				</div>
 			</div>
-			<div class="col-md-4 text-center">
-				<div class="top flex">
-					<div class="btn bg-transparent border-white">Рус</div>
-					<div class="btn bg-transparent opacity">Eng</div>
-					<div class="btn bg-green">Выход</div>
+			<div class="col-md-4">
+				<div class="text-center right">
+					<div class="top flex">
+						<div class="btn form-control bg-transparent border-white text-white">Рус</div>
+						<div class="btn form-control bg-transparent border-white text-white opacity">Eng</div>
+						<div class="btn form-control bg-green text-white">Выход</div>
+					</div>
+					<div class="bottom btn form-control bg-orange text-uppercase text-white btn-large bold"><img src="img/balance-white.png" alt="balance">Продать все</div>
 				</div>
-				<div class="btn bg-orange text-uppercase"><img src="img/balance-white.png" alt="balance">Продать все</div>
 			</div>
 		</div>
 	</div>
@@ -66,7 +68,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="title">Покупка</div>
-				<div>
+				<div class="bg-grey">
 					<ul class="nav nav-tabs">
 					    <li class="active"><a data-toggle="tab" href="#left">Отложенный ордер</a></li>
 					    <li><a data-toggle="tab" href="#right">Рыночный ордер</a></li>
@@ -86,7 +88,7 @@
 							  </div>
 							 </div>
 							  <div class="form-group">
-							  	<button type="submit" class="btn bg-green">КУПИТЬ</button>
+							  	<button type="submit" class="btn bg-green form-control text-white">КУПИТЬ</button>
 							  </div>
 							</form>
 					    </div>

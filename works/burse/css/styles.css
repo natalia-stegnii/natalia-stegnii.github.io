@@ -13,23 +13,54 @@ body{
 .bg-grey{
 	background: #f4f6fa;
 }
+.bg-bgrey{
+  background: #dae0eb;
+}
 .bg-green{
 	background: #35a947;
 }
 .bg-orange{
 	background: #ff5722;
 }
+.bg-transparent{
+  background: transparent;
+}
+.border-white{
+  border: 1px solid #fff !important;
+}
+.opacity{
+  opacity: 0.1;
+}
+.text-white{
+  color: #fff;
+}
 .text-green{
   color: rgb(53, 169, 71);
+}
+.bold{
+  font-weight: bold;
 }
 .text-orange{
 	color: rgb(255, 87, 34);
 }
+.btn:hover, .btn:focus, .btn.focus{
+  color: #fff;
+}
 header{
 	background: #262a42;
 }
+header .top{
+  background-image: linear-gradient(to right, #2c3048 , #1e2238);
+  padding: 15px 0;
+}
+.top.flex div{
+  margin: 0 5px;
+}
+header .bottom{
+  margin: 20px 20px;
+}
 header .col-md-4{
-	
+  padding: 0 7px;
 }
 table{
 	font-size: 14px;
@@ -47,21 +78,54 @@ table thead{
 .title-table{
 	font-size: 20px;
 }
-
-._2018_12_01_18:44:41_ {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(38, 42, 66);
-  line-height: 1.2;
-  text-align: left;
-  -moz-transform: scale(1.02, 1);
-  -webkit-transform: scale(1.02, 1);
-  -ms-transform: scale(1.02, 1);
-  position: absolute;
-  left: 335.253px;
-  top: 982.266px;
-  width: 116.253px;
-  height: 9.968px;
-  z-index: 156;
+header{
+  padding: 10px 0;
+}
+header .text-center{
+  background: #2b2f48;
+}
+header .left, header .center{
+  padding: 10px 50px;
+}
+.btn img{
+  padding-right: 10px;
+}
+.form-control{
+  border-radius: 20px;
+  border: 0;
+  width: auto;
+  height: 40px;
+  padding: 10px 20px;
+}
+header select.form-control{
+  background: #363c59;
+  width: -webkit-fill-available;
+}
+header .form-group{
+  margin-bottom: 5px;
+}
+.btn-large{
+  width: -webkit-fill-available;
+}
+.large.balance{
+  font-size: 16px;
+  color: rgb(197, 202, 228);
+  padding-top: 5px;
+}
+.large.balance span{
+  font-size: 28px;
+  font-weight: bold;
+}
+.small.balance{
+  font-size: 15px;
+  color: rgb(197, 202, 228);
+}
+.small.balance span{
+  font-size: 18px;
+  font-weight: bold;
 }
 
+/*tabs*/
+.nav-tabs > li{
+  background: #dae0eb;
+}
