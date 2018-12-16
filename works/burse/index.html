@@ -80,28 +80,116 @@
 					      	<div class="form-inline">
 							  <div class="form-group">
 							    <label>Цена:</label>
-							    <input class="form-control" placeholder="0.00">
+							    <input class="form-control border-grey" placeholder="0.00">
 							  </div>
 							  <div class="form-group">
-							    <label>Кол-во</label>
-							    <input class="form-control" placeholder="0.00">
+							    <label>Кол-во:</label>
+							    <input class="form-control border-grey" placeholder="0.00">
 							  </div>
 							 </div>
 							  <div class="form-group">
-							  	<button type="submit" class="btn bg-green form-control text-white">КУПИТЬ</button>
+							  	<button type="submit" class="btn bg-green form-control text-white bold">КУПИТЬ</button>
 							  </div>
 							</form>
 					    </div>
-					    <div id="right" class="tab-pane fade">
+					    <div id="right" class="tab-pane fade right">
 					      <form>
 					      	<div class="form-inline">
 							  <div class="form-group">
 							    <label>Кол-во</label>
-							    <input class="form-control" placeholder="0.00">
+							    <input class="form-control border-grey" placeholder="0.00">
 							  </div>
 							 </div>
 							  <div class="form-group">
-							  	<button type="submit" class="btn bg-green">КУПИТЬ</button>
+							  	<button type="submit" class="btn bg-green form-control text-white bold">КУПИТЬ</button>
+							  </div>
+							</form>
+					    </div>
+					  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="title">Продажа</div>
+				<div class="bg-grey">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#left2">Отложенный ордер</a></li>
+					    <li><a data-toggle="tab" href="#right2">Рыночный ордер</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+					    <div id="left2" class="tab-pane fade in active">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Цена:</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							  <div class="form-group">
+							    <label>Кол-во:</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-orange form-control text-white bold">КУПИТЬ</button>
+							  </div>
+							</form>
+					    </div>
+					    <div id="right2" class="tab-pane fade right">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Кол-во</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-orange form-control text-white bold">ПРОДАТЬ</button>
+							  </div>
+							</form>
+					    </div>
+					  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="title">Установка ордеров</div>
+				<div class="bg-grey">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#left3">Стоп лосс</a></li>
+					    <li><a data-toggle="tab" href="#right3">Тейк профит</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+					    <div id="left3" class="tab-pane fade in active">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Цена:</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							  <div class="form-group">
+							    <label>Объем в %</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-green form-control text-white bold">УСТАНОВИТЬ ОРДЕР</button>
+							  </div>
+							</form>
+					    </div>
+					    <div id="right3" class="tab-pane fade">
+					      <form>
+					      	<div class="form-inline">
+							  <div class="form-group">
+							    <label>Цена:</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							  <div class="form-group">
+							    <label>Объем в %</label>
+							    <input class="form-control border-grey" placeholder="0.00">
+							  </div>
+							 </div>
+							  <div class="form-group">
+							  	<button type="submit" class="btn bg-green form-control text-white bold">УСТАНОВИТЬ ОРДЕР</button>
 							  </div>
 							</form>
 					    </div>
@@ -116,7 +204,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="title">Открытые ордера</div>
-				<table class="table">
+				<div><table class="table">
 				    <thead>
 				      <tr>
 				        <th>Дата/время</th>
@@ -148,7 +236,37 @@
 				        <th class="text-green bg-grey">1.050600</th>
 				      </tr>
 				    </tbody>
-				  </table>
+				  </table></div>
+			</div>
+			<div class="col-md-6">
+				<div class="title">История ордеров</div>
+				<div><table class="table">
+				    <thead>
+				      <tr>
+				        <th>Дата/время</th>
+				        <th>Валюта</th>
+				        <th>Тип</th>
+				        <th>Сумма</th>
+				        <th>Статус</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>АЕВТС</th>
+				        <th class="bg-grey">takeprofit</th>
+				        <th></th>
+				        <th class="text-green bg-grey">исполнен</th>
+				      </tr>
+				      <tr>
+				        <th class="bg-grey">2018-12-01 18:44:41</th>
+				        <th>АЕВТС</th>
+				        <th class="bg-grey">takeprofit</th>
+				        <th></th>
+				        <th class="text-green bg-grey">исполнен</th>
+				      </tr>
+				    </tbody>
+				  </table></div>
 			</div>
 		</div>
 	</div>
