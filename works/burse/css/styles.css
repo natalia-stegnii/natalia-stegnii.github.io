@@ -118,7 +118,7 @@ header{
 }
 header .top{
   background-image: linear-gradient(to right, #2c3048 , #1e2238);
-  padding: 20px 0;
+  padding: 20px 60px;
 }
 .top.flex div{
   margin: 0 2px;
@@ -141,7 +141,7 @@ header .col-md-4{
 .title-table{
 	font-size: 20px;
 }
-header .left{
+header .h-left{
   padding-top: 20px;
   padding-bottom: 28px;
 }
@@ -218,6 +218,7 @@ header .form-group{
   padding: 25px 0 5px;
   text-align: center;
   box-shadow: 0 10px 10px -5px #dae0eb;
+  height: 220px;
 }
 .tab-content .form-group, .edit .form-group{
   margin-bottom: 5px;
@@ -238,7 +239,7 @@ header .form-group{
   width: 50%;
   margin: 20px auto;
 }
-.tab-content .right .btn{
+.tab-content .t-right .btn{
   margin-top: 70px;
 }
 .tab-content::-webkit-input-placeholder { /* Chrome/Opera/Safari */
