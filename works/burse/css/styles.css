@@ -11,6 +11,15 @@ font-style: normal;
 body{
 	font-family: 'Roboto';
 }
+.flex{
+  display: flex;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 .form-control:focus{
   box-shadow: none;
   border: 0;
@@ -43,7 +52,10 @@ body{
   color: #fff;
 }
 .text-green{
-  color: rgb(53, 169, 71);
+  color: rgb(53, 169, 71) !important;
+}
+.text-pink{
+  color: rgb(234, 0, 112);
 }
 .bold{
   font-weight: bold;
@@ -54,9 +66,55 @@ body{
 .btn:hover, .btn:focus, .btn.focus{
   color: #fff;
 }
+.padding{
+  padding: 5px;
+}
+.right.flex div{
+  margin: 5px;
+}
+.burse-table{
+  font-size: 10px;
+}
+.burse-table::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 16px;
+  color: rgb(38, 42, 66);
+}
+.burse-table::-moz-placeholder { /* Firefox 19+ */
+  font-size: 16px;
+  color: rgb(38, 42, 66);
+}
+.burse-table:-ms-input-placeholder { /* IE 10+ */
+  font-size: 16px;
+  color: rgb(38, 42, 66);
+}
+.burse-table:-moz-placeholder { /* Firefox 18- */
+  font-size: 16px;
+  color: rgb(38, 42, 66);
+}
+.input-group-addon{
+  padding: 0 10px;
+}
+.glyphicon-search{
+  font-size: 10px;
+}
+.star{
+  margin: 5px;
+}
+.burse-table .t-radio{
+  position: relative;
+  top: 3px;
+}
+.burse-table .table{
+  margin-bottom: 0;
+}
+.glyphicon-triangle-bottom{
+  font-size: 8px;
+  margin-left: 5px;
+}
 header{
 	background: #262a42;
   padding: 15px 0;
+  margin-bottom: 10px;
 }
 header .top{
   background-image: linear-gradient(to right, #2c3048 , #1e2238);
@@ -103,7 +161,7 @@ header .center{
   height: 40px;
   padding: 10px 20px;
 }
-header select.form-control{
+header input.form-control{
   background: #363c59;
   width: -webkit-fill-available;
 }
@@ -183,45 +241,45 @@ header .form-group{
 .tab-content .right .btn{
   margin-top: 70px;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.tab-content::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 16px;
   color: rgb(38, 42, 66);
 }
-::-moz-placeholder { /* Firefox 19+ */
+.tab-content::-moz-placeholder { /* Firefox 19+ */
   font-size: 16px;
   color: rgb(38, 42, 66);
 }
-:-ms-input-placeholder { /* IE 10+ */
+.tab-content:-ms-input-placeholder { /* IE 10+ */
   font-size: 16px;
   color: rgb(38, 42, 66);
 }
-:-moz-placeholder { /* Firefox 18- */
+.tab-content:-moz-placeholder { /* Firefox 18- */
   font-size: 16px;
   color: rgb(38, 42, 66);
 }
 
 /*table*/
-table{
+.table-bottom table{
     box-shadow: 0 10px 10px -5px #dae0eb;
 }
-table thead{
+.table-bottom table thead{
   background: #292e46;
   color: #fff;
 }
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+.table-bottom .table > thead > tr > th, .table-bottom .table > tbody > tr > th, .table-bottom .table > tfoot > tr > th, .table-bottom .table > thead > tr > td, .table-bottom .table > tbody > tr > td{
   text-align: center;
   vertical-align: middle;
   font-size: 13px;
   padding: 8px 0;
 }
-.table > thead > tr > th{
+.table-bottom .table > thead > tr > th{
   padding: 14px 0;
 }
-.table > tbody > tr > th, .table > tfoot > tr > th,  .table > tbody > tr > td, .table > tfoot > tr > td{
+.table-bottom .table > tbody > tr > th, .table > tfoot > tr > th,  .table > tbody > tr > td, .table > tfoot > tr > td{
   font-weight: 100;
   color: rgb(38, 42, 66);
 }
-.table > tbody > tr > th:nth-child(2n+3), .table > tbody > tr > th:first-child {
+.table > tbody > tr:hover{
   background: #f4f6fa;
 }
 .click-edit{
