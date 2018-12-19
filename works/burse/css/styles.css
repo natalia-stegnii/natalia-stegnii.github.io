@@ -11,6 +11,9 @@ font-style: normal;
 body{
 	font-family: 'Roboto';
 }
+a, a:hover{
+  color: inherit;
+}
 .flex{
   display: flex;
 }
@@ -68,9 +71,16 @@ body{
 }
 .padding{
   padding: 5px;
+  height: fit-content;
 }
 .right.flex div{
   margin: 5px;
+}
+.burse-table select{
+  border: 0;
+}
+.padding-secect{
+  padding: 4px;
 }
 .burse-table{
   font-size: 10px;
@@ -161,7 +171,7 @@ header .center{
   height: 40px;
   padding: 10px 20px;
 }
-header input.form-control{
+header input.form-control, header select.form-control{
   background: #363c59;
   width: -webkit-fill-available;
 }
