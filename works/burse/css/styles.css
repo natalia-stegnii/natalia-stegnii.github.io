@@ -208,7 +208,7 @@ header .form-group{
   border: 0;
   color: rgb(114, 127, 151);
   font-weight: bold;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }
 .nav-tabs{
@@ -225,10 +225,9 @@ header .form-group{
   font-weight: bold;
 }
 .tab-content{
-  padding: 25px 0 5px;
   text-align: center;
   box-shadow: 0 10px 10px -5px #dae0eb;
-  height: 220px;
+  padding-top: 8px;
 }
 .tab-content .form-group, .edit .form-group{
   margin-bottom: 5px;
@@ -247,7 +246,7 @@ header .form-group{
 }
 .tab-content .btn{
   width: 50%;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 .tab-content .t-right .btn{
   margin-top: 70px;
