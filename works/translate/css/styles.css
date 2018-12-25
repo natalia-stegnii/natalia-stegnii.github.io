@@ -113,6 +113,10 @@ h2{
 header{
 	border-bottom: 1px solid rgb(11, 103, 165);
 	padding-top: 20px;
+	position: fixed;
+    z-index: 1;
+    background: white;
+    width: -webkit-fill-available;
 }
 .lang i{
 	display: none;
@@ -201,6 +205,7 @@ footer{
 /*main*/
 .main{
 	position: relative;
+	top: 210px;
 }
 .main::after {
   content: "";
@@ -250,6 +255,9 @@ footer{
 	border-bottom: 1px solid rgba(11, 103, 165, 0.5);
 }
 /*service*/
+.services{
+	margin-top: 200px;
+}
 .services li, .article li{
 	width: 360px;
 	margin: 10px 0 15px;
@@ -557,7 +565,9 @@ footer .flex div{
 	.f-thirt,
 	.carousel-indicators,
 	.main img,
-	header .sosial, header .contact{
+	header .sosial,
+	 header .contact,
+	 .article-date{
 		display: none;
 	}
 	.map-contact{
@@ -583,6 +593,7 @@ footer .flex div{
 	}
 	.f-first{
 		margin-right: 15px;
+		width: auto;
 	}
 	.reviews{
 		padding-bottom: 100px;
@@ -620,6 +631,8 @@ footer .flex div{
 	}
 	.logo{
 		padding: 0;
+		position: relative;
+		top:20px;
 	}
 	.logo img{
 		width: 100px;
@@ -640,6 +653,7 @@ footer .flex div{
 	.mobile-menu{
 		display: flex;
 		margin-left: 41%;
+		margin-top: 25px;
 	}
 	.lang i{
 		display: inline;
@@ -682,11 +696,17 @@ footer .flex div{
 	    margin: 0 15px;
 	}
 	.mobile-contact ul{
-		margin-top: -35px;
+		margin-top: -10px;
     	margin-left: 36%;
     	margin-bottom: 20px;
 	}
 	.mobile-contact .nav-tabs>li>a {
     	color: rgb(11, 103, 165);
+    }
+    .mobile-contact .tab-content .font-light{
+    	margin-bottom: 0;
+    }
+    .main{
+    	top:160px;
     }
 }
