@@ -482,7 +482,6 @@ footer .flex div{
 	position: fixed;
 	z-index: 100;
 	bottom: 0;
-	right: 10%;
     width: fit-content;
 }
 .btn-request .fa{
