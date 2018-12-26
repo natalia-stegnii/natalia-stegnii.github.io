@@ -104,6 +104,9 @@ ul{
 .border-bottom:hover{
 	text-decoration: none;
 }
+.for-mobile{
+	display: none;
+}
 h2{
 	margin: 75px 0 55px;
 }
@@ -114,7 +117,7 @@ header{
 	border-bottom: 1px solid rgb(11, 103, 165);
 	padding-top: 20px;
 	position: fixed;
-    z-index: 1;
+    z-index: 1000;
     background: white;
     width: -webkit-fill-available;
 }
@@ -167,6 +170,12 @@ header .fa-media:hover{
 }
 .dropdown-menu>li>a{
 	color: rgb(11, 103, 165);
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.navbar-nav>li>.dropdown-menu{
+	top:62px;
 }
 .dropdown-menu{
 	border: 0;
@@ -258,18 +267,14 @@ footer{
 .services{
 	margin-top: 200px;
 }
-.services li, .article li{
-	width: 360px;
-	margin: 10px 0 15px;
-	margin-right: 25px;
-}
-.services li:nth-child(3n), .article li:nth-child(3n){
-	margin-right: 0px;
+.services .item{
+	height: 380px;
+
 }
 .services .text-blue{
 	margin: 10px 0 15px;
 }
-.services li:hover .text-blue, .article li:hover .text-blue{
+.services .item:hover .text-blue, .article .item:hover .text-blue{
 	color: rgb(56, 127, 62);
 }
 /*reviews*/
@@ -313,7 +318,7 @@ footer{
 	z-index: 1;
 	margin-left: 15px;
 }
-.article li:hover .article-date{
+.article .item:hover .article-date{
 	background: #387f3e;
 }
 .article-date .border-bottom{
@@ -322,6 +327,12 @@ footer{
 }
 .article .font-medium{
 	margin: 10px 0 17px;
+}
+.article .item{
+	margin-bottom: 45px;
+}
+.article .text-center a:hover{
+	color: rgb(56, 127, 62);
 }
 /*reqest*/
 .request{
@@ -470,7 +481,7 @@ footer .flex div{
 	padding: 7px 7px 7px 20px;
 	position: fixed;
 	bottom: 0;
-	right: 10%;
+    width: fit-content;
 }
 .btn-request .fa{
 	margin: 0 7px;
@@ -486,7 +497,7 @@ footer .flex div{
 	line-height: 1 !important;
 	border-bottom: 1px solid #fff;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
 	.logo{
 		margin-right: 0;
 	}
@@ -541,10 +552,7 @@ footer .flex div{
 		margin-top: 0 !important;
 	}
 	.sosial{
-		display: flex;
-	    position: absolute;
-	    margin-top: -50px;
-	    margin-left: -110px;
+		display: none;
 	}
 	.contact.u{
 		width: 26% !important;
@@ -566,8 +574,7 @@ footer .flex div{
 	.carousel-indicators,
 	.main img,
 	header .sosial,
-	 header .contact,
-	 .article-date{
+	 header .contact{
 		display: none;
 	}
 	.map-contact{
@@ -588,11 +595,8 @@ footer .flex div{
 	.request{
 		background-size: cover;
 	}
-	.btn-request a{
-		right: auto;
-	}
 	.f-first{
-		margin-right: 15px;
+		float: left;
 		width: auto;
 	}
 	.reviews{
@@ -614,9 +618,6 @@ footer .flex div{
 		text-align: center;
 		display: block;
 	}
-	.services .container, .article .container{
-		padding: 0;
-	}
 	.main .item {
 	    margin: 65px 30px;
 	}
@@ -633,6 +634,7 @@ footer .flex div{
 		padding: 0;
 		position: relative;
 		top:20px;
+		float: left;
 	}
 	.logo img{
 		width: 100px;
@@ -642,7 +644,7 @@ footer .flex div{
 	}
 	.menu-block{
 	    position: absolute;
-	    top: 100px;
+	    top: 60px;
 	    width: 70%;
 	    right: 0;
 	    float: right;
@@ -652,8 +654,8 @@ footer .flex div{
 	}
 	.mobile-menu{
 		display: flex;
-		margin-left: 41%;
 		margin-top: 25px;
+		float: right;
 	}
 	.lang i{
 		display: inline;
@@ -675,6 +677,7 @@ footer .flex div{
 	header{
 		border: 0;
 		margin-bottom: -35px;
+		padding: 0;
 	}
 	.mobile-contact{
 		display: block;
@@ -686,7 +689,7 @@ footer .flex div{
 		padding: 0;
 		text-align: center;
 	}
-	.mobile-contact .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	.mobile-contact .nav-tabs>li.active>a, .mobile-contact .nav-tabs>li.active>a:focus, .mobile-contact .nav-tabs>li.active>a:hover{
 		color: rgb(56, 127, 62);
 		border-bottom: 1px solid rgb(56, 127, 62);
 		background: transparent;
@@ -697,8 +700,8 @@ footer .flex div{
 	}
 	.mobile-contact ul{
 		margin-top: -10px;
-    	margin-left: 36%;
     	margin-bottom: 20px;
+    	float: right;
 	}
 	.mobile-contact .nav-tabs>li>a {
     	color: rgb(11, 103, 165);
@@ -709,4 +712,22 @@ footer .flex div{
     .main{
     	top:160px;
     }
+    .img-responsive{
+    	margin: auto;
+    }
+    header .flex.text-black, footer .flex{
+    	display: block;
+    }
+    .btn-request a{
+		left: 0;
+	    right: 0;
+	    margin: auto;
+	    width: fit-content;
+	}
+	.without{
+		margin: 0;
+	}
+	.for-mobile{
+		display: block;
+	}
 }

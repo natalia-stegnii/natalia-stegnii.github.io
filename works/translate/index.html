@@ -35,13 +35,13 @@
 	 		</div>
 	 		<div class="mobile-menu">
 	 			<div class="lang">
-		 			<div class="inline" onclick="changeLang()"><img src="images/uk.png" alt="uk"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+		 			<div class="inline" onclick="changeLang()"><a href=""><img src="images/uk.png" alt="uk"><i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
 		 			<div id="ShowLang" class="inline">
-			 			<div class="inline"><img src="images/ru.png" alt="ru"></div>
-			 			<div class="inline"><img src="images/en.png" alt="en"></div>
-			 			<div class="inline"><img src="images/hu.png" alt="hu"></div>
-			 			<div class="inline"><img src="images/sk.png" alt="sk"></div>
-			 			<div class="inline"><img src="images/de.png" alt="de"></div>
+			 			<a href=""><div class="inline"><img src="images/ru.png" alt="ru"></div></a>
+			 			<a href=""><div class="inline"><img src="images/en.png" alt="en"></div></a>
+			 			<a href=""><div class="inline"><img src="images/hu.png" alt="hu"></div></a>
+			 			<a href=""><div class="inline"><img src="images/sk.png" alt="sk"></div></a>
+			 			<a href=""><div class="inline"><img src="images/de.png" alt="de"></div></a>
 			 		</div>
 	 			</div>
 	 			<div class="navbar-header">
@@ -64,7 +64,7 @@
 			  <li class="active"><a data-toggle="tab" href="#uzhgorod-header">Ужгород</a></li>
 			  <li><a data-toggle="tab" href="#mukazevo-header">Мукачево</a></li>
 			</ul>
-
+			<div class="clearfix"></div>
 			<div class="tab-content f-18 bg-blue text-white">
 			  <div id="uzhgorod-header" class="tab-pane fade in active">
 				<div class="font-light">вул. Швабська, 67А, тел: (050)664-86-65</div>
@@ -128,19 +128,19 @@
 		      </div>
 		    </div>
 
-		  <!--   <div class="item">
+		    <div class="item">
 		      <div class="flex">
 		      	<div class="text">
 		      		<div class="text-blue font-bold f-36">Довідка про відсутність судимості</div>
 		      		<div class="font-bold f-18 tex-black">Без вашої присутності. Терміново. Додатково робимо апостиль і переклад довідки на іноземну мову.</div>
 		      		<div class="font-regular f-14">Якщо Вам потрібно надати довідку швидше, ми допоможемо Вам оформити і отримати довідку в найкоротші терміни зручним для Вас способом. Крім витребування (отримання) довідки про несудимість, ми одночасно можемо проставити штампу «Апостиль» одночасно з перекладом на іншу мову і нотаріальним засвідченням.</div>
-		      		<a class="btn bg-green text-white font-light f-18">Дізнатися більше</a>
+		      		<a class="btn btn-oval bg-green text-white font-light f-18">Дізнатися більше</a>
 		      	</div>
 		      	<div>
 		      		<img src="images/main-photo.png" alt="main-photo">
 		      	</div>
 		      </div>
-		    </div> -->
+		    </div>
 		  </div>
 
 		  <!-- Left and right controls -->
@@ -158,75 +158,82 @@
 <section class="services">
 	<div class="container">
 		<h2 class="text-green f-30 font-bold text-center">Наші послуги</h2>
-		<ul class="item">
-			<li>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="item">
 				<a href="">
-					<img src="images/dovidka.png" alt="dovidka">
+					<img src="images/dovidka.png" alt="dovidka" class="img-responsive">
 					<div class="text-center text-blue f-24 font-bold">Довідка про відсутність судимості</div>
 					<div class="font-light f-18">Без присутності. Можливий переклад і апостиль.</div>
 				</a>
-			</li>
-			<li>
+				</div>
+				<div  class="item">
+					<a href="">
+						<img src="images/diploma.png" alt="diploma" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Нострифікація</div>
+						<div class="font-light f-18">Визнання українських дипломів за кордоном (Австрія, Чехія, Словаччина) та закордонних в Україні</div>
+					</a>
+				</div>
+				<div  class="item">
+					<a href="">
+						<img src="images/university.png" alt="university" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Допомога влаштування на
+	навчання в європейські вузи</div>
+						<div class="font-light f-18">Австрія, Німеччина, Чехія, Словаччина, Італія</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div  class="item">
+					<a href="">
+						<img src="images/apostil.png" alt="apostil" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Апостиль документів</div>
+						<div class="font-light f-18">Завірення. Легалізація.</div>
+					</a>
+				</div>
+				<div  class="item">
+					<a href="">
+						<img src="images/wedding.png" alt="wedding" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Віза нареченої</div>
+						<div class="font-light f-18">Підготовка пакетів документів для укладання шлюбу за кордоном</div>
+					</a>
+				</div>
+				<div  class="item">
 				<a href="">
-					<img src="images/apostil.png" alt="apostil">
-					<div class="text-center text-blue f-24 font-bold">Апостиль документів</div>
-					<div class="font-light f-18">Завірення. Легалізація.</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/translate.png" alt="translate">
-					<div class="text-center text-blue f-24 font-bold">Переклади</div>
-					<div class="font-light f-18">Переклад рідкісних мов (литовська, латвійська, арабська)</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/diploma.png" alt="diploma">
-					<div class="text-center text-blue f-24 font-bold">Нострифікація</div>
-					<div class="font-light f-18">Визнання українських дипломів за кордоном (Австрія, Чехія, Словаччина) та закордонних в Україні</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/wedding.png" alt="wedding">
-					<div class="text-center text-blue f-24 font-bold">Віза нареченої</div>
-					<div class="font-light f-18">Підготовка пакетів документів для укладання шлюбу за кордоном</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/legal.png" alt="legal">
-					<div class="text-center text-blue f-24 font-bold">Легалізація українських документів для Італії</div>
-					<div class="font-light f-18"></div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/university.png" alt="university">
-					<div class="text-center text-blue f-24 font-bold">Допомога влаштування на
-навчання в європейські вузи</div>
-					<div class="font-light f-18">Австрія, Німеччина, Чехія, Словаччина, Італія</div>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/family.png" alt="family">
+					<img src="images/family.png" alt="family" class="img-responsive">
 					<div class="text-center text-blue f-24 font-bold">Об’єднання родини</div>
 					<div class="font-light f-18"></div>
 				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/italy.png" alt="italy">
-					<div class="text-center text-blue f-24 font-bold">Допомога в оформленні
-пенсії в Італії</div>
-					<div class="font-light f-18">Без присутності. Можливий переклад і апостиль.</div>
-				</a>
-			</li>
-		</ul>
+			</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div  class="item">
+					<a href="">
+						<img src="images/translate.png" alt="translate" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Переклади</div>
+						<div class="font-light f-18">Переклад рідкісних мов (литовська, латвійська, арабська)</div>
+					</a>
+				</div>
+				<div  class="item">
+					<a href="">
+						<img src="images/legal.png" alt="legal" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Легалізація українських документів для Італії</div>
+						<div class="font-light f-18"></div>
+					</a>
+				</div>
+				<div  class="item">
+					<a href="">
+						<img src="images/italy.png" alt="italy" class="img-responsive">
+						<div class="text-center text-blue f-24 font-bold">Допомога в оформленні
+	пенсії в Італії</div>
+						<div class="font-light f-18">Без присутності. Можливий переклад і апостиль.</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
+<div class="clearfix"></div>
 <section class="reviews">
 	<div class="container">
 		<h2 class="text-green f-30 font-bold text-center">Відгуки клієнтів</h2>
@@ -245,9 +252,10 @@
 		      <div class="font-light f-18">Рекомендую всё. Необыкновенно высокий профессионализм и аккуратнейшая работа. Также полная ответственность за документы. Изумительное качество. Индивидуальный подход к каждому клиенту не на словах, а на деле!!! Прекрасный стиль работы! Благодарю бесконечно!!!!</div>
 		    </div>
 
-		    <!-- <div class="item">
-
-		    </div> -->
+		    <div class="item">
+		      <div class="font-bold f-20 text-blue">Catherine Volkova</div>
+		      <div class="font-light f-18">Рекомендую всё. Необыкновенно высокий профессионализм и аккуратнейшая работа. Также полная ответственность за документы. Изумительное качество. Индивидуальный подход к каждому клиенту не на словах, а на деле!!! Прекрасный стиль работы! Благодарю бесконечно!!!!</div>
+		    </div>
 		  </div>
 
 		  <!-- Left and right controls -->
@@ -265,38 +273,43 @@
 <section class="article">
 	<div class="container">
 		<h2 class="text-green f-30 font-bold text-center">Останні статті</h2>
-		<ul class="item">
-			<li>
-				<div class="article-date bg-blue font-light f-14 text-white text-center">
-					<div class="border-bottom">7.06</div>
-					<div>2018</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div  class="item">
+					<div class="article-date bg-blue font-light f-14 text-white text-center">
+						<div class="border-bottom">7.06</div>
+						<div>2018</div>
+					</div>
+					<a href="">
+						<img src="images/article.png" alt="article">
+						<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
+					</a>
 				</div>
-				<a href="">
-					<img src="images/article.png" alt="article">
-					<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
-				</a>
-			</li>
-			<li>
-				<div class="article-date bg-blue font-light f-14 text-white text-center">
-					<div class="border-bottom">7.06</div>
-					<div>2018</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div  class="item">
+					<div class="article-date bg-blue font-light f-14 text-white text-center">
+						<div class="border-bottom">7.06</div>
+						<div>2018</div>
+					</div>
+					<a href="">
+						<img src="images/article.png" alt="article">
+						<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
+					</a>
 				</div>
-				<a href="">
-					<img src="images/article.png" alt="article">
-					<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
-				</a>
-			</li>
-			<li>
-				<div class="article-date bg-blue font-light f-14 text-white text-center">
-					<div class="border-bottom">7.06</div>
-					<div>2018</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div  class="item">
+					<div class="article-date bg-blue font-light f-14 text-white text-center">
+						<div class="border-bottom">7.06</div>
+						<div>2018</div>
+					</div>
+					<a href="">
+						<img src="images/article.png" alt="article">
+						<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
+					</a>
 				</div>
-				<a href="">
-					<img src="images/article.png" alt="article">
-					<div class="text-center text-blue f-20 font-medium">Показники якості усного перекладу</div>
-				</a>
-			</li>
-		</ul>
+			</div>
 		<div class="text-center"><a href="" class="font-light f-20 text-green border-bottom">Всі статті блога</a></div>
 	</div>
 </section>
@@ -395,6 +408,7 @@
 				Copyright © 2018<br>
 				Студія перекладів «Мадагаскар»<br>
 				All rights reserved.
+				<div class="for-mobile without"><a href="">Політика конфіденційності</a></div>
 			</div>
 			<div class="f-second">
 				<ul>
@@ -415,6 +429,7 @@
 		</div>
 	</div>
 </footer>
+<div class="clearfix"></div>
 <div class="container">
 	<div class="btn-request font-light f-18 text-white"><a href="" class="bg-green">Надіслати запит<i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></div>
 </div>
