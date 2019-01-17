@@ -89,7 +89,7 @@ p{
 .picture{
 	margin-bottom: 50px;
 }
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 768px) {
 	.paginat span {
     margin: 5px;
 	}
