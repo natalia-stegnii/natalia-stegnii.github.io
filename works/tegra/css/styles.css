@@ -91,4 +91,7 @@ p{
 	.text-center p{
 		width: auto;
 	}
+	.mb-mobile{
+		margin-bottom: 20px;
+	}
 }
