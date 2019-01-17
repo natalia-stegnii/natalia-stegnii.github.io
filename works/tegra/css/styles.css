@@ -28,39 +28,47 @@ p{
 	border: 1px solid #000;
 	border-radius: 5px;
 }
-.wait-img{
-	margin-top: 50px;
-	margin-right: 10px;
+.carousel-indicators-numbers li {
+  text-indent: 0;
+  margin: 0 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 1.9;
+  font-size: 18px;
+  border: none;
 }
-.paginat{
-	margin: 40px 0;
-	font-size: 18px;
+.carousel-indicators-numbers li.active{
+    width: 36px;
+    height: 35px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 5px;       
 }
-.paginat span{
-	margin: 15px;
+.bg-grey .carousel{
+	margin: 45px 0 110px;
 }
-.paginat a{
-	padding: 8px;
+.bg-grey .carousel-indicators{
+	bottom: -75px;
+	width: auto;
+    left: 40%
 }
-.paginat .active{
-	padding: 8px 0;
-}
-.carousel{
+.bg-black .carousel{
 	margin: 85px 0 110px;
 }
-.carousel-indicators{
+.bg-black .carousel-indicators{
 	bottom: -60px;
 }
-.carousel-indicators li{
+.bg-black .carousel-indicators li{
 	background-color: #666666;
 	border-color: #666666;
 	margin: 12px;
 }
-.carousel-indicators .active {
+.bg-black .carousel-indicators .active {
     width: 10px;
     height: 10px;
     margin: 12px;
     border-color: #fff;
+    background: #fff;
 }
 .text-center p{
 	width: 45%;
