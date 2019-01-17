@@ -171,8 +171,10 @@ header .fa-media:hover{
 .dropdown-menu>li>a{
 	color: rgb(11, 103, 165);
 }
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
+@media (min-width: 950px){
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+	    display: block;    
+	}
 }
 .navbar-nav>li>.dropdown-menu{
 	top:62px;
@@ -429,7 +431,6 @@ textarea{
 	z-index: 1;
 	background: #fff;
 	margin-top: -530px;
-    margin-left: 400px;
 }
 .nav-tabs{
 	border: 0;
