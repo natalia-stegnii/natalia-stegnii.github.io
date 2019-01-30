@@ -1,0 +1,103 @@
+; $Id: jflex.info,v 4.0 2018/04/15 00:00:00 goba Exp $
+name = jFlex
+description = jFlex + Library v 4.0
+version = Version 4.0
+core = 7.x
+engine = phptemplate
+
+
+; -- General regions
+regions[pagetitleslogan]      = Page title slogan
+regions[language]       = Language
+regions[search]         = Search
+regions[fullpage_top]   = Page Top
+regions[content_top]    = Content Top
+regions[leftside]       = Left side
+regions[filters]        = Left side Filters
+regions[innode_leftside]  = Node left side
+regions[rightside]       = Right side
+regions[innode_rightside]  = Node right side
+regions[content]        = Content
+regions[content_bottom] = Content Bottom
+regions[flex_theme]     = Flex Theme
+
+; -- Other regions
+regions[tel]            = Telephone
+regions[tel_first]      = Telephone (first)
+regions[openhours]      = Open Hours
+regions[cityselect]     = City Select
+regions[cart]           = Cart
+regions[coupon]         = Coupon discount
+regions[infoblocks]     = Info blocks
+regions[email_first]    = Email (first)
+regions[product_social] = Social links (product)
+regions[product_promo]  = Promo Info (product)
+
+; -- Menu regions
+regions[menu_corp]      = Corporate section menu
+regions[menu_user]      = User menu
+regions[menu_catalogshop] = Catalog shop menu
+regions[menu_visitors]  = Menu Visitors
+regions[menu_adminflex] = Admin menu Flex operations
+regions[menu_adminflex_add] = Admin menu Flex additionals
+regions[menu_main]      = Main menu
+
+; -- Bottom regions
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
+regions[capture]        = Capture
+regions[subscribe]      = Subscribe
+regions[hidden]         = Hidden
+regions[counters]       = Counters
+regions[livechat]       = Live chat
+
+; -- CRM styles
+scripts[] = crm/jcrm.js
+stylesheets[all][] = crm/jcrm.css
+
+; -- Adding general fonts for template
+stylesheets[all][] = library/css/normalize.css
+stylesheets[all][] = library/fonts/icons/icons.css
+stylesheets[all][] = library/fonts/gothampro/gothampro.css
+stylesheets[all][] = library/css/ckeditor.css
+stylesheets[all][] = library/css/modules.css
+stylesheets[all][] = library/css/jflex.css
+stylesheets[all][] = library/css/themes/readyshop/css/readyshop.css
+stylesheets[all][] = library/css/mobile.css
+stylesheets[all][] = library/css/adaptive.css
+stylesheets[all][] = library/css/themes/readyshop/css/readyshop-adaptive.css
+
+scripts[] = library/js/jquery.swipe.js
+scripts[] = library/js/handlebars.js
+scripts[] = library/js/helpers.js
+scripts[] = library/js/compacttable.js
+scripts[] = library/js/cookie.js
+scripts[] = library/js/fancytable.js
+scripts[] = library/js/fixedMenu.js
+scripts[] = library/js/floatyclone.js
+scripts[] = library/js/formController.js
+scripts[] = library/js/hoverflow.js
+scripts[] = library/js/jBox.js
+scripts[] = library/js/jElementToggler.js
+scripts[] = library/js/jEqualSize.js
+scripts[] = library/js/jEventAnimation.js
+scripts[] = library/js/jquery.countdown.js
+scripts[] = library/js/jRangeBar.js
+scripts[] = library/js/jTooltip.js
+scripts[] = library/js/jPlayer.js
+scripts[] = library/js/jTour.js
+scripts[] = library/js/jTourMaster.js
+scripts[] = library/js/maskform.js
+scripts[] = library/js/masonry.pkgd.js
+scripts[] = library/js/rotate.js
+scripts[] = library/js/scrolledtable.js
+scripts[] = library/js/slick.js
+scripts[] = library/js/drupal/init.js
+scripts[] = library/js/mediaqueries.js
+scripts[] = library/js/drupal/mobile.js
+scripts[] = library/js/modules.js
+scripts[] = library/js/jFlex.js
+scripts[] = library/js/drupal/drupal.js
+scripts[] = library/js/project_scripts/readyshop.js
+scripts[] = library/js/timer/sprintf.js
+scripts[] = library/js/timer/timer.js

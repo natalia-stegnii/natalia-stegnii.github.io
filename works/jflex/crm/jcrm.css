@@ -1,0 +1,66 @@
+@font-face {
+font-family: 'icons';
+src: url('../library/fonts/icons/icons.eot');
+src: url('../library/fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+url('../library/fonts/icons/icons.svg#icons') format('svg'),
+url('../library/fonts/icons/icons.woff') format('woff'),
+url('../library/fonts/icons/icons.ttf') format('truetype');
+}
+
+.view-crm .view-filters .form-item .description,
+.view-crm #edit-date-filter-group legend,
+.view-crm .ajax-progress,
+.view-crm .form-required,
+.view-crm .form-textarea-wrapper .grippie
+{display:none;}
+
+
+.view-crm td {vertical-align: top;}
+.view-crm .view-filters .form-item, #edit-date-filter-group {padding:0 0 5px; float:left; margin:0 20px 0 0;}
+.view-crm .view-filters label, .view-crm .view-filters .fieldset-legend {margin:0 0 3px;}
+
+.view-crm .view-filters {border:1px solid #ddd; padding:10px; font-size:12px; margin:0 0 30px;}
+.view-crm .view-filters input[type="text"], .view-crm .views-table input[type="text"] {border:1px solid #eee; border-radius:3px; padding:5px; background-color:#fafafa; -webkit-appearance:none;}
+.view-crm .view-filters input[type="text"]:focus, .view-crm .views-table input[type="text"]:focus {background-color:#fff; border-color:#ccc;}
+
+.view-crm .views-widget-filter-field_request_type_value, .view-crm #edit-field-request-deposit-value-group {clear:both;}
+
+
+.view-crm #edit-date-filter-group, .view-crm #edit-field-request-deposit-value-group {border:none; margin:0; padding:0;}
+.view-crm .form-item-date-filter-value-date .element-invisible {display:block; height:auto; overflow:inherit; position:inherit !important; visibility: visible;}
+
+.view-crm fieldset .fieldset-wrapper {padding:0;}
+.view-crm .collapsible .fieldset-legend {margin-top:5px;}
+.view-crm fieldset.collapsible {padding:35px 10px 0; clear:both;}
+
+.view-crm #edit-field-request-deposit-value-group legend .fieldset-legend {text-transform:none; font-size:12px; position:relative; padding:0; background:none;}
+
+.view-crm #edit-field-request-deposit-value-group label[for="edit-field-request-deposit-value-max"] { float:left; text-transform:lowercase; margin:0 20px 0 0;}
+
+.view-crm #edit-field-request-deposit-value-group input[type="text"] {width:100px;}
+
+.view-crm th a {font-size:12px; text-transform:none;}
+.view-crm .views-table input[type="text"] {width:100px;}
+
+.view-crm .changed {color:#777; border-bottom:1px solid #ccc; padding:0 0 5px; margin:0 0 5px;}
+.view-crm .changed b:before {font-weight:normal; content:'\e6a8'; margin:0 5px 0 0; cursor:default; font-family:'icons'; font-size:12px; color:#aaa;}
+
+.view-crm .feedbacks a {padding:2px 5px 1px 23px; position:relative; z-index:1; position:relative; border:1px solid #ccc; border-radius:3px; margin:8px 0 0; display:block;}
+.view-crm .feedbacks a:before {font-family:'icons'; font-size:14px; top:1px; left:5px; position:absolute; color:#aaa; margin:0 3px 0 0; content:'\e6eb'; cursor:pointer; z-index:0;}
+.view-crm .feedbacks a:hover {border-color:#aaa;}
+
+.view-crm .views-field-nid {text-align:center; font-size:10px; color:#777;}
+.view-crm .views-field-created, .view-crm .views-field-changed {font-size:10px;}
+.view-crm .changed {line-height:14px;}
+.view-crm .email a {width:100px; overflow:hidden; display:block; font-size:11px;}
+
+.view-crm .views-field-field-request-task-editable fieldset {padding:0;}
+.view-crm .views-field-field-auto-price {white-space:nowrap;}
+
+.view-crm .views-table .views-field-field-request-deposit-editable input[type="text"] {width:55px;}
+
+.view-crm .views-table select {background-color:#fafafa; border:1px solid #eee;}
+.view-crm .source {font-size:11px; color:#777;}
+.view-crm textarea {border:none; background-color:transparent; font-size:11px; padding:0;}
+
+.view-crm .field-request-manager-botton.click-processed {cursor:pointer; display:block; padding:5px 10px; border:1px solid #ddd; border-radius:3px; text-align:center;}

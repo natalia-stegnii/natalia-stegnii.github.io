@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import "../../jflex/library/css/mixin";
+@import "../../jflex/library/css/mixin-static";
+@import "../../jflex/library/css/keyframes";
+@import "../../jflex/library/css/variables";
+@import "custom-variables";
+@import "custom-keyframes";
+
+@import "slider_flower";
+@import "flower_04_tsr";
+
+
+/* custom css-files */
+
+.tabs-nav {
+  border: 1px solid $lightGrey;
+  @include border-radius(3px);
+
+  .tab-name, .tab-link a {
+    padding: 15px 40px;
+    margin: -1px;
+    font-size: 14px;
+    font-family: $gothamProMed;
+    color: $fontColorDescription;
+    text-decoration: underline;
+    border: 2px solid transparent;
+    @include border-radius(3px);
+
+    &.active {
+      color: #333;
+      text-decoration: none;
+      border-color: $grey;
+    }
+  }
+}
+
+
+
+.product .marker {
+
+  &.celebration {
+    background-color: $red;
+  }
+  &.lastchance {
+    background-color: #138708;
+  }
+  &.discount {
+    background-color: #cc0605;
+  }
+  &.sale {
+    background-color: #9966cc;
+  }
+}

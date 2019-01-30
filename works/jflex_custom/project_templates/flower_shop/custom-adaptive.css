@@ -1,0 +1,64 @@
+/* custom adaptive styles */
+@media screen and (max-width: 640px) {
+  .tab-name, .tab-link {
+    width: 100% !important;
+    text-align: center; }
+
+  .tabs-nav .tab-name {
+    margin: 0;
+    border: 2px solid #eee;
+    border-top-color: transparent;
+    border-bottom-color: transparent; }
+    .tabs-nav .tab-name + .tab-name, .tabs-nav .tab-name + .tab-link a {
+      border-top: 2px solid #eee; }
+    .tabs-nav .tab-name.first {
+      border-left: 2px solid #eee;
+      border-top: 2px solid #eee; }
+    .tabs-nav .tab-name.last {
+      border-right: 2px solid #eee;
+      border-bottom: 2px solid #eee; }
+    .tabs-nav .tab-name.active {
+      color: #333;
+      text-decoration: none;
+      border: 2px solid #aaa;
+      border-bottom-color: transparent;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      cursor: default; }
+      .tabs-nav .tab-name.active + .tab-name, .tabs-nav .tab-name.active + .tab-link a {
+        border-top: 2px solid #aaa; }
+      .tabs-nav .tab-name.active.last {
+        border-bottom: 2px solid #aaa; }
+  .tabs-nav .tab-link a {
+    margin: 0;
+    border: 2px solid #eee;
+    border-top-color: transparent;
+    border-bottom-color: transparent; }
+    .tabs-nav .tab-link a.active {
+      color: #333;
+      text-decoration: none;
+      border: 2px solid #aaa;
+      border-bottom-color: transparent;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      cursor: default; }
+      .tabs-nav .tab-link a.active + .tab-name, .tabs-nav .tab-link a.active + .tab-link {
+        border-top: 2px solid #aaa; }
+      .tabs-nav .tab-link a.active.last {
+        border-bottom: 2px solid #aaa; }
+  .tabs-nav .tab-link + .tab-name, .tabs-nav .tab-link + .tab-link a {
+    border-top: 2px solid #eee; }
+  .tabs-nav .tab-link.first a {
+    border-left: 2px solid #eee;
+    border-top: 2px solid #eee; }
+  .tabs-nav .tab-link.last a {
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee; }
+  .tabs-nav .first, .tabs-nav .last {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; } }
+
+/*# sourceMappingURL=custom-adaptive.css.map */

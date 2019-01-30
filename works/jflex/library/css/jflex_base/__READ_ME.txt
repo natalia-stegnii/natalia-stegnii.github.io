@@ -1,0 +1,1 @@
+Basic (default) styles for jFlex library.

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> <!-- using for layout adaptivity -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="robots" content="noarchive"> <!-- do not allow archive services to save content of this page -->
+	<meta name="cmsmagazine" content="0591af55a212d18c503daee916f40219"/> <!-- jFLEX copyright meta-tag -->
+
+	<title>jFlex </title>
+
+		<!-- Begin jFlex library & Drupal CSS styles. Always actual versions and getting from the source jFlex website. Do not edit this list to prevent low prediction of behaviors with theme. Delete it before porting to Drupal theme. -->
+
+	<style type="text/css" media="all">
+		@import url("../jflex_custom/drupal_styles.css");
+		@import url("../jflex_custom/jflex_styles.css");
+	</style>
+
+	<!-- End of jFlex library & Drupal CSS styles -->
+
+
+<!-- Begin of local fonts styles. You can't load fonts from server, because of browsers privacy politics. -->
+  	<style type="text/css" media="all">
+
+	  	@import url("../jflex/library/fonts/gothampro/gothampro.css");
+	  	@import url("../jflex/library/fonts/icons/icons.css");
+
+  	</style>
+  	<!-- End of local fonts styles -->
+
+
+  	<!-- Begin of local custom CSS styles -->
+  	<style type="text/css" media="all">
+
+	  	@import url("../jflex_custom/css/custom.css");
+		@import url("../jflex_custom/css/custom-adaptive.css");
+	
+	</style>
+
+	<!-- End of local custom CSS styles -->
+
+
+
+
+	<!-- Begin of jFlex JS scripts. Always actual versions and getting from the source Flex website. Do not edit this list to prevent script errors. -->
+
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/misc/jquery.once.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/misc/drupal.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/libraries/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/libraries/backbone/backbone-min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/misc/jquery.form.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/modules/contextual/contextual.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/select2/js/Drupal.select2.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/token/token.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/content_lock/js/content_lock.url.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/content_lock/js/content_lock.core.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.menu.min.js?v=1.10.2"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.autocomplete.min.js?v=1.10.2"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/misc/form.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/misc/ajax.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/jquery_update/js/jquery_update.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/modules/contrib/ajax_error_behavior/ajax_error_behavior.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/libraries/select2/select2.min.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/libraries/select2/select2_locale_ru.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jquery.swipe.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/handlebars.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/helpers.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/compacttable.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/cookie.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/fancytable.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/fixedMenu.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/floatyclone.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/formController.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/hoverflow.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jBox.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jElementToggler.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jEqualSize.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jEventAnimation.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jRangeBar.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jTooltip.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jPlayer.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/maskform.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/rotate.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/scrolledtable.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/slick.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/mediaqueries.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/modules.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/jFlex.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/timer/sprintf.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/timer/timer.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/drupal/init.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/drupal/mobile.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/drupal/drupal.js"></script>
+	<script type="text/javascript" src="http://core.jetoflex.com/sites/all/themes/jflex/library/js/project_scripts/readyshop.js"></script>
+
+	<!-- End of jFlex JS scripts. -->
+
+
+
+	<!-- Begin of local jFlex custom JS scripts. -->
+	<script type="text/javascript" src="../jflex_custom/js/custom.js"></script>
+	<!-- End of local jFlex custom JS scripts. -->
+	
+</head>
+<body>
+<header>
+	<div class="top">
+		<div class="phone">
+			<a href="tel:88007757847" class="icon-phone">8 800 775 78 47</a>
+		</div>
+	</div>
+</header>
+
+</body>
+</html>

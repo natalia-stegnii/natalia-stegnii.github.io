@@ -1,0 +1,148 @@
+.fashion_01_f_tsr {
+
+  .content__block {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .item {
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    height: 400px;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    &:hover {
+      .image__box {
+        @include transform(scale(1.07));
+      }
+    }
+
+    .image__box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      @include transition(all 0.7s ease);
+    }
+    .content__box {
+      position: relative;
+      z-index: 2;
+    }
+    .title {
+      line-height: 24px;
+      font-size: 22px;
+    }
+
+    .bottom__box {
+      padding-top: 200px;
+    }
+    .btn.simple {
+      font-family: $gothamProReg;
+      border-color: #444;
+
+      &.s_white {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  .item_1 {
+    font-family: $gothamProBold;
+
+    .content__box {
+      width: 125px;
+    }
+    .discount {
+      line-height: 36px;
+      font-size: 41px;
+      color: #cc3434;
+
+      .number {
+        font-size: 42px;
+        font-weight: 900;
+
+        span {
+          font-family: $gothamProReg;
+          font-weight: normal;
+        }
+      }
+    }
+    .price {
+      font-size: 15px;
+      color: #cc3434;
+    }
+    .new {
+      display: inline-block;
+      padding: 0 10px;
+      line-height: 20px;
+      font-size: 9px;
+      color: #fff;
+      background-color: #ce322e;
+    }
+  }
+  .item_2 {
+    font-size: 15px;
+    color: #333;
+
+    .price {
+      font-family: $gothamProMed;
+      font-size: 24px;
+    }
+  }
+  .item_3 {
+
+    .content__box {
+      width: 125px;
+    }
+    .title {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .fashion_01_f_tsr {
+
+    .row {
+      &.sp-10 {
+        margin-right: -5px;
+        margin-left: -5px;
+
+        > .col {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .item {
+      padding: 30px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .fashion_01_f_tsr {
+
+    .content__block {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .fashion_01_f_tsr {
+
+    .item {
+      padding: 30px;
+    }
+    .col.t6 {
+      width: 100%;
+    }
+  }
+}
