@@ -49,7 +49,7 @@ sup { vertical-align: super; font-size: smaller;}
     <td width="50%" valign="bottom"><b>р/сч №:</b> <?=variable_get('uc_bank_current_account')?></td>
 </tr>
 <tr>
-  <td colspan="3"><b>Назначение платежа:</b><div style="font-size: 19px; font-weight: bold;">Оплата по счету № <?=$order->order_id?> от <?=variable_get('uc_bank_date_current') ? date('d.m.Y') : date('d.m.Y', $order->created)?> за интернет-услуги. Без НДС.</div></td>
+  <td colspan="3"><b>Назначение платежа:</b><div style="font-size: 19px; font-weight: bold;">Оплата по счету № <?=$order->order_id?> от <?=variable_get('uc_bank_date_current') ? date('d.m.Y') : date('d.m.Y', $order->created)?><?php if (variable_get('uc_bank_purpose')) print ' ' . variable_get('uc_bank_purpose'); ?>. <?php print variable_get('uc_bank_vat'); ?>.</div></td>
 </tr>
 </table>
 </br>
@@ -79,7 +79,7 @@ sup { vertical-align: super; font-size: smaller;}
           if ($profile['field_corp_kpp']) print $profile['field_corp_kpp'] .  ', ';
           if ($profile['field_corp_pacc']) print $profile['field_corp_pacc'] .  ', ';
           if ($profile['field_corp_bankbik']) print $profile['field_corp_bankbik'] .  ', ';
-          if ($profile['field_copr_koracc']) print $profile['field_copr_koracc'];
+          if ($profile['field_corp_koracc']) print $profile['field_corp_koracc'];
   //      }
   //      else {
   //        $link = l('ссылке', 'profile-' . FLEXPROD_PROFILE2_USERCORPDATA_TYPE . '/'  . $order->uid . '/edit');
@@ -225,7 +225,7 @@ print num2str($order->order_total);
 </br>
 </br>
 </br>
-<div style="border:5px solid #ff0000; padding:20px; font-size:16px;"><b>ВНИМАНИЕ!</b></br>Оплата третьими лицами не допускается. Назначение платежа указывается <u>БЕЗ</u> изменений:</br>Оплата по счету № <?=$order->order_id?> от <?=variable_get('uc_bank_date_current') ? date('d.m.Y') : date('d.m.Y', $order->created)?> за интернет-услуги. Без НДС. </div>
+<div style="border:5px solid #ff0000; padding:20px; font-size:16px;"><b>ВНИМАНИЕ!</b></br>Оплата третьими лицами не допускается. Назначение платежа указывается <u>БЕЗ</u> изменений:</br>Оплата по счету № <?=$order->order_id?> от <?=variable_get('uc_bank_date_current') ? date('d.m.Y') : date('d.m.Y', $order->created)?><?php if (variable_get('uc_bank_purpose')) print ' ' . variable_get('uc_bank_purpose'); ?>. <?php print variable_get('uc_bank_vat'); ?>.</div>
 </br>
 </br>
 </br>

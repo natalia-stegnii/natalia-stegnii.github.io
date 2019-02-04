@@ -101,7 +101,7 @@ $profile_class = '';
           if ($profile['field_corp_kpp']) print ', ' . $profile['field_corp_kpp'];
           if ($profile['field_corp_pacc']) print ', ' . $profile['field_corp_pacc'];
           if ($profile['field_corp_bankbik']) print ', ' . $profile['field_corp_bankbik'];
-          if ($profile['field_copr_koracc']) print ', ' . $profile['field_copr_koracc'];
+          if ($profile['field_corp_koracc']) print ', ' . $profile['field_corp_koracc'];
         }
         else {
           //$link = l('ссылке', 'profile-' . FLEXPROD_ACT_PROFILE2_USERCORPDATA_TYPE . '/'  . $order->uid . '/edit');

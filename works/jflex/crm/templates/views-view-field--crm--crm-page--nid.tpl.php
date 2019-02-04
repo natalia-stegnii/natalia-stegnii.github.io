@@ -32,17 +32,17 @@ if ($output && $uid) {
   $output = l($output, 'j-crm/block_request/' . $uid . '/nojs', array(
     'attributes' => array(
       'class' => array('use-ajax modal-block'),
-      'title' => t('Другие заявки пользователя'),
+      'title' => t('Other user requests'),
     )
   ));
 }
 else {
   $class = ' empty';
 }
-$link = $uid ? 'j-crm/form/nojs/request_node_form/' . $uid : 'j-crm/nojs/request_node_form';
+$link = $uid ? 'flex/nojs/modal/form/request_node_form/-/set_client/' . $uid : 'flex/nojs/modal/form/request_node_form';
 $output .= l('+', $link, array(
   'attributes' => array(
-    'class' => array('ctools-use-modal btn small simple'),
+    'class' => array('ctools-use-modal btn small simple ctools-modal-ctools-flex-style'),
     'title' => t('Create request'),
   )
 ));

@@ -192,6 +192,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             break;
           case 'right':
             top = this.getCenterTooltip(pos);
+            console.log(top);
             left = blockCoords.right + offset;
             arrowCss = this.getArrowCenter(pos, top);
             arrowClass = 'jtooltip-r';
@@ -279,7 +280,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           } else if (!availBottom) {
             return viewportCoords.bottom - tooltipHeight;
           }
-
           return blockCenter - tooltipHeight / 2;
         }
       }
@@ -309,10 +309,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         blockCenter = blockCoords[propName] + blockCoords[propLengthName] / 2;
         arrowCenter = arrowCoords[propName] + arrowCoords[propLengthName] / 2 + offset;
 
+
+
+
         if (blockCenter === arrowCenter) return;
 
-        currPropVal = $arrow.css(propName) !== 'auto' ? parseFloat($arrow.css(propName)) : 0;
+        //currPropVal = $arrow.css(propName) !== 'auto' ? parseFloat($arrow.css(propName)) : 0;
+        currPropVal = 0;
         propVal = currPropVal + (blockCenter - arrowCenter) + 'px';
+
 
         return {
           propName: propName,

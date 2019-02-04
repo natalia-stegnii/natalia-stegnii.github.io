@@ -164,15 +164,17 @@
         </div>
       </div><!--mid-line-->
     </header>
+    <div class="main-menu-wrapper">
+      <div id="main-menu" class="js__fixed-menu main-menu d-menu  menu main justify expanded">
+        <div class="hold pad-h">
+          <!--block-menu-block / Меню каталога-->
+          <?php if (!empty($page['menu_catalogshop'])): ?>
+            <?php print render($page['menu_catalogshop']); ?>
+          <?php endif; ?>
+        </div>
+      </div><!--main-menu-->
+    </div><!--main-menu-wrapper-->
 
-    <div id="main-menu" class="js__fixed-menu main-menu d-menu menu main justify expanded">
-      <div class="hold pad-h">
-        <!--block-menu-block / Меню каталога-->
-        <?php if (!empty($page['menu_catalogshop'])): ?>
-          <?php print render($page['menu_catalogshop']); ?>
-        <?php endif; ?>
-      </div>
-    </div><!--main-menu-->
 
     <div class="block-system">
       <div class="hold pad-h">
@@ -182,7 +184,11 @@
           </div>
           <?php if (empty($is_tabs_hide)): ?>
             <?php print render($tabs); ?>
-            <?php print render($action_links); ?>
+            <?php if (!empty($action_links)): ?>
+              <ul class="tabs action">
+                <?php print render($action_links); ?>
+              </ul>
+            <?php endif; ?>
             <?php print render($tabs2); ?>
           <?php endif; ?>
         </div>
@@ -205,13 +211,13 @@
       <!--Title-->
     <?php if ($is_title): ?>
       <div class="hold pad-h contextual-links-region">
-        <?php print render($title_suffix); ?>
+        <?php print render($title_prefix); ?>
         <h1 class="title page-title" id="page-title"><?php print $title; ?><?php print $title_suffix_text; ?></h1>
         <?php print render($title_suffix); ?>
       </div>
     <?php else: ?>
       <div class="contextual-links-region">
-        <?php print render($title_suffix); ?>
+        <?php print render($title_prefix); ?>
         <?php print render($title_suffix); ?>
       </div>
     <?php endif; ?>
@@ -274,8 +280,10 @@
 
               </div>
             </div>
-          <?php else: ?>
-            <?php if (!empty($page['content'])): ?>
+          <?php elseif (!empty($page['content'])): ?>
+            <?php if ($content_nowrap): ?>
+              <?php print render($page['content']); ?>
+            <?php else: ?>
               <div class="content-data"><?php print render($page['content']); ?></div>
             <?php endif; ?>
           <?php endif; ?>
@@ -420,4 +428,8 @@
   <div id="hidden" class="hidden">
     <?php print render($page['hidden']); ?>
   </div>
+<?php endif; ?>
+
+<?php if (!empty($closure)): ?>
+  <?php print $closure; ?>
 <?php endif; ?>

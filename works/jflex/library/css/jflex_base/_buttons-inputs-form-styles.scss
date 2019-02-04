@@ -61,6 +61,8 @@ input[type="submit"] {
   }
 }
 .btn.simple {
+  position: relative;
+  top: 1px;
   color: #777;
   border: 1px solid #ddd;
   background: transparent;
@@ -68,6 +70,7 @@ input[type="submit"] {
 
   &:hover {
     border-color: #ccc;
+    background-image: none;
   }
   &.active {
     color: #444;
@@ -75,6 +78,94 @@ input[type="submit"] {
   }
 }
 
+.btn.simple.s_green {
+  color: $green !important;
+  border: 1px solid $green;
+  background: transparent;
+  text-shadow: none;
+  @include box-shadow(none);
+
+  &:hover {
+    border-color: darken($green, 10%);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.active {
+    color: darken($green, 20%);
+    cursor: default;
+  }
+}
+
+.btn.simple.s_orange {
+  color: $orange !important;
+  border: 1px solid $orange;
+  background: transparent;
+  text-shadow: none;
+  @include box-shadow(none);
+
+  &:hover {
+    border-color: darken($orange, 10%);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.active {
+    color: darken($orange, 20%);
+    cursor: default;
+  }
+}
+
+.btn.simple.s_dark-orange {
+  color: $darkOrange !important;
+  border: 1px solid $darkOrange;
+  background: transparent;
+  text-shadow: none;
+  @include box-shadow(none);
+
+  &:hover {
+    border-color: darken($darkOrange, 10%);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.active {
+    color: darken($darkOrange, 20%);
+    cursor: default;
+  }
+}
+
+.btn.simple.s_blue {
+  color: $blue !important;
+  border: 1px solid $blue;
+  background: transparent;
+  text-shadow: none;
+  @include box-shadow(none);
+
+  &:hover {
+    border-color: darken($blue, 10%);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.active {
+    color: darken($blue, 20%);
+    cursor: default;
+  }
+}
+.btn.simple.s_red {
+  color: $red !important;
+  border: 1px solid $red;
+  background: transparent;
+  text-shadow: none;
+  @include box-shadow(none);
+
+  &:hover {
+    border-color: darken($red, 10%);
+    background: transparent;
+    box-shadow: none;
+  }
+  &.active {
+    color: darken($red, 20%);
+    cursor: default;
+  }
+}
 .btn.rounded {
   @include border-radius(100px);
 }

@@ -26,7 +26,7 @@
 
         <div class="description"><?php print t('Requested page display is not allowed. Login to access this page.'); ?></div>
 
-        <div id="developer-from" class="developer-from"><?php print $flex_copyright; ?></div>
+        <div id="developer-from" class="developer-from centrify inlb"><?php print $flex_copyright; ?></div>
 
       </div>
 

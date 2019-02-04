@@ -249,8 +249,8 @@ jQuery(document).ready(function ($) {
      });
    })();*/
 
-  /*block-flex-theme show toggler*/
-  (function () {
+   /*block-flex-theme show toggler*/
+   (function () {
     var $btn = $('.flex_theme_block_show');
     var options = {
       animation: 'fade'
@@ -387,11 +387,11 @@ jQuery(document).ready(function ($) {
         if (!$dMode.hasClass(hash)) {
           switch (hash) {
             case 'grid':
-              setMode('grid');
-              break;
+            setMode('grid');
+            break;
             case 'linear':
-              setMode('linear');
-              break;
+            setMode('linear');
+            break;
           }
         } else {
           hash == 'linear' ? setMode('linear', true) : '';
@@ -472,70 +472,70 @@ jQuery(document).ready(function ($) {
        '&mefibs-form-filter-price-sell_price%5Bmax%5D=' +
        max +
        '&mefibs-form-filter-price-mefibs_block_id=filter_price';
-       }*/
-    })();
+     }*/
+   })();
 
-    /*refresh jRangeBar in jbox*/
-    (function () {
-      /*in jbox*/
-      var holder = document.getElementById('jbox-holder');
+   /*refresh jRangeBar in jbox*/
+   (function () {
+    /*in jbox*/
+    var holder = document.getElementById('jbox-holder');
 
-      if (!holder) return;
+    if (!holder) return;
 
-      var $holder = $(holder);
+    var $holder = $(holder);
 
-      $holder.on('jBox:afterOpen', refreshRangeBar);
+    $holder.on('jBox:afterOpen', refreshRangeBar);
 
-      function refreshRangeBar() {
-        var $rangeBar = $(this).find('.jrangebar-wrapper');
+    function refreshRangeBar() {
+      var $rangeBar = $(this).find('.jrangebar-wrapper');
 
-        $rangeBar.trigger('jRangeBar:refresh');
-      }
-    })();
-
-    /*hide jbox after rangebar submit*/
-    (function () {
-      var $submit = $('.views-exposed-widget.views-submit-button .form-submit', document.getElementById('views-exposed-form-taxonomy-term-page-category-mfb-filter-price'));
-
-      if (!$submit.length) return;
-
-      $submit.on('click', function (e) {
-        var jboxHolder = this.closest('#jbox-holder');
-
-        if (!jboxHolder) return;
-
-        $.jBox.hideBlock();
-      });
-    })();
+      $rangeBar.trigger('jRangeBar:refresh');
+    }
   })();
 
-  /*hide jbox on click*/
+  /*hide jbox after rangebar submit*/
   (function () {
-    var $closeBtn = $('.js__jbox-close');
+    var $submit = $('.views-exposed-widget.views-submit-button .form-submit', document.getElementById('views-exposed-form-taxonomy-term-page-category-mfb-filter-price'));
 
-    $closeBtn.on('click', function (e) {
-      e.preventDefault();
+    if (!$submit.length) return;
 
-      $.jBox.close();
+    $submit.on('click', function (e) {
+      var jboxHolder = this.closest('#jbox-holder');
+
+      if (!jboxHolder) return;
+
+      $.jBox.hideBlock();
     });
   })();
+})();
 
-  /*cookies confirm button*/
-  (function () {
-    var confirmName = 'cookiesConfirmed';
-    var isConfirmed = $.cookie(confirmName);
+/*hide jbox on click*/
+(function () {
+  var $closeBtn = $('.js__jbox-close');
 
-    /*debugger*/
-    window.deleteCookieConfirm = function () {
-      var options = {
-        expires: 365,
-        path: '/'
-      };
+  $closeBtn.on('click', function (e) {
+    e.preventDefault();
 
-      $.removeCookie(confirmName, options);
+    $.jBox.close();
+  });
+})();
+
+/*cookies confirm button*/
+(function () {
+  var confirmName = 'cookiesConfirmed';
+  var isConfirmed = $.cookie(confirmName);
+
+  /*debugger*/
+  window.deleteCookieConfirm = function () {
+    var options = {
+      expires: 365,
+      path: '/'
     };
 
-    if (isConfirmed) return;
+    $.removeCookie(confirmName, options);
+  };
+
+  if (isConfirmed) return;
 
     var $cookiesBlock = $(document.getElementById('cookie')); //renderCookiesConfirm();
     var $confirmBtn = $cookiesBlock.find('.btn_confirm');
@@ -614,7 +614,7 @@ jQuery(document).ready(function ($) {
     };
     ScrollToAnchor.prototype.anchorClickListener = function (e) {
       var elem = e.target;
-      var anchor = elem.closest('a[href*="#"]:not([data-scroll="disable"]):not(.js__scroll-disable):not(.jbox)');
+      var anchor = elem.closest('a[href*="#"]:not([data-scroll="disable"]):not(.js__scroll-disable):not(.jbox):not(.presentation_link)');
 
       if (!anchor) return;
 
@@ -1009,10 +1009,10 @@ jQuery(document).ready(function ($) {
       swipe: function swipe(event, direction, distance, duration, fingerCount, fingerData) {
         switch (direction) {
           case 'left':
-            $activeTab.trigger('jElementToggler:close');
-            break;
+          $activeTab.trigger('jElementToggler:close');
+          break;
           case 'right':
-            break;
+          break;
         }
       },
       allowPageScroll: "vertical"
@@ -1234,205 +1234,213 @@ jQuery(document).ready(function ($) {
 
   /*tour master*/
   (function () {
-    var $startBtn = $('.tour-master-start');
-    var $adminMenu = $('.menu_adminflex__wrap');
-    var $fullPage = $('.fullpage');
-    var cachedFullPagePaddingLeft = void 0;
-    var steps = [{
-      element: '.js__jtour-step1',
-      title: 'step 1',
-      tag: 'Функциональные опции интернет-магазина', //в турмастере в popup4 шаги по одной теме группируются вместе, с одним заголовком
-      content: 'some bla-bla-bla',
-      path: '/review/flex_admin_tour/test2.html'
-    }, {
-      element: '.js__jtour-step2',
-      title: 'step 2',
-      tag: 'Функциональные опции интернет-магазина',
-      content: 'some bla-bla-bla',
-      path: '/review/flex_admin_tour/test2.html'
-    }, {
-      element: '.js__jtour-step3',
-      title: 'step 3',
-      tag: 'Функциональные опции интернет-магазина',
-      content: 'some bla-bla-bla',
-      path: '/review/flex_admin_tour/test2.html'
-    }, {
-      element: '.js__jtour-step4',
-      title: 'step 4',
-      tag: 'Процессы для юридических лиц',
-      content: 'some bla-bla-bla',
-      animateType: 'highlight',
-      path: '/review/flex_admin_tour/test2.html'
-    }, {
-      element: '.js__jtour-step5',
-      title: 'step 5',
-      tag: 'Процессы для юридических лиц',
-      content: 'some bla-bla-bla',
-      path: '/review/flex_admin_tour/test.html'
-    }];
-    var options = {
-      tours: [],
-      steps: steps,
-      defaultTourOptions: {
-        isMenu: true,
-        addMenuMethod: function addMenuMethod($menu, container, controller) {
-          $menu.find('.title').text(controller.title);
-          cachedFullPagePaddingLeft = $fullPage.css('padding-left');
+    if (Drupal.settings.hasOwnProperty('flexMaster')
+      && Drupal.settings.flexMaster.hasOwnProperty('tourStart')
+      && Drupal.settings.flexMaster.tourStart)
+    {
+      var $startBtn = $('.tour-master-start');
+      var $adminMenu = $('.menu_adminflex__wrap');
+      var $fullPage = $('.fullpage');
+      var cachedFullPagePaddingLeft = void 0;
+      var steps = [{
+        element: '.js__jtour-step1',
+        title: 'step 1',
+        tag: 'Функциональные опции интернет-магазина', //в турмастере в popup4 шаги по одной теме группируются вместе, с одним заголовком
+        content: 'some bla-bla-bla',
+        path: '/review/flex_admin_tour/test2.html'
+      }, {
+        element: '.js__jtour-step2',
+        title: 'step 2',
+        tag: 'Функциональные опции интернет-магазина',
+        content: 'some bla-bla-bla',
+        path: '/review/flex_admin_tour/test2.html'
+      }, {
+        element: '.js__jtour-step3',
+        title: 'step 3',
+        tag: 'Функциональные опции интернет-магазина',
+        content: 'some bla-bla-bla',
+        path: '/review/flex_admin_tour/test2.html'
+      }, {
+        element: '.js__jtour-step4',
+        title: 'step 4',
+        tag: 'Процессы для юридических лиц',
+        content: 'some bla-bla-bla',
+        animateType: 'highlight',
+        path: '/review/flex_admin_tour/test2.html'
+      }, {
+        element: '.js__jtour-step5',
+        title: 'step 5',
+        tag: 'Процессы для юридических лиц',
+        content: 'some bla-bla-bla',
+        path: '/review/flex_admin_tour/test.html'
+      }];
+      var options = {
+        tours: [],
+        steps: steps,
+        defaultTourOptions: {
+          isMenu: true,
+          addMenuMethod: function addMenuMethod($menu, container, controller) {
+            $menu.find('.title').text(controller.title);
+            cachedFullPagePaddingLeft = $fullPage.css('padding-left');
 
-          $menu.css({ left: '-100%', zIndex: '9750' }).appendTo($(document.body)).animate({ left: '0' }, {
-            duration: 400,
-            queue: false
-          });
-          $adminMenu.animate({ left: '-100%' }, { duration: 400, queue: false });
-          $(document.body).addClass('tour-menu-active');
-        },
-        removeMenuMethod: function removeMenuMethod($menu) {
-          $menu.animate({ left: '-100%' }, {
-            duration: 400,
-            queue: false,
-            complete: function complete() {
-              $menu.remove();
-            }
-          });
-          $adminMenu.animate({ left: '0' }, { duration: 400, queue: false });
-          $(document.body).removeClass('tour-menu-active');
+            $menu.css({ left: '-100%', zIndex: '9750' }).appendTo($(document.body)).animate({ left: '0' }, {
+              duration: 400,
+              queue: false
+            });
+            $adminMenu.animate({ left: '-100%' }, { duration: 400, queue: false });
+            $(document.body).addClass('tour-menu-active');
+          },
+          removeMenuMethod: function removeMenuMethod($menu) {
+            $menu.animate({ left: '-100%' }, {
+              duration: 400,
+              queue: false,
+              complete: function complete() {
+                $menu.remove();
+              }
+            });
+            $adminMenu.animate({ left: '0' }, { duration: 400, queue: false });
+            $(document.body).removeClass('tour-menu-active');
+          }
         }
+      };
+      var tourMaster = null;
+
+      getTours().then(function (tours) {
+        options.tours = tours;
+        tourMaster = $.jTourMaster(options);
+
+        $startBtn.on('click', function (e) {
+          e.preventDefault();
+
+          tourMaster.start();
+        });
+
+        startMasterOnAdmin($.extend({}, options));
+      }).catch(function (error) {
+        console.dir(error);
+      });
+
+      function startMasterOnAdmin(options) {
+        var isAdminPage = $adminMenu.length;
+        var isNew = !$.cookie('admin-tour-first');
+        var extraOptions = $.extend(true, {}, options, {
+          jboxOptions: {
+            customHolderClass: 'jbox__bg-full-white',
+            customOverlayClass: 'jbox__bg-full-white',
+            disableCloseBtnHandler: true,
+            disableOverlayHandler: true
+          }
+        });
+
+        if (!isAdminPage || !isNew) return;
+
+        extraOptions.customHolderClass = 'jbox__bg-full-white';
+        extraOptions.customOverlayClass = 'jbox__bg-full-white';
+
+        var tourMaster = $.jTourMaster(extraOptions);
+        tourMaster.start();
+        $.cookie('admin-tour-first', 'true', { path: '/', expires: 365 });
       }
-    };
-    var tourMaster = null;
 
-    getTours().then(function (tours) {
-      options.tours = tours;
-      tourMaster = $.jTourMaster(options);
+      function getTours() {
+        return new Promise(function (resolve, reject) {
+          // Skip admin theme.
+          // if (!$('body.page-admin').length) return;
 
-      $startBtn.on('click', function (e) {
+          $.getJSON('/admin/flex-master', function (response, status, xhr) {
+            if (xhr.status === 200) {
+              resolve(parseTours(response));
+            } else {
+              reject(response);
+            }
+          }).fail(function (response) {
+            reject(response);
+          });
+        });
+      }
+
+      function parseTours(tours) {
+        var newTours = [];
+
+        tours.forEach(function (tour) {
+          var newTour = {
+            steps: []
+          };
+          var steps = tour.steps;
+
+          for (var key in tour) {
+            if (key === 'steps') {
+              continue;
+            }
+
+            newTour[key] = tour[key];
+          }
+
+          steps.forEach(function (step) {
+            newTour.steps.push(parseStep(step));
+          });
+
+          newTours.push(newTour);
+        });
+
+        return newTours;
+      }
+
+      function parseStep(step) {
+        var stepMapper = {
+          animatetype: 'animateType',
+          ismenustep: 'isMenuStep',
+          menutitle: 'menuTitle',
+          onelement: 'onElement'
+        };
+        var handlerMapper = {
+          'saveNGo': saveNGo
+        };
+        var newStep = {};
+
+        for (var key in step) {
+          if (stepMapper[key]) {
+            if (key === 'onelement') {
+              newStep[stepMapper[key]] = {
+                event: step[key].event,
+                handler: handlerMapper[step[key].handler]
+              };
+            } else {
+              newStep[stepMapper[key]] = step[key];
+            }
+          } else if (key === 'path') {
+            if (step.path && step.path !== '/') {
+              newStep.path = '/' + step.path;
+            } else if (step.path === '/') {
+              newStep.path = step.path;
+            } else {
+              newStep.path = '';
+            }
+          } else {
+            newStep[key] = step[key];
+          }
+        }
+
+        return newStep;
+      }
+
+      function saveNGo(e) {
+        var $target = $(e.target);
+        var tour = e.data.tourController;
+
         e.preventDefault();
 
-        tourMaster.start();
-      });
-
-      startMasterOnAdmin($.extend({}, options));
-    }).catch(function (error) {
-      console.dir(error);
-    });
-
-    function startMasterOnAdmin(options) {
-      var isAdminPage = $adminMenu.length;
-      var isNew = !$.cookie('admin-tour-first');
-      var extraOptions = $.extend(true, {}, options, {
-        jboxOptions: {
-          customHolderClass: 'jbox__bg-full-white',
-          customOverlayClass: 'jbox__bg-full-white',
-          disableCloseBtnHandler: true,
-          disableOverlayHandler: true
-        }
-      });
-
-      if (!isAdminPage || !isNew) return;
-
-      extraOptions.customHolderClass = 'jbox__bg-full-white';
-      extraOptions.customOverlayClass = 'jbox__bg-full-white';
-
-      var tourMaster = $.jTourMaster(extraOptions);
-      tourMaster.start();
-      $.cookie('admin-tour-first', 'true', { path: '/', expires: 365 });
-    }
-
-    function getTours() {
-      return new Promise(function (resolve, reject) {
-        $.getJSON('/admin/flex-master', function (response, status, xhr) {
-          if (xhr.status === 200) {
-            resolve(parseTours(response));
-          } else {
-            reject(response);
-          }
-        }).fail(function (response) {
-          reject(response);
-        });
-      });
-    }
-
-    function parseTours(tours) {
-      var newTours = [];
-
-      tours.forEach(function (tour) {
-        var newTour = {
-          steps: []
-        };
-        var steps = tour.steps;
-
-        for (var key in tour) {
-          if (key === 'steps') {
-            continue;
-          }
-
-          newTour[key] = tour[key];
-        }
-
-        steps.forEach(function (step) {
-          newTour.steps.push(parseStep(step));
-        });
-
-        newTours.push(newTour);
-      });
-
-      return newTours;
-    }
-
-    function parseStep(step) {
-      var stepMapper = {
-        animatetype: 'animateType',
-        ismenustep: 'isMenuStep',
-        menutitle: 'menuTitle',
-        onelement: 'onElement'
-      };
-      var handlerMapper = {
-        'saveNGo': saveNGo
-      };
-      var newStep = {};
-
-      for (var key in step) {
-        if (stepMapper[key]) {
-          if (key === 'onelement') {
-            newStep[stepMapper[key]] = {
-              event: step[key].event,
-              handler: handlerMapper[step[key].handler]
-            };
-          } else {
-            newStep[stepMapper[key]] = step[key];
-          }
-        } else if (key === 'path') {
-          if (step.path && step.path !== '/') {
-            newStep.path = '/' + step.path;
-          } else if (step.path === '/') {
-            newStep.path = step.path;
-          } else {
-            newStep.path = '';
-          }
-        } else {
-          newStep[key] = step[key];
-        }
+        setTimeout(function () {
+          $target.trigger(tour.activeStep.onElement.event);
+        }, 50);
+        tour.bindNextStep();
       }
 
-      return newStep;
+      /*debugger*/
+      window.deleteCookieTour = function () {
+        $.removeCookie('admin-tour-first', { path: '/', expires: 365 });
+      };
     }
-
-    function saveNGo(e) {
-      var $target = $(e.target);
-      var tour = e.data.tourController;
-
-      e.preventDefault();
-
-      setTimeout(function () {
-        $target.trigger(tour.activeStep.onElement.event);
-      }, 50);
-      tour.bindNextStep();
-    }
-
-    /*debugger*/
-    window.deleteCookieTour = function () {
-      $.removeCookie('admin-tour-first', { path: '/', expires: 365 });
-    };
   })();
 
   /*admin menu extention*/
@@ -1474,8 +1482,9 @@ jQuery(document).ready(function ($) {
           this._closeHandler = this.closeHandler.bind(this);
           this._renderCloseBtn = this.renderCloseBtn.bind(this);
           /*delayed menu opening*/
-          this._onMouseover = this.onMouseover.bind(this);
-          this._onMouseout = this.onMouseout.bind(this);
+          //this._onMouseover = this.onMouseover.bind(this);
+          //this._onMouseout = this.onMouseout.bind(this);
+          this._onClick = this.onClick.bind(this);
           /*spinner*/
           this._spinnerActivate = this.spinnerActivate.bind(this);
 
@@ -1483,8 +1492,9 @@ jQuery(document).ready(function ($) {
 
           $menu.on({
             'click touch': this._closeHandler,
-            'mouseover': this._onMouseover,
-            'mouseout': this._onMouseout
+            //'mouseover': this._onMouseover,
+            //'mouseout': this._onMouseout,
+            'click': this._onClick
           });
           this.$spinnerActivateArea.on({
             'click touch': this._spinnerActivate
@@ -1495,8 +1505,9 @@ jQuery(document).ready(function ($) {
         value: function stop() {
           this.$menu.off({
             'click touch': this._closeHandler,
-            'mouseover': this._onMouseover,
-            'mouseout': this._onMouseout
+            //'mouseover': this._onMouseover,
+            //'mouseout': this._onMouseout,
+            'click': this._onClick
           });
           this.$menu.off({
             'click touch': this._spinnerActivate
@@ -1528,6 +1539,32 @@ jQuery(document).ready(function ($) {
 
           this.$liHovered.removeClass(this.classHovered);
           this.$liHovered = null;
+        }
+      },{
+        key: 'onClick',
+        value: function onClick(e) {
+
+            if ($(e.target).is('.fullscreen .menu') || $(e.target).is('.fullscreen .menu *') ){
+               return; 
+            }
+          if (this.$liHovered) {
+            if ($(e.target).parent().hasClass('hover')){
+              this.$liHovered.removeClass(this.classHovered);
+              this.$liHovered = null;
+              return;
+            } else{
+              this.$liHovered.removeClass(this.classHovered);
+              this.$liHovered = null;
+            }
+          };
+
+          var $target = $(e.target);
+          var $liCurrent = $target.closest(this.$liExpanded);
+
+          if (!$liCurrent.length) return;
+
+          this.$liHovered = $liCurrent;
+          this.hoverDebounce($liCurrent);
         }
       }, {
         key: 'closeHandler',
@@ -1574,88 +1611,88 @@ jQuery(document).ready(function ($) {
         }
       }]);
 
-      return AdminMenu;
-    }();
+return AdminMenu;
+}();
 
-    var adminMenu = new AdminMenu({
-      menu: menu,
-      spinnerActivateArea: '.menu_adminflex',
-      preloaderSelector: '#logo-preloader',
-      liFullscreenSelector: '.expanded',
-      liExpandedSelector: '.expanded',
-      hoverDelay: 300
-    });
+var adminMenu = new AdminMenu({
+  menu: menu,
+  spinnerActivateArea: '.menu_adminflex',
+  preloaderSelector: '#logo-preloader',
+  liFullscreenSelector: '.expanded',
+  liExpandedSelector: '.expanded',
+  hoverDelay: 300
+});
 
-    adminMenu.init();
-  })();
+adminMenu.init();
+})();
 
-  /*serch menu*/
-  (function () {
-    var menu = document.querySelector('.menu_adminflex.operations .menu');
+/*serch menu*/
+(function () {
+  var menu = document.querySelector('.menu_adminflex.operations .menu');
 
-    if (!menu) return;
+  if (!menu) return;
 
-    var Search = function () {
-      function Search(options) {
-        _classCallCheck(this, Search);
+  var Search = function () {
+    function Search(options) {
+      _classCallCheck(this, Search);
 
-        this.menu = options.menu;
-        this.className = {
-          hidden: 'js__search-hidden'
-        };
+      this.menu = options.menu;
+      this.className = {
+        hidden: 'js__search-hidden'
+      };
 
-        this.init();
+      this.init();
+    }
+
+    _createClass(Search, [{
+      key: 'init',
+      value: function init() {
+        this.bindElements();
+        this.bindHandlers();
+        this.attachHandlers();
       }
+    }, {
+      key: 'searchHandler',
+      value: function searchHandler(e) {
+        var target = e.target;
+        var type = e.type;
 
-      _createClass(Search, [{
-        key: 'init',
-        value: function init() {
-          this.bindElements();
-          this.bindHandlers();
-          this.attachHandlers();
-        }
-      }, {
-        key: 'searchHandler',
-        value: function searchHandler(e) {
-          var target = e.target;
-          var type = e.type;
+        switch (type) {
+          case 'input':
+          var search = target.value;
 
-          switch (type) {
-            case 'input':
-              var search = target.value;
+          this.filterFields(this.$searchItemns, search);
 
-              this.filterFields(this.$searchItemns, search);
-
-              if (search) {
-                this.$searchReset.removeClass(this.className.hidden);
-                this.$searchSubmit.addClass(this.className.hidden);
-              } else {
-                this.$searchReset.addClass(this.className.hidden);
-                this.$searchSubmit.removeClass(this.className.hidden);
-              }
-              break;
-            case 'submit':
-              e.preventDefault();
-              this.filterFields(this.$searchItemns, this.$searchInput.val());
-              break;
-            case 'click':
-              if ($(target).closest(this.$searchReset).length) {
-                this.$searchInput.val('');
-                this.$searchReset.addClass(this.className.hidden);
-                this.$searchSubmit.removeClass(this.className.hidden);
-                this.filterFields(this.$searchItemns, null);
-              }
-              break;
+          if (search) {
+            this.$searchReset.removeClass(this.className.hidden);
+            this.$searchSubmit.addClass(this.className.hidden);
+          } else {
+            this.$searchReset.addClass(this.className.hidden);
+            this.$searchSubmit.removeClass(this.className.hidden);
           }
+          break;
+          case 'submit':
+          e.preventDefault();
+          this.filterFields(this.$searchItemns, this.$searchInput.val());
+          break;
+          case 'click':
+          if ($(target).closest(this.$searchReset).length) {
+            this.$searchInput.val('');
+            this.$searchReset.addClass(this.className.hidden);
+            this.$searchSubmit.removeClass(this.className.hidden);
+            this.filterFields(this.$searchItemns, null);
+          }
+          break;
         }
-      }, {
-        key: 'renderSearch',
-        value: function renderSearch() {
-          var searchTpl = '<li class="search-field">\n            <form>\n                <label class="search-input"><input type="text" placeholder="' + Drupal.t('search in menu') + '" name="search"/></label>\n                <div class="search-reset ' + this.className.hidden + '"></div>\n                <label class="search-submit"><input type="submit"/></label>\n            </form>\n           </li>';
-          var $searchBlock = $(searchTpl);
-          this.$searchInput = $searchBlock.find('.search-input input');
-          this.$searchReset = $searchBlock.find('.search-reset');
-          this.$searchSubmit = $searchBlock.find('.search-submit');
+      }
+    }, {
+      key: 'renderSearch',
+      value: function renderSearch() {
+        var searchTpl = '<li class="search-field">\n            <form>\n                <label class="search-input"><input type="text" placeholder="' + Drupal.t('search in menu') + '" name="search"/></label>\n                <div class="search-reset ' + this.className.hidden + '"></div>\n                <label class="search-submit"><input type="submit"/></label>\n            </form>\n           </li>';
+        var $searchBlock = $(searchTpl);
+        this.$searchInput = $searchBlock.find('.search-input input');
+        this.$searchReset = $searchBlock.find('.search-reset');
+        this.$searchSubmit = $searchBlock.find('.search-submit');
 
           //this.$menu.append($searchBlock);
 
@@ -1721,45 +1758,45 @@ jQuery(document).ready(function ($) {
         }
       }]);
 
-      return Search;
-    }();
+return Search;
+}();
 
-    var $menu = $(menu);
-    var $searchedMenus = $menu.find('> li.expanded > .menu');
+var $menu = $(menu);
+var $searchedMenus = $menu.find('> li.expanded > .menu');
 
-    $searchedMenus.each(function () {
-      new Search({
-        menu: this
-      });
-    });
-  })();
+$searchedMenus.each(function () {
+  new Search({
+    menu: this
+  });
+});
+})();
 
-  /*open live chat*/
-  (function () {
-    var $startBtn = $('.livechat-start');
+/*open live chat*/
+(function () {
+  var $startBtn = $('.livechat-start');
 
-    $startBtn.on('click', function (e) {
-      var $rocketChat = $('.rocketchat-widget');
+  $startBtn.on('click', function (e) {
+    var $rocketChat = $('.rocketchat-widget');
 
-      e.preventDefault();
+    e.preventDefault();
 
-      if ($rocketChat.attr('data-state') !== 'opened') {
-        $rocketChat.attr('data-state', 'opened');
-      } else {
-        $rocketChat.attr('data-state', 'closed');
-      }
-    });
-  })();
+    if ($rocketChat.attr('data-state') !== 'opened') {
+      $rocketChat.attr('data-state', 'opened');
+    } else {
+      $rocketChat.attr('data-state', 'closed');
+    }
+  });
+})();
 
-  /*add current page url to input*/
-  (function () {
-    var $targetInput = $('[name="submitted[source]"]');
-    var pathname = window.location.href;
+/*add current page url to input*/
+(function () {
+  var $targetInput = $('[name="submitted[source]"]');
+  var pathname = window.location.href;
 
-    $targetInput.val(pathname);
-  })();
+  $targetInput.val(pathname);
+})();
 
-  /*textarea auto-resizer*/
+/*textarea auto-resizer*/
   /* (function () {
      const $textarea = $('.support-chat__message textarea');
      const options = {
@@ -1768,7 +1805,7 @@ jQuery(document).ready(function ($) {
   
      $textarea.autoResize(options);
    })();*/
-});
+ });
 
 /*Drupal behaviors*/
 (function ($) {
@@ -1822,7 +1859,7 @@ jQuery(document).ready(function ($) {
      * Custom script after update cupon
      */
 
-    function afterUpdateCupon($cuponHtml) {
+     function afterUpdateCupon($cuponHtml) {
       var cuponWasDeleted = ~$cuponHtml.text().indexOf('был удален из вашего заказа');
       var $cuponActive = $cuponHtml.find('#uc-coupon-active-coupons');
       var $error = $cuponHtml.find('.messages.error');
@@ -2150,83 +2187,40 @@ jQuery(document).ready(function ($) {
   })();
 
   /*ajax overlay on*/
-  (function () {
-    Drupal.behaviors.ajaxOverlayOnTrobber = {
-      attach: function attach(context) {
-        var $throbbers = $('.ajax-progress-throbber', context);
-        var $ajaxOverlay = $('.ajax-progress-overlay.ajax-custom', context);
-        var $throbberGlobal = $('.ajax-progress-throbber');
-
-        $ajaxOverlay.once(function () {
-          var $currOverlay = $(this);
-          var $throbber = $currOverlay.siblings('.ajax-progress-throbber');
-          var $parent = $currOverlay.parent();
-
-          if ($throbber.length) return;
-
-          $currOverlay.remove();
-          $parent.css({
-            position: ''
-          });
-        });
-
-        $throbbers.once(function () {
-          var $throbber = $(this);
-          var $overlay = $('<div class="ajax-progress-overlay ajax-custom"></div>');
-          var $parent = $throbber.parent();
-
-          $throbber.before($overlay);
-          $parent.css({
-            position: 'relative'
-          });
-        });
-      }
-    };
-  })();
-
-  /*editable fields*/
-  (function () {
-    Drupal.behaviors.editablefields_submit = {
-      attach: function attach(context) {
-        $('.editablefield-item').once('editablefield', function () {
-          var $this = $(this);
-
-          // There is only one editable field in that form, we can hide the submit
-          // button.
-          if ($this.find('input[type=text],input[type=checkbox],textarea,select').length == 1 || $this.find('select.use-select-2').length == 1 || $this.find('input[type=radio] ').length > 1) {
-            $this.find('input.form-submit').hide();
-            $this.find('input[type=text],input[type=checkbox],input[type=radio],textarea,select').change(function () {
-              var $input = $this.find('textarea, input[type="text"], select');
-
-              $input.css('background', '').addClass('input-disabled input-progress').prop('readonly', true);
-
-              if ($input.is('select.use-select-2')) {
-                $input.select2('readonly', true);
-                $input.siblings('.select2-container').find('.select2-choice').addClass('input-progress');
-              }
-
-              $this.find('input.form-submit').triggerHandler('click');
-            });
-          }
-
-          var submitName = 'input.form-submit.editablefield-edit-hover';
-          var linkName = '.editablefield-hover-link';
-
-          var $submit = $this.find(submitName);
-          $submit.hide().after('<a href="#" class="editablefield-hover-link">' + $submit.attr('value') + '</a>');
-
-          $this.find(linkName).hide().click(function () {
-            $this.find(submitName).click();
-            return false;
-          });
-
-          $this.hover(function () {
-            $this.find(linkName).fadeToggle('fast');
-          });
-        });
-      }
-    };
-  })();
+  // @TODO Эта функция делает проблему, добавляет контейнеры, но не удаляет их, и они накладывается в большом кол-ве, поэтому пока убрали, и не понятно зачем эта функция, если не нужна то удалить.
+  // (function () {
+  //   Drupal.behaviors.ajaxOverlayOnTrobber = {
+  //     attach: function attach(context) {
+  //       var $throbbers = $('.ajax-progress-throbber', context);
+  //       var $ajaxOverlay = $('.ajax-progress-overlay.ajax-custom', context);
+  //       var $throbberGlobal = $('.ajax-progress-throbber');
+  //
+  //       $ajaxOverlay.once(function () {
+  //         var $currOverlay = $(this);
+  //         var $throbber = $currOverlay.siblings('.ajax-progress-throbber');
+  //         var $parent = $currOverlay.parent();
+  //
+  //         if ($throbber.length) return;
+  //
+  //         $currOverlay.remove();
+  //         $parent.css({
+  //           position: ''
+  //         });
+  //       });
+  //
+  //       $throbbers.once(function () {
+  //         var $throbber = $(this);
+  //         var $overlay = $('<div class="ajax-progress-overlay ajax-custom"></div>');
+  //         var $parent = $throbber.parent();
+  //
+  //         $throbber.before($overlay);
+  //         $parent.css({
+  //           position: 'relative'
+  //         });
+  //       });
+  //     }
+  //   };
+  // })();
 
   /*city block width*/
   (function () {
@@ -2277,21 +2271,70 @@ jQuery(document).ready(function ($) {
 
   /* delegate submit click in ctools-modal-content*/
   (function () {
-    Drupal.behaviors.delegatedSubmit = {
-      attach: function attach(context) {
-        if (context !== '#modalContent') return;
+    /* replytemplate. Insert ready reply in ticket body */
+    Drupal.behaviors.replyTemplate = {
+      attach: function (context, settings) {
+        // Delete cookie.
         $(context).once(function () {
-          var $modal = $(this);
-          var $submitBtn = $('#edit-submit', $modal);
-          var $modalHeader = $('.modal-header', $modal);
-          var $delegatedBtn = $('<div class="btn_delegated-submit btn small simple">Сохранить конфигурацию</div>');
+          if (settings.FlexJSEvent !== undefined && settings.FlexJSEvent.hook == 'comment_insert' && $.cookie('reply-template')) {
+            $.removeCookie('reply-template');
+          }
+        });
 
-          $modalHeader.append($delegatedBtn);
-          $delegatedBtn.on('click', function () {
-            $submitBtn.trigger('click');
+        $('.view-display-id-block_reply_template .views-row #reply-template-checkbox').once('click', function () {
+          var $block = $(this).closest('.views-row');
+          var id = $block.find('.node').attr('id');
+          var nids = $.cookie('reply-template');
+          nids = nids === undefined ? {} : JSON.parse(nids);
+          /* Если есть выбранный в куках то выделяем шаблон выбранным. */
+          if (id && nids[id] !== undefined) {
+            $block.addClass('selected');
+
+            /* Проверяем в textarea наличие этого шаблона, если нету то проставляем. */
+            var $fieldBody = $('form.comment-form .field-name-comment-body iframe.cke_wysiwyg_frame').contents().find('body.cke_editable');
+            if (!$fieldBody.find('#reply-template-wrap-' + id).length) {
+              var replyTemplate = '<div id="reply-template-wrap-' + id + '">' + $block.find('.data').html() + '</div>';
+              $fieldBody.append(replyTemplate);
+            }
+          }
+
+          $(this).click(function () {
+            var $block = $(this).closest('.views-row');
+            var id = $block.find('.node').attr('id');
+            var nids = $.cookie('reply-template');
+            nids = nids === undefined ? {} : JSON.parse(nids);
+            var $fieldBody = $('form.comment-form .field-name-comment-body iframe.cke_wysiwyg_frame').contents().find('body.cke_editable');
+
+            /* Если выбран шаблон то удаляем. */
+            if ($block.hasClass('selected')) {
+              $block.removeClass('selected');
+              if (nids[id] !== undefined) {
+                delete nids[id];
+                var nidsSave = JSON.stringify(nids);
+                $.cookie('reply-template', nidsSave, {expires: 1});
+              }
+              if ($fieldBody.length) {
+                $fieldBody.find('#reply-template-wrap-' + id).remove();
+              }
+            }
+            /* Если невыбран шаблон то добавляем. */
+            else {
+              $block.addClass('selected');
+              if (nids[id] === undefined) {
+                nids[id] = '';
+                var nidsSave = JSON.stringify(nids);
+                $.cookie('reply-template', nidsSave, {expires: 1});
+              }
+              var replyTemplate = '<div id="reply-template-wrap-' + id + '">' + $block.find('.data').html() + '</div>';
+              $fieldBody.append(replyTemplate);
+            }
           });
         });
       }
     };
   })();
+
+
+
+
 })(jQuery);

@@ -352,4 +352,37 @@
       o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string"
     );
   }
+
+  // search form clearing
+
+
+
+
+
 })(jQuery);
+
+
+jQuery(document).ready(function () {
+  
+  $searchInput = jQuery(".reset-button").find("form").find(".form-text");
+
+  searchCheck();
+  $searchInput.keyup(function(){
+    searchCheck();
+  });
+
+  function searchCheck(){
+    if ( $searchInput.val() && jQuery(".clean-button").length == 0 ){
+
+      jQuery(".reset-button").find("form").append('<button class="clean-button"></button>');
+      jQuery(".clean-button").on("click", function(e){
+        e.preventDefault();
+        $searchInput.val('');
+        jQuery(".reset-button").find("form").submit();
+      })
+    } 
+    if ( $searchInput.val() == "" && jQuery(".clean-button").length == 1 ){
+      jQuery(".clean-button").remove();
+    }
+  }
+});

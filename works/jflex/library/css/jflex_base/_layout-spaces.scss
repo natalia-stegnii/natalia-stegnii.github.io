@@ -14,11 +14,18 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.pad-reset-h{
+  margin-right: -20px;
+  margin-left: -20px;
+}
 .pad-v {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+.pad-reset-v{
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
 /* content spaces - can't be rewritten, used for layouting content */
 
 /* in pixels */

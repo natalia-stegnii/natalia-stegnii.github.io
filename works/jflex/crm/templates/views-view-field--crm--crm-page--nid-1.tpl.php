@@ -39,10 +39,10 @@ if ($output && $uid) {
 else {
   $class = ' empty';
 }
-$link = $uid ? 'j-crm/form/nojs/task_node_form/' . $uid : 'j-crm/nojs/task_node_form';
+$link = $uid ? 'flex/nojs/modal/form/task_node_form/-/set_client/' . $uid : 'flex/nojs/modal/form/task_node_form';
 $output .= l('+', $link, array(
   'attributes' => array(
-    'class' => array('ctools-use-modal btn small simple'),
+    'class' => array('ctools-use-modal btn small simple ctools-modal-ctools-flex-style'),
     'title' => t('Create task'),
   )
 ));

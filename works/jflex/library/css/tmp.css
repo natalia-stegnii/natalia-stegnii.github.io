@@ -1,0 +1,21 @@
+/*
+  Отображение флагов на странице курсов.
+  https://core.jetoflex.com/ru/node/8/course-enrollments
+  http://joxi.ru/ZrJJEjEH9ppYkr
+*/
+.view-course-enrollment-vbo-admin input[type="checkbox"],
+.view-course-enrollment-vbo-admin input[type="radio"],
+.view-course-enrollment-search-add input[type="checkbox"],
+.view-course-enrollment-search-add input[type="radio"]
+{
+  display: inherit !important;
+}
+
+/**
+  Добавление отступов между кнопками для действий в админке заказа
+  https://coffeedelux.ru/admin/store/orders/2405
+  http://joxi.ru/J2bbJXJHXQPnw2
+ */
+#uc-order-view-update-form #edit-controls .form-actions input {
+  margin-right: 10px;
+}

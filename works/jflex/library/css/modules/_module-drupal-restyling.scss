@@ -127,7 +127,7 @@ li a.active {
 }
 
 .messages {
-  display: none;
+  //display: none;
   position: relative;
   padding-left: 40px;
   margin: 10px 0 !important;
@@ -147,6 +147,10 @@ li a.active {
   &.status:before {
     content: '\e71c';
     color: #aaa;
+  }
+  &.warning:before {
+    content: '\e946';
+    color: #f9c700;
   }
   &.error:before {
     content: '\e7d5';
@@ -200,7 +204,7 @@ li a.active {
   }
 
   ul.primary {
-    float: left;
+    //float: left;
     margin-right: 10px;
   }
   li {
@@ -234,6 +238,14 @@ li a.active {
     padding: 0;
     margin: 10px 0;
     border: none;
+    display: block;
+    li{
+      display: inline-block;
+      margin-top: 10px;
+      a{
+        margin-right: 0.5em;
+      }
+    }
   }
 }
 
@@ -251,3 +263,12 @@ li a.active {
     vertical-align: top;
   }
 }
+
+//.social-tabs{
+//  &.tabs-content ul.primary{
+//    float: none;
+//  }
+//  &.tabs-content .tabs{
+//    display: block;
+//  }
+//}

@@ -106,6 +106,27 @@ function jflex_preprocess_html(&$vars) {
  *
  * @param $vars
  * @param $hook
+ *
+ * @see theme_menu_local_tasks()
+ */
+function jflex_preprocess_menu_local_tasks(&$vars, $hook) {
+  $menu_types = array('primary', 'secondary');
+  foreach ($menu_types as $menu_type) {
+    if (isset($vars[$menu_type]) && !empty($vars[$menu_type])) {
+      foreach ($vars[$menu_type] as $key => $var) {
+        if (!empty($vars[$menu_type][$key]["#link"])) {
+          $vars[$menu_type][$key]["#link"]['localized_options']['attributes']['class'][] = 'tab-link-item tab-link-' . $key;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * hook_preprocess_page()
+ *
+ * @param $vars
+ * @param $hook
  */
 function jflex_preprocess_page(&$vars, $hook) {
   $path_cur = menu_get_item();
@@ -119,9 +140,15 @@ function jflex_preprocess_page(&$vars, $hook) {
   $vars['is_category'] = FALSE;
   $vars['is_desine_category'] = FALSE;
   $vars['category_slider'] = NULL;
-  $vars['is_title'] = TRUE;
-  $vars['is_tabs_hide'] = FALSE;
+  if (!isset($vars['is_title'])) {
+    $vars['is_title'] = TRUE;
+  }
+  if (!isset($vars['is_tabs_hide'])) {
+    $vars['is_tabs_hide'] = FALSE;
+  }
   $vars['title_suffix_text'] = '';
+  // Added wrapper to content.
+  $vars['content_nowrap'] = isset($vars['content_nowrap']) ? $vars['content_nowrap'] : FALSE;
   // Show breadcrumb on page
   $vars['breadcrumb_show'] = FALSE;
 
@@ -178,6 +205,18 @@ function jflex_preprocess_page(&$vars, $hook) {
   $title_suffix_text = ' <span class="goods-count"></span>';
   if ($path_cur) {
     switch ($path_cur['path']) {
+
+      // Show breadcrumb on url.
+      case 'support/docs':
+        // Show breadcrumb on page
+        $vars['breadcrumb_show'] = TRUE;
+
+        // Breadcrumbs.
+        $breadcrumb = array();
+        $breadcrumb[] = drupal_get_title();
+        drupal_set_breadcrumb($breadcrumb);
+        break;
+
       case 'user/tickets':
         $vars['is_title'] = FALSE;
         break;
@@ -342,7 +381,7 @@ function jflex_preprocess_page(&$vars, $hook) {
               // Show breadcrumb on page
               $vars['breadcrumb_show'] = TRUE;
               $breadcrumb = array();
-              $breadcrumb[] = t('Help');
+              $breadcrumb[] = l(t('Help'), '/support');
               drupal_set_breadcrumb($breadcrumb);
               break;
 
@@ -357,11 +396,11 @@ function jflex_preprocess_page(&$vars, $hook) {
             case 'request':
               $vars['title'] = t('Request') . ': ' . $node->nid;
               $order_id = '';
-              $entity_wrapper = entity_metadata_wrapper('node', $node);
-              if ($entity_wrapper->__isset('field_order')) {
-                $order_id = $entity_wrapper->field_order->raw();
+              $emw = entity_metadata_wrapper('node', $node);
+              if ($emw->__isset('field_order')) {
+                $order_id = $emw->field_order->raw();
               }
-              if ($entity_wrapper->__isset('field_order_product') && $order_product = $entity_wrapper->field_order_product->value()) {
+              if ($emw->__isset('field_order_product') && $order_product = $emw->field_order_product->value()) {
                 $order_id = $order_id ? ' / ' . t('order') . ' #' . $order_id : '';
                 $vars['title'] = $vars['title'] . ' (' . t('model') . ' ' . $order_product->model . $order_id . ')';
               }
@@ -396,7 +435,7 @@ function jflex_preprocess_page(&$vars, $hook) {
     && is_numeric($arg[1])
   ) {
     // Hide tabs on the user page.
-    $vars['is_tabs_hide'] = TRUE;
+    //$vars['is_tabs_hide'] = TRUE;
     // Show breadcrumb on page
     $vars['breadcrumb_show'] = TRUE;
   }
@@ -429,6 +468,8 @@ function jflex_preprocess_node(&$vars) {
   // Get device.
   $vars['device'] = jflex_get_device();
   $node = $vars['node'];
+
+  $vars['comment_new'] = comment_num_new($node->nid);
 
   // Set up template suggestions for non-standard view modes
   if ($vars['view_mode'] <> 'full') {
@@ -466,7 +507,7 @@ function jflex_preprocess_node(&$vars) {
     //$price_old_decimals = 0;
     $price_old_decimals = $price_old && abs(fmod($price_old, floor($price_old))) ? 2 : 0;
     $price_old = $price_old ? number_format($price_old, $price_old_decimals, '.', ' ') : 0;
-    $vars['sell_price'] = $sell_price;
+    $vars['sell_price'] = $sell_price ? $sell_price : t('free');
     $vars['price_old'] = $price_old;
     $vars['discount'] = $discount;
   }
@@ -602,7 +643,20 @@ function jflex_preprocess_node(&$vars) {
 function jflex_preprocess_comment_wrapper(&$vars) {
   // Required for the module "ajax_comments".
   $vars['class_wrapper_comments'] = 'comment-wrapper-nid-' . $vars['node']->nid;
+
+  // Hide the comment for client.
+  if (!empty($vars['content']['comments']) && !j_crm_operator_is_user()) {
+    $comment = reset($vars['content']['comments']);
+    if (isset($comment['#comment']->field_comment_note, $comment['#comment']->comment_body)) {
+      foreach ($vars['content']['comments'] as $key => $comment) {
+        if (!empty($comment['field_comment_note']) && empty($comment['comment_body'])) {
+          $vars['content']['comments'][$key]['#access'] = FALSE;
+        }
+      }
+    }
+  }
 }
+
 /**
  * hook_preprocess_comment()
  *
@@ -643,6 +697,22 @@ function jflex_preprocess_block(&$vars) {
  */
 function jflex_preprocess_flag(&$vars) {
   $vars['theme_hook_suggestions'][] = 'flag--' . $vars['flag']->name;
+}
+
+/**
+ * Implements hook_mefibs_elements_alter()
+ *
+ * @TODO Имеется жесткая привязка к ID блока, нужно сделатьуниверсальнее. $context['block_id'] == 'sort_block'.
+ *
+ * @param $form_keys
+ * @param $context
+ *
+ * @see mefibs_hide_exposed_form_items().
+ */
+function jflex_mefibs_elements_alter(&$form_keys, $context) {
+  if ($context['block_id'] == 'sort_block' && !isset($form_keys['sort'])) {
+    $form_keys[] = 'sort_by';
+  }
 }
 
 /**
@@ -764,8 +834,8 @@ function jflex_date_nav_title($params) {
  */
 function jflex_form_views_exposed_form_alter(&$form, &$form_state) {
   if (isset($form['sell_price']['max']) && !isset($form['sell_price']['#prefix'])) {
-    $form['sell_price']['min']['#field_prefix'] = 'от';
-    $form['sell_price']['max']['#field_prefix'] = 'до';
+    $form['sell_price']['min']['#field_prefix'] = t('price from', array(), array('context' => 'sell price o views filter'));
+    $form['sell_price']['max']['#field_prefix'] = t('price to', array(), array('context' => 'sell price o views filter'));
   }
 }
 
@@ -967,11 +1037,107 @@ function jflex_node_compare_toggle_link($vars) {
  */
 function jflex_preprocess_uc_attribute_add_to_cart(&$vars) {
   $form = &$vars['form'];
-  $form['#attributes']['class'][] = 'row sp-10';
+  $form['#attributes']['class']['jflex'] = 'row sp-10';
   foreach (element_children($form) as $aid) {
-    $form[$aid]['#uc_attribute_expand_attributes']['class'][] = 'col d6 m12';
+    $form[$aid]['#uc_attribute_expand_attributes']['class']['jflex'] = 'col d6 m12';
   }
 }
+
+/**
+ * @see theme_form_element().
+ *
+ * @param $variables
+ *
+ * @return string
+ * @throws \Exception
+ */
+function jflex_form_element($variables) {
+  $element = &$variables['element'];
+
+  // This function is invoked as theme wrapper, but the rendered form element
+  // may not necessarily have been processed by form_builder().
+  $element += array(
+    '#title_display' => 'before',
+  );
+
+  // Add element #id for #type 'item'.
+  if (isset($element['#markup']) && !empty($element['#id'])) {
+    $attributes['id'] = $element['#id'];
+  }
+  // Add element's #type and #name as class to aid with JS/CSS selectors.
+  $attributes['class'] = array('form-item');
+  if (!empty($element['#type'])) {
+    $attributes['class'][] = 'form-type-' . strtr($element['#type'], '_', '-');
+  }
+  if (!empty($element['#name'])) {
+    $attributes['class'][] = 'form-item-' . strtr($element['#name'], array(' ' => '-', '_' => '-', '[' => '-', ']' => ''));
+  }
+  // Add a class for disabled elements to facilitate cross-browser styling.
+  if (!empty($element['#attributes']['disabled'])) {
+    $attributes['class'][] = 'form-disabled';
+  }
+  $output = '<div' . drupal_attributes($attributes) . '>' . "\n";
+
+  // If #title is not set, we don't display any label or required marker.
+  if (!isset($element['#title'])) {
+    $element['#title_display'] = 'none';
+  }
+  $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span>' : '';
+  $suffix = isset($element['#field_suffix']) ? '<span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+
+  $wrap = !isset($element['#type']) || $element['#type'] <> 'checkbox';
+
+  switch ($element['#title_display']) {
+    case 'before':
+    case 'invisible':
+      if ($wrap) {
+        $output .= ' <span class="label">' . theme('form_element_label', $variables) . '</span>';
+        $output .= ' <span class="item">' . $prefix . $element['#children'] . $suffix . "</span>\n";
+      }
+      else {
+        $output .= ' ' . theme('form_element_label', $variables);
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      }
+      break;
+
+    case 'after':
+      if ($wrap) {
+        $output .= ' <span class="item">' . $prefix . $element['#children'] . $suffix . '</span>';
+        $output .= ' <span class="label">' . theme('form_element_label', $variables) . "</span>\n";
+      }
+      else {
+        $output .= ' ' . $prefix . $element['#children'] . $suffix;
+        $output .= ' ' . theme('form_element_label', $variables) . "\n";
+      }
+      break;
+
+    case 'none':
+    case 'attribute':
+      // Output no label and no required marker, only the children.
+      if ($wrap) {
+        $output .= ' <span class="item">' . $prefix . $element['#children'] . $suffix . "</span>\n";
+      }
+      else {
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      }
+      break;
+  }
+
+  if (!empty($element['#description'])) {
+    $output .= '<div class="description">' . $element['#description'] . "</div>\n";
+  }
+
+  $output .= "</div>\n";
+
+  return $output;
+}
+
+///**
+// * Implements hook_date_combo_process_alter().
+// */
+//function jflex_date_combo_process_alter(&$element, &$form_state, $context) {
+//  //$element['value']['#date_format'] = 'd/m/Y - H:i';
+//}
 
 /**
  * Implements hook_translated_menu_link_alter().
@@ -1276,18 +1442,36 @@ function jflex_theme_jslider($images = array(), $jslider_options = NULL, $jslide
  * $msw_detect->isMobile();
  * $msw_detect->isTablet();
  *
- * @return array|bool
+ * @param bool $is_mobile
+ * @param bool $getlabel
+ *
+ * @return mixed|null|string
  */
-function jflex_get_device($is_mobile = FALSE) {
-  static $device = FALSE;
-  if (!$device && module_exists('mobile_switch')) {
-    $device = mobile_switch_mobile_detect();
-  }
-  if ($is_mobile && !empty($device)) {
-    return $device['ismobiledevice'];
+function jflex_get_device($is_mobile = FALSE, $getlabel = FALSE) {
+  static $output = array();
+  $key = $is_mobile . $getlabel;
+  if (!isset($output[$key])) {
+    $output[$key] = FALSE;
+    if (module_exists('mobile_switch')) {
+      $device = mobile_switch_mobile_detect();
+      if ($device) {
+        if ($device['device_type'] == 'mobile') {
+          $device['label'] = empty($device['istablet']) ? t('Mobile device') : t('Tablet device');
+        }
+        else {
+          $device['label'] = t('Desktop device');
+        }
+        if ($is_mobile) {
+          return $device['ismobiledevice'];
+        }
+        elseif ($getlabel) {
+          return $device['label'];
+        }
+      }
+    }
   }
 
-  return $device;
+  return $output[$key];
 }
 
 /**

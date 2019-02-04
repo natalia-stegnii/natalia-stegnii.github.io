@@ -121,7 +121,8 @@
   right: 70px;
   z-index: 101;
   width: 320px;
-  max-height: 100vh;
+  height: 100vh;
+  max-height: 1000px;
   overflow: hidden;
   overflow-y: auto !important;
   @include box-shadow(0 6px 30px rgba(0, 0, 0, 0.25));
@@ -427,7 +428,9 @@
 .support-chat__content {
   position: relative;
   padding-bottom: 70px;
-
+  .ajax-comments-nodejs-new{
+    background-color: transparent !important;
+  }
   form, .contextual-links-region {
     position: static;
   }
@@ -510,13 +513,13 @@
   .file {
     display: block;
     position: relative;
-
+    padding-left: 20px;
     &::before {
       content: '\e64f';
       display: block;
       position: absolute;
       top: 50%;
-      left: 20px;
+      left: 0;
       font-family: $iconsFont;
       font-size: 14px;
       color: $grey;
@@ -612,7 +615,7 @@
 }
 
 .ajax-comments-nodejs-new {
-  background-color: transparent !important;
+  /*background-color: transparent !important;*/
 }
 
 
@@ -642,6 +645,12 @@
     }
   }
   .support-chat__operator_list {
+    display: none;
+  }
+}
+
+.j_crm-chat--content-wrap {
+  .message-file{
     display: none;
   }
 }

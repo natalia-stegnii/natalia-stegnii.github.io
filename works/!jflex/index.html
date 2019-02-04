@@ -206,19 +206,54 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
    <style type="text/css" media="all">
 
     @import url("../jflex/library/fonts/gothampro/gothampro.css");
-    @import url("../jflex/library/fonts/icons/icons.css");
+    @import url("../jflex/library/fonts/icons/examples/style.css");
 
    </style>
+   <link rel="stylesheet" href="css/styles.css" type="text/css">
    <!-- End of local fonts styles -->
 </head>
 <body id="major"  class="front  html front not-logged-in no-sidebars page-node page-node- page-node-23 node-type-page theme__color_dark theme__style_rounded i18n-en displaymode grid isadaptive-t">
-<header>
+<header class="t_white">
 	<div class="top">
-		<div class="phone">
-			<a href="tel:88007757847" class="btn_cart-link icon icon-shopping-cart">8 800 775 78 47</a>
+		<h2 class="float-left phone light">
+			<span class=""></span>
+			<a href="tel:88007757847" class="icon icon-phone">8 800 775 78 47</a>
+		</h2>
+		<div class="menu inline medium">
+			<div class="p10"><a href="">Начать</a></div>
+			<div class="p10"><a href="">Программы <span class="icon-chevron-small-down"></span></a></div>
+			<div class="p10"><a href="">Мероприятия</div>
+			<div class="p10"><a href="">О проекте</div>
+			<div class="p10"><a href="">Партнерам <span class="icon-chevron-small-down"></span></a></div>
+			<div class="p10"><a href="">Контакты</a></div>
+		</div>
+		<div class="float-right inline">
+			<span><a href="#" class="p10 brd r-5 icon-user">Личный кабинет</a></span>
+			<span><a href="#" class="p10 brd r-5 mm10">RU<span class="icon-chevron-small-down"></a></span>
 		</div>
 	</div>
 </header>
-
+<section class="bg-to cover t_white main center">
+  <img class="bg" src="img/bg-main.png" alt="фон">
+	<div class="logo">
+		<img src="img/logo.png" alt="logo">
+		<span class="logo-text ucase brd l s_white">открой в себе нового я</span>
+	</div>
+	<p>Акселератор личностного и профессионального роста.</p>
+	<form>
+		<div class="inline">
+			<div>
+				<input class="bg_white p10" type="name" name="name" placeholder="Введите ваше имя">
+			</div>
+			<div>
+				<input class="bg_white p10"  name="email" placeholder="Введите ваш email">
+			</div>
+			<div>
+				<a type="submit" class="btn s_orange">НАЧАТЬ</a>
+			</div>
+		</div>
+		<h5 class="regular">Отправка формы означает согласие с <a href="">условиями обработки данных</a></h5>
+	</form>
+</section>
 </body>
 </html>

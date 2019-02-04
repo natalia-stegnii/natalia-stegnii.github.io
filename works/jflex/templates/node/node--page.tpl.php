@@ -89,4 +89,7 @@
       <?php print render($content['body']); ?>
     </div>
   <?php endif; ?>
+  <?php if (!empty($content['field_product_collection'])): ?>
+    <?php print drupal_render($content['field_product_collection']); ?>
+  <?php endif; ?>
 </div>

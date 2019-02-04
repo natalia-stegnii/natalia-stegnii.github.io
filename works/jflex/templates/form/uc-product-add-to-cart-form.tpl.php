@@ -13,6 +13,9 @@
  */
 //dpm($form, '$form');
 ?>
+<?php if (!empty($form['flexprod_change_extension'])): ?>
+  <?php print drupal_render($form['flexprod_change_extension']); ?>
+<?php endif; ?>
 <?php if (!empty($form['downpayment'])): ?>
   <div>
     <?php print drupal_render($form['downpayment']); ?>

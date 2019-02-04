@@ -134,9 +134,15 @@
         <div>
           <div class="prices">
             <div class="current">
-              <div class="display-price icon ic-rub uc-product-<?php print $nid; ?>">
-                <?php print $sell_price; ?>
-              </div>
+              <?php if (is_numeric($sell_price) || $sell_price <> t('free')): ?>
+                <div class="display-price icon ic-rub uc-product-<?php print $nid; ?>">
+                  <?php print $sell_price; ?>
+                </div>
+              <?php else: ?>
+                <div class="display-price uc-product-<?php print $nid; ?>">
+                  <?php print $sell_price; ?>
+                </div>
+              <?php endif; ?>
             </div>
             <div class="additional">
               <?php if ($price_old): ?>

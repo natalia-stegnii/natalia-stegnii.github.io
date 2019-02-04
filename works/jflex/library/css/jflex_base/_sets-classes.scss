@@ -63,7 +63,15 @@ hr {
 .rtejustify {
   text-align:justify;
 }
-
+.rtecenter {
+  text-align: center;
+}
+.rteleft{
+  text-align: left;
+}
+.rteright{
+  text-align: right;
+}
 .fl {
   float: left;
 }
@@ -242,6 +250,9 @@ hr {
 .shadow-s {
   @include box-shadow(0 10px 10px rgba(0, 0, 0, 0.10));
 }
+.shadow-big {
+  @include box-shadow(0 10px 25px rgba(0, 0, 0, 0.10));
+}
 
 
 /* opacity */
@@ -324,3 +335,22 @@ hr {
   vertical-align: top;
 }
 
+.brd.s_white_opacity10 {border-color:rgba(255,255,255,0.1)}
+.brd.s_white_opacity20 {border-color:rgba(255,255,255,0.2)}
+.brd.s_white_opacity30 {border-color:rgba(255,255,255,0.3)}
+.brd.s_white_opacity40 {border-color:rgba(255,255,255,0.4)}
+.brd.s_white_opacity50 {border-color:rgba(255,255,255,0.5)}
+.brd.s_white_opacity60 {border-color:rgba(255,255,255,0.6)}
+.brd.s_white_opacity70 {border-color:rgba(255,255,255,0.7)}
+.brd.s_white_opacity80 {border-color:rgba(255,255,255,0.8)}
+.brd.s_white_opacity90 {border-color:rgba(255,255,255,0.9)}
+
+.brd.s_black_opacity10 {border-color:rgba(0,0,0,0.1)}
+.brd.s_black_opacity20 {border-color:rgba(0,0,0,0.2)}
+.brd.s_black_opacity30 {border-color:rgba(0,0,0,0.3)}
+.brd.s_black_opacity40 {border-color:rgba(0,0,0,0.4)}
+.brd.s_black_opacity50 {border-color:rgba(0,0,0,0.5)}
+.brd.s_black_opacity60 {border-color:rgba(0,0,0,0.6)}
+.brd.s_black_opacity70 {border-color:rgba(0,0,0,0.7)}
+.brd.s_black_opacity80 {border-color:rgba(0,0,0,0.8)}
+.brd.s_black_opacity90 {border-color:rgba(0,0,0,0.9)}

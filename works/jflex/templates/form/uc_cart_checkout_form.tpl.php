@@ -58,6 +58,13 @@ hide($form['actions']['cancel']);
         </div>
       <?php endif; ?>
 
+      <?php if (!empty($form['panes']['flex_balance_bonus'])): ?>
+        <div class="bonus__wrap">
+          <div class="title"><?php print t('Bonus'); ?></div>
+          <div class="pane bonus"><?php print render($form['panes']['flex_balance_bonus']); ?></div>
+        </div>
+      <?php endif; ?>
+
       <?php if (!empty($form['panes']['payment'])): ?>
         <div class="payment__wrap">
           <div class="title"><?php print t('Select a Payment Method'); ?></div>

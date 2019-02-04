@@ -5,6 +5,7 @@ version = Version 4.0
 core = 7.x
 engine = phptemplate
 
+dependencies[] = flex
 
 ; -- General regions
 regions[pagetitleslogan]      = Page title slogan
@@ -30,6 +31,7 @@ regions[cart]           = Cart
 regions[coupon]         = Coupon discount
 regions[infoblocks]     = Info blocks
 regions[email_first]    = Email (first)
+regions[email]    = Email (all)
 regions[product_social] = Social links (product)
 regions[product_promo]  = Promo Info (product)
 
@@ -62,10 +64,11 @@ stylesheets[all][] = library/fonts/gothampro/gothampro.css
 stylesheets[all][] = library/css/ckeditor.css
 stylesheets[all][] = library/css/modules.css
 stylesheets[all][] = library/css/jflex.css
-stylesheets[all][] = library/css/themes/readyshop/css/readyshop.css
+stylesheets[all][] = library/css/project_themes/readyshop/css/readyshop.css
+stylesheets[all][] = library/css/project_themes/readyshop/css/readyshop-adaptive.css
 stylesheets[all][] = library/css/mobile.css
 stylesheets[all][] = library/css/adaptive.css
-stylesheets[all][] = library/css/themes/readyshop/css/readyshop-adaptive.css
+stylesheets[all][] = library/css/tmp.css
 
 scripts[] = library/js/jquery.swipe.js
 scripts[] = library/js/handlebars.js
@@ -92,6 +95,7 @@ scripts[] = library/js/masonry.pkgd.js
 scripts[] = library/js/rotate.js
 scripts[] = library/js/scrolledtable.js
 scripts[] = library/js/slick.js
+scripts[] = library/js/slick_options.js
 scripts[] = library/js/drupal/init.js
 scripts[] = library/js/mediaqueries.js
 scripts[] = library/js/drupal/mobile.js

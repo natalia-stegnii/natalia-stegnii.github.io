@@ -38,6 +38,21 @@
     }
   }
 }
+.t_green {
+  color: $green;
+
+  a {
+    color: $green;
+
+    &:hover {
+      color: darken($green, 20%);
+    }
+    &.active {
+      text-decoration: none;
+      color: darken($green, 10%);
+    }
+  }
+}
 .t_dark-grey {
   color: $darkGrey;
 
@@ -217,6 +232,9 @@
   }
   &.s_grey {
     border-color: $grey;
+  }
+  &.s_green {
+    border-color: $green;
   }
   &.s_dark-grey {
     border-color: $darkGrey;

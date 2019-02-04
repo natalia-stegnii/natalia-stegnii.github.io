@@ -1,0 +1,43 @@
+.lang-menu {
+    background-color: #fff;
+}
+
+.lang-menu ul {
+    position: relative;
+    list-style: none;
+    font-family: "gothampromed";
+    font-size: 12px;
+    color: #444;
+}
+
+.lang-menu ul::before {
+    content: '\e91f';
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    line-height: normal;
+    font-family: "icons";
+    font-size: 10px;
+    color: #ccc;
+}
+
+.lang-menu li {
+    display: none;
+}
+
+.lang-menu li.active {
+    display: block;
+}
+
+.lang-menu a, .lang-menu span {
+    display: block;
+    position: relative;
+    line-height: 34px;
+    padding: 0 20px 0 40px;
+    text-decoration: none;
+}
+
+.lang-menu a {
+    color: inherit;
+}
+

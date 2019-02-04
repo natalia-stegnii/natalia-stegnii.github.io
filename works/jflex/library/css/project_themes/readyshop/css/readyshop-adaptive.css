@@ -304,8 +304,7 @@
     text-align: center; }
 
   header {
-    padding-bottom: 0;
-    border-bottom: none; }
+      }
     header h1 {
       display: block;
       padding-bottom: 20px;

@@ -68,6 +68,21 @@
   }
 }
 
+.form_btn_small {
+
+  input[type=submit] {
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+    height: 28px;
+    line-height: 26px;
+    display: inline-block;
+    font-size: 12px !important;
+    box-shadow: none;
+
+    &:hover {
+    }
+  }
+}
 
 /*webform positioning*/
 
@@ -183,5 +198,33 @@
 
   &.form-item {
     width: 100%;
+  }
+}
+
+.container-inline-date{
+  .form-type-textfield{
+    position: relative;
+    .item{
+      position: relative;
+      display: inline-block;
+      input{
+        padding-right: 20px;
+      }
+      &:before{
+        position: absolute;
+        content: '\e965';
+        font-family: 'icons';
+        top: 9px;
+        right: 5px;
+        color: #aaa;
+        line-height: 12px;
+      } 
+    }
+
+  }
+  .form-item{
+    input,select,option{
+      margin-right: 0;
+    }
   }
 }

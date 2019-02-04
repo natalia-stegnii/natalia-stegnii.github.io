@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: normal;
+  cursor: default;
 }
 
 h1, .h1 {
@@ -106,10 +107,30 @@ b, strong, th {font-weight:normal; font-family: $gothamProBold;}
 }
 
 /* line-height */
-
+.lh10 {
+  line-height:10px;
+}
+.lh15 {
+  line-height:15px;
+}
 .lh20 {
   line-height:20px;
 }
 .lh25 {
   line-height:25px;
+}
+.lh30 {
+  line-height:30px;
+}
+.lh35{
+  line-height:35px;
+}
+.lh40 {
+  line-height:40px;
+}
+.lh45 {
+  line-height:45px;
+}
+.lh50 {
+  line-height:50px;
 }

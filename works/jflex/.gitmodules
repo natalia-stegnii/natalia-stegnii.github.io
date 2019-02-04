@@ -1,6 +1,3 @@
 [submodule "library"]
 	path = library
-	url = git@gitlab.com:alphacrew/library.git
-[submodule "custom-template-blocks"]
-	path = custom-template-blocks
-	url = git@gitlab.com:alphacrew/custom-templates.git
+	url = git@gitlab.com:alphacrew/jflex_library.git

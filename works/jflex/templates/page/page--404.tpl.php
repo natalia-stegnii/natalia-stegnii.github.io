@@ -26,7 +26,7 @@
         
         <div class="description"><?php print t('Page not found. Please try again later.'); ?></div>
 
-        <div id="developer-from" class="developer-from"><?php print $flex_copyright; ?></div>
+        <div id="developer-from" class="developer-from centrify inlb"><?php print $flex_copyright; ?></div>
         
       </div>
 
