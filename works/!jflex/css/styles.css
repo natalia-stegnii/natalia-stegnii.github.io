@@ -7,18 +7,57 @@
 .inline{
 	display: inline-flex;
 }
+.i-r:before{
+	margin-right: 15px;
+}
+.i-l:before{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+header a{
+	text-decoration: none;
+}
+header{
+	position: relative;
+	top:50px;
+}
 .main{
 	margin-top: -50px;
-	padding-top: 100px;
+	padding-top: 350px;
+	padding-bottom: 300px;
+}
+.logo{
+	padding-bottom: 75px;
 }
 .logo img{
 	padding-right: 50px;
+	width: 18%;
 }
 .logo-text{
-	font-size: 50px;
+	font-size: 30px;
 	line-height: 1.4;
-	padding-left: 50px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-.phone a{
-	text-decoration: none;
+input{
+	border: none;
+	width: 350px;
 }
+input.first{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+input.last{
+	margin-right: -2px;
+}
+form .btn{
+	padding: 9px 40px;
+	font-size: 22px;
+}
+input::placeholder{
+  font-size: 18px;
+  color: rgb(68, 68, 68);
+}
+
+
