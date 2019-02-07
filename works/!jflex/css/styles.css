@@ -1,3 +1,6 @@
+.flex{
+	display: flex;
+}
 .inline{
 	display: inline-flex;
 }
@@ -61,5 +64,28 @@ input::placeholder{
 		background-size: contain;
 	}
 }
-
-
+.title{
+	padding: 40px 0;
+}
+.title h1{
+	font-size: 36px;
+}
+.line{
+	margin: 20px 0;
+}
+.col{
+	padding: 40px 10px;
+}
+.team .i{
+	color: #00bf3f;
+	margin-right: 20px;
+}
+.team img{
+	margin-bottom: 40px;
+}
+.team .prof{
+	margin: 10px 0;
+}
+.team .desc{
+	padding-left: 20px;
+}
