@@ -4,6 +4,13 @@
 .inline{
 	display: inline-flex;
 }
+.fit{
+	width: fit-content;
+	margin: auto;
+}
+.i-grey{
+	color: #aaaaaa;
+}
 .i-r:before{
 	margin-right: 15px;
 }
@@ -88,4 +95,14 @@ input::placeholder{
 }
 .team .desc{
 	padding-left: 20px;
+}
+.course .col{
+	padding: 0;
+}
+.bg-text{
+	margin-top: -80px;
+}
+.payments img{
+	width: 9.6%;
+	padding: 20px;
 }
