@@ -8,6 +8,19 @@
 	width: fit-content;
 	margin: auto;
 }
+.fitm{
+	width: fit-content;
+	margin: 40px auto;
+}
+.fitw{
+	width: fit-content;
+}
+.pl110{
+	padding-left: 110px;
+}
+.pr110{
+	padding-right: 110px;
+}
 .i-grey{
 	color: #aaaaaa;
 }
@@ -17,6 +30,14 @@
 .i-l:before{
 	margin-left: 10px;
 	margin-right: 5px;
+}
+.i-closer{
+	position: relative;
+    top: -10px;
+    left: 10px;
+}
+a{
+	text-decoration: none;
 }
 header a{
 	text-decoration: none;
@@ -101,6 +122,23 @@ input::placeholder{
 }
 .bg-text{
 	margin-top: -80px;
+}
+.action-item{
+	margin: 40px 0;
+}
+.action-promo{
+	position: relative;
+    top: -60px;
+}
+.rewiev h3{
+	padding-left: 30px;
+    line-height: 1.4;
+}
+.rewiev h1{
+	margin-bottom: 40px;
+}
+.rewiev-b a{
+	text-decoration: none;
 }
 .payments img{
 	width: 9.6%;
