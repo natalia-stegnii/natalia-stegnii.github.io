@@ -36,8 +36,36 @@
     top: -10px;
     left: 10px;
 }
+.pv{
+	padding-left: 0 !important;
+	padding-top: 80px !important;
+	padding-right: 40px !important;
+}
+p{
+	line-height: 1.5;
+}
 a{
 	text-decoration: none;
+}
+.line-short{
+	border-width: 2px;
+	width: 25%;
+	margin: 25px 0 20px !important;
+}
+.bg_light-grey{
+	background: #f5f5f5;
+}
+.f18{
+	font-size: 18px;
+}
+.mt70{
+	margin-top: 70px;
+}
+.pb47{
+	padding-bottom: 47px;
+}
+.pb0{
+	padding-bottom: 0 !important;  
 }
 header a{
 	text-decoration: none;
@@ -93,10 +121,14 @@ input::placeholder{
 	}
 }
 .title{
-	padding: 40px 0;
+	padding: 90px 0 60px;
 }
 .title h1{
 	font-size: 36px;
+	padding-bottom: 10px;
+}
+.title h3{
+	line-height: 1.4;
 }
 .line{
 	margin: 20px 0;
@@ -106,22 +138,30 @@ input::placeholder{
 }
 .team .i{
 	color: #00bf3f;
-	margin-right: 20px;
+	margin-right: 10px;
+	font-size: 22px;
 }
 .team img{
-	margin-bottom: 40px;
-}
-.team .prof{
-	margin: 10px 0;
-}
-.team .desc{
-	padding-left: 20px;
+	margin-bottom: 30px;
+	width: 65%;
 }
 .course .col{
 	padding: 0;
 }
+.course .col.d3{
+	width: 23%;
+}
+.course-name{
+	font-size: 24px;
+}
 .bg-text{
-	margin-top: -80px;
+	margin-top: -120px;
+	margin-bottom: 40px;
+}
+.action-item img{
+	width: 45%;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 .action-item{
 	margin: 40px 0;
