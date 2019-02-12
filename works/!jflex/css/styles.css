@@ -55,8 +55,36 @@ a{
 .bg_light-grey{
 	background: #f5f5f5;
 }
+.f14{
+	font-size: 14px;
+}
 .f18{
 	font-size: 18px;
+}
+.f16{
+	font-size: 16px;
+}
+.f20{
+	font-size: 20px;
+}
+.f22{
+	font-size: 22px;
+}
+.f30{
+	font-size: 30px;
+}
+.f50{
+	font-size: 50px;
+}
+.mtm10{
+	position: relative;
+	bottom: 8px;
+}
+.mt30{
+	margin-top: 30px !important;
+}
+.mt40{
+	margin-top: 40px !important;
 }
 .mt70{
 	margin-top: 70px;
@@ -64,8 +92,17 @@ a{
 .pb47{
 	padding-bottom: 47px;
 }
+.pb70{
+	padding-bottom: 70px;
+}
 .pb0{
 	padding-bottom: 0 !important;  
+}
+.lh18{
+	line-height: 1.8;
+}
+.bg_s-orange{
+	background: #dc9e00;
 }
 header a{
 	text-decoration: none;
@@ -93,7 +130,7 @@ header{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-form{
+.main form{
 	padding-top: 4%;
 }
 input{
@@ -107,11 +144,11 @@ input.first{
 input.last{
 	margin-right: -2px;
 }
-form .btn{
+.main form .btn{
 	padding: 9px 40px;
 	font-size: 20px;
 }
-input::placeholder{
+.main input::placeholder{
   font-size: 18px;
   color: rgb(68, 68, 68);
 }
@@ -148,9 +185,7 @@ input::placeholder{
 .course .col{
 	padding: 0;
 }
-.course .col.d3{
-	width: 23%;
-}
+
 .course-name{
 	font-size: 24px;
 }
@@ -164,11 +199,11 @@ input::placeholder{
     margin-top: 50px;
 }
 .action-item{
-	margin: 40px 0;
+	margin: 40px 50px;
 }
 .action-promo{
 	position: relative;
-    top: -60px;
+    top: -80px;
 }
 .rewiev h3{
 	padding-left: 30px;
@@ -183,4 +218,12 @@ input::placeholder{
 .payments img{
 	width: 9.6%;
 	padding: 20px;
+}
+.f-logo{
+	width: 70%;
+	float: right;
+}
+.fmenu-item{
+	padding: 5px;
+	font-size: 15px;
 }
