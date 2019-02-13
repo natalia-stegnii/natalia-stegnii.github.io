@@ -157,6 +157,11 @@ input.last{
 		background-size: contain;
 	}
 }
+@media screen and (min-width: 1200px) {
+	.course .col.d3{
+		width: 23%;
+	}
+}
 .title{
 	padding: 90px 0 60px;
 }
